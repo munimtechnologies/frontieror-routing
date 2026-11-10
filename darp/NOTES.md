@@ -1,6 +1,39 @@
-# cordeau2006 (DARP) practice solver: v1 score and v2 plan (2026-11-10)
+# cordeau2006 (DARP) practice solver: notes and scores
 
 MV2 of Munim, Inc. (mv2@munimtech.com). Made with AI agents working in MV2's name. Text CC BY 4.0, code Apache-2.0.
+
+## v2 (solver 0.2.0, job froc-darp-cordeau-v2, 2026-11-10): scored
+
+42 Cordeau (2006) a/b instances, 60 s each, 2 workers, run as subprocesses exactly as the FrontierOR sandbox calls
+`solve.py`, every solution re-checked by the independent checker. Results: [results-v2.md](results-v2.md),
+[results-v2.json](results-v2.json).
+
+- **42 of 42 feasible** (v1: 34). No user left unserved, none over time (longest wall 55.5 s), no host pause detected
+  (0 re-run attempts), nothing below a reference.
+- Mean gap to the Ho et al. (2018) optimal or best known values: **1.11% on the 21 a-instances, 0.72% on the 21
+  b-instances**. 14 of 42 are within 0.1% (7 a, 7 b), all but one (b6-48) with at most 5 vehicles. The largest gaps
+  are on the biggest instances: a8-80 3.85%, b8-96 3.77%, a8-96 3.50%, a7-70 3.47%.
+- On the 34 instances v1 solved, v2 is better on 32, equal on 1 (b2-24) and worse on 1 (a2-20, by 0.001%: both
+  344.83 to two decimals); the mean ratio v2/v1 is 0.984. Only the insertion fix changed, so this difference is the
+  fix.
+- 12 of 12 tiny random instances (3-4 users) reach the exact optimum (v1: 10).
+- 12 unit tests pass, among them best_insert against a brute force over every position pair.
+
+| | guess (written before the run) | how sure | result | (p - outcome)^2 |
+|---|---|---|---|---|
+| E1 | the unit test step passes | 0.75 | 12 of 12, held | 0.0625 |
+| E2 | all 42 instances feasible | 0.80 | 42 of 42, held | 0.0400 |
+| E3 | 12 of 12 tiny instances optimal | 0.80 | 12 of 12, held | 0.0400 |
+| E4 | mean gap over all 21 a-instances <= 3.0% | 0.45 | 1.11%, held | 0.3025 |
+| E5 | v2 at or below v1 on at least 26 of 34 | 0.60 | 33 of 34 (32 better, 1 equal), held | 0.1600 |
+| E6 | none below a reference by more than 0.005% | 0.90 | none, held | 0.0100 |
+
+Brier score over E1-E6: 0.615 / 6 = **0.103** (v1: 0.328). All six held. E4 and E5 were set too cautiously: once the
+bug was found, the guesses should have trusted that v1's gaps came mostly from it.
+
+What is next for this solver: the remaining gap sits on instances with 7-8 vehicles and 70-96 users, where each worker
+gets only about 2,000-3,000 iterations in 60 s. Speeding up the insertion evaluation (incremental forward time slack
+instead of a full schedule re-check) is the obvious lever.
 
 ## v1 (solver 0.1.0, job froc-darp-cordeau-v1, 2026-11-09): scored
 
@@ -9,7 +42,7 @@ because whole users were left unserved** (a2-16, a2-24, a3-36, a4-40, b2-20, b3-
 runs, mean gap to the Ho et al. (2018) reference was 3.61% on 17 a-instances and 1.94% on 17 b-instances. 10 of 12
 tiny random instances optimal; seeds 2 and 6 ended with a user unserved although a feasible optimum exists. The unit
 test step failed for that reason (`test_cli_tiny_is_optimal_and_checked`, seed 2). No run was paused, none was over
-time, and none came out below a reference.
+time, and none came out below a reference. Results: [results-v1.md](results-v1.md).
 
 Guesses written before the run (in the run's private notes, not a public pre-registration):
 
@@ -46,17 +79,3 @@ best_insert returned was feasible, never that it found the feasible positions.
    coincided one-to-one with a host pause window in the runner's log.)
 
 Nothing else in the search changed, so the v1 -> v2 difference measures the fix.
-
-## v2 guesses, written before job froc-darp-cordeau-v2 runs
-
-| | guess | how sure |
-|---|---|---|
-| E1 | the unit test step passes | 0.75 |
-| E2 | all 42 instances feasible (independent checker) | 0.80 |
-| E3 | 12 of 12 tiny instances optimal | 0.80 |
-| E4 | mean gap over all 21 a-instances <= 3.0% | 0.45 |
-| E5 | v2 at or below v1 on at least 26 of the 34 instances v1 solved | 0.60 |
-| E6 | none below a reference by more than 0.005% | 0.90 |
-
-When done: score E1-E6 and publish darp/ (v2 code, results, this file) to frontieror-routing if the tests passed;
-otherwise publish only this file and the results, and fix.
