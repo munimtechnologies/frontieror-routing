@@ -1,0 +1,1505 @@
+{
+ "fspd_commit": "de480ce4c59accc9f71c76c76f32b707ee7305ad",
+ "time_limit_s": 60,
+ "tiny": [
+  {
+   "seed": 1,
+   "n": 4,
+   "optimum": 244.0,
+   "exact_s": 0.0,
+   "auto": {
+    "wall_s": 5.12,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580",
+    "feasible": true,
+    "why": "ok",
+    "objective": 178.0,
+    "routes": 2,
+    "optimal": false
+   },
+   "own": {
+    "wall_s": 5.11,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": null,
+    "feasible": true,
+    "why": "ok",
+    "objective": 178.0,
+    "routes": 2,
+    "optimal": false
+   }
+  },
+  {
+   "seed": 2,
+   "n": 4,
+   "optimum": 356.0,
+   "exact_s": 0.0,
+   "auto": {
+    "wall_s": 5.11,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580",
+    "feasible": true,
+    "why": "ok",
+    "objective": 185.0,
+    "routes": 2,
+    "optimal": false
+   },
+   "own": {
+    "wall_s": 5.11,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": null,
+    "feasible": true,
+    "why": "ok",
+    "objective": 185.0,
+    "routes": 2,
+    "optimal": false
+   }
+  },
+  {
+   "seed": 3,
+   "n": 4,
+   "optimum": 280.0,
+   "exact_s": 0.0,
+   "auto": {
+    "wall_s": 5.13,
+    "overtime": false,
+    "engine_used": "construct",
+    "pyvrp_error": "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580",
+    "feasible": true,
+    "why": "ok",
+    "objective": 185.0,
+    "routes": 3,
+    "optimal": false
+   },
+   "own": {
+    "wall_s": 5.13,
+    "overtime": false,
+    "engine_used": "construct",
+    "pyvrp_error": null,
+    "feasible": true,
+    "why": "ok",
+    "objective": 185.0,
+    "routes": 3,
+    "optimal": false
+   }
+  },
+  {
+   "seed": 4,
+   "n": 4,
+   "optimum": 210.0,
+   "exact_s": 0.0,
+   "auto": {
+    "wall_s": 5.12,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580",
+    "feasible": true,
+    "why": "ok",
+    "objective": 128.0,
+    "routes": 3,
+    "optimal": false
+   },
+   "own": {
+    "wall_s": 5.11,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": null,
+    "feasible": true,
+    "why": "ok",
+    "objective": 128.0,
+    "routes": 3,
+    "optimal": false
+   }
+  },
+  {
+   "seed": 5,
+   "n": 4,
+   "optimum": 164.0,
+   "exact_s": 0.0,
+   "auto": {
+    "wall_s": 5.12,
+    "overtime": false,
+    "engine_used": "construct",
+    "pyvrp_error": "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580",
+    "feasible": true,
+    "why": "ok",
+    "objective": 112.0,
+    "routes": 3,
+    "optimal": false
+   },
+   "own": {
+    "wall_s": 5.11,
+    "overtime": false,
+    "engine_used": "construct",
+    "pyvrp_error": null,
+    "feasible": true,
+    "why": "ok",
+    "objective": 112.0,
+    "routes": 3,
+    "optimal": false
+   }
+  },
+  {
+   "seed": 6,
+   "n": 4,
+   "optimum": 356.0,
+   "exact_s": 0.0,
+   "auto": {
+    "wall_s": 5.13,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580",
+    "feasible": true,
+    "why": "ok",
+    "objective": 255.0,
+    "routes": 2,
+    "optimal": false
+   },
+   "own": {
+    "wall_s": 5.11,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": null,
+    "feasible": true,
+    "why": "ok",
+    "objective": 255.0,
+    "routes": 2,
+    "optimal": false
+   }
+  },
+  {
+   "seed": 7,
+   "n": 5,
+   "optimum": 196.0,
+   "exact_s": 0.06,
+   "auto": {
+    "wall_s": 5.13,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580",
+    "feasible": true,
+    "why": "ok",
+    "objective": 149.0,
+    "routes": 2,
+    "optimal": false
+   },
+   "own": {
+    "wall_s": 5.12,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": null,
+    "feasible": true,
+    "why": "ok",
+    "objective": 149.0,
+    "routes": 2,
+    "optimal": false
+   }
+  },
+  {
+   "seed": 8,
+   "n": 5,
+   "optimum": 254.0,
+   "exact_s": 0.02,
+   "auto": {
+    "wall_s": 5.11,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580",
+    "feasible": true,
+    "why": "ok",
+    "objective": 166.0,
+    "routes": 4,
+    "optimal": false
+   },
+   "own": {
+    "wall_s": 5.11,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": null,
+    "feasible": true,
+    "why": "ok",
+    "objective": 166.0,
+    "routes": 4,
+    "optimal": false
+   }
+  },
+  {
+   "seed": 9,
+   "n": 5,
+   "optimum": 181.0,
+   "exact_s": 0.04,
+   "auto": {
+    "wall_s": 5.12,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580",
+    "feasible": true,
+    "why": "ok",
+    "objective": 162.0,
+    "routes": 2,
+    "optimal": false
+   },
+   "own": {
+    "wall_s": 5.12,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": null,
+    "feasible": true,
+    "why": "ok",
+    "objective": 162.0,
+    "routes": 2,
+    "optimal": false
+   }
+  },
+  {
+   "seed": 10,
+   "n": 5,
+   "optimum": 158.0,
+   "exact_s": 0.02,
+   "auto": {
+    "wall_s": 5.15,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580",
+    "feasible": true,
+    "why": "ok",
+    "objective": 119.0,
+    "routes": 3,
+    "optimal": false
+   },
+   "own": {
+    "wall_s": 5.1,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": null,
+    "feasible": true,
+    "why": "ok",
+    "objective": 119.0,
+    "routes": 3,
+    "optimal": false
+   }
+  },
+  {
+   "seed": 11,
+   "n": 5,
+   "optimum": 171.0,
+   "exact_s": 0.02,
+   "auto": {
+    "wall_s": 5.12,
+    "overtime": false,
+    "engine_used": "construct",
+    "pyvrp_error": "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580",
+    "feasible": true,
+    "why": "ok",
+    "objective": 115.0,
+    "routes": 2,
+    "optimal": false
+   },
+   "own": {
+    "wall_s": 5.12,
+    "overtime": false,
+    "engine_used": "construct",
+    "pyvrp_error": null,
+    "feasible": true,
+    "why": "ok",
+    "objective": 115.0,
+    "routes": 2,
+    "optimal": false
+   }
+  },
+  {
+   "seed": 12,
+   "n": 5,
+   "optimum": 128.0,
+   "exact_s": 0.03,
+   "auto": {
+    "wall_s": 5.13,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580",
+    "feasible": true,
+    "why": "ok",
+    "objective": 106.0,
+    "routes": 2,
+    "optimal": false
+   },
+   "own": {
+    "wall_s": 5.12,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": null,
+    "feasible": true,
+    "why": "ok",
+    "objective": 106.0,
+    "routes": 2,
+    "optimal": false
+   }
+  }
+ ],
+ "anchor": [
+  {
+   "wall_s": 25.14,
+   "overtime": false,
+   "engine_used": "own",
+   "pyvrp_error": "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580",
+   "feasible": true,
+   "why": "ok",
+   "objective": 472.368678426,
+   "routes": 3,
+   "instance": "CMTX/CMT1",
+   "published_optimum": 466.77,
+   "gap_pct": 1.199
+  },
+  {
+   "wall_s": 25.13,
+   "overtime": false,
+   "engine_used": "own",
+   "pyvrp_error": "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580",
+   "feasible": true,
+   "why": "ok",
+   "objective": 482.312093358,
+   "routes": 3,
+   "instance": "CMTY/CMT1",
+   "published_optimum": 466.77,
+   "gap_pct": 3.33
+  }
+ ],
+ "rows": [
+  {
+   "instance": "CMTX/CMT1",
+   "n": 50,
+   "ignored": {},
+   "capacity": 160,
+   "ddp_auto": {
+    "wall_s": 52.94,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580",
+    "feasible": true,
+    "why": "ok",
+    "objective": 476.0,
+    "routes": 3
+   },
+   "ddp_own": {
+    "wall_s": 52.95,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": null,
+    "feasible": true,
+    "why": "ok",
+    "objective": 488.0,
+    "routes": 3
+   },
+   "spd_auto": {
+    "wall_s": 25.3,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580",
+    "feasible": true,
+    "why": "ok",
+    "objective": 470.0,
+    "routes": 3
+   },
+   "own_over_auto": 1.02521,
+   "split_saving_pct": -1.277
+  },
+  {
+   "instance": "CMTY/CMT1",
+   "n": 50,
+   "ignored": {},
+   "capacity": 160,
+   "ddp_auto": {
+    "wall_s": 53.09,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580",
+    "feasible": true,
+    "why": "ok",
+    "objective": 496.0,
+    "routes": 3
+   },
+   "ddp_own": {
+    "wall_s": 52.93,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": null,
+    "feasible": true,
+    "why": "ok",
+    "objective": 491.0,
+    "routes": 3
+   },
+   "spd_auto": {
+    "wall_s": 25.12,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580",
+    "feasible": true,
+    "why": "ok",
+    "objective": 470.0,
+    "routes": 3
+   },
+   "own_over_auto": 0.98992,
+   "split_saving_pct": -5.532
+  },
+  {
+   "instance": "CMTX/CMT2",
+   "n": 75,
+   "ignored": {},
+   "capacity": 140,
+   "ddp_auto": {
+    "wall_s": 52.93,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580",
+    "feasible": true,
+    "why": "ok",
+    "objective": 837.0,
+    "routes": 6
+   },
+   "ddp_own": {
+    "wall_s": 52.94,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": null,
+    "feasible": true,
+    "why": "ok",
+    "objective": 814.0,
+    "routes": 6
+   },
+   "spd_auto": {
+    "wall_s": 25.14,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580",
+    "feasible": true,
+    "why": "ok",
+    "objective": 686.0,
+    "routes": 6
+   },
+   "own_over_auto": 0.97252,
+   "split_saving_pct": -22.012
+  },
+  {
+   "instance": "CMTY/CMT2",
+   "n": 75,
+   "ignored": {},
+   "capacity": 140,
+   "ddp_auto": {
+    "wall_s": 52.95,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580",
+    "feasible": true,
+    "why": "ok",
+    "objective": 839.0,
+    "routes": 6
+   },
+   "ddp_own": {
+    "wall_s": 52.94,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": null,
+    "feasible": true,
+    "why": "ok",
+    "objective": 784.0,
+    "routes": 6
+   },
+   "spd_auto": {
+    "wall_s": 25.15,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580",
+    "feasible": true,
+    "why": "ok",
+    "objective": 693.0,
+    "routes": 6
+   },
+   "own_over_auto": 0.93445,
+   "split_saving_pct": -21.068
+  },
+  {
+   "instance": "CMTX/CMT3",
+   "n": 100,
+   "ignored": {},
+   "capacity": 200,
+   "ddp_auto": {
+    "wall_s": 53.01,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580",
+    "feasible": true,
+    "why": "ok",
+    "objective": 793.0,
+    "routes": 5
+   },
+   "ddp_own": {
+    "wall_s": 53.0,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": null,
+    "feasible": true,
+    "why": "ok",
+    "objective": 835.0,
+    "routes": 5
+   },
+   "spd_auto": {
+    "wall_s": 25.2,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580",
+    "feasible": true,
+    "why": "ok",
+    "objective": 725.0,
+    "routes": 5
+   },
+   "own_over_auto": 1.05296,
+   "split_saving_pct": -9.379
+  },
+  {
+   "instance": "CMTY/CMT3",
+   "n": 100,
+   "ignored": {},
+   "capacity": 200,
+   "ddp_auto": {
+    "wall_s": 52.99,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580",
+    "feasible": true,
+    "why": "ok",
+    "objective": 767.0,
+    "routes": 5
+   },
+   "ddp_own": {
+    "wall_s": 52.94,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": null,
+    "feasible": true,
+    "why": "ok",
+    "objective": 779.0,
+    "routes": 5
+   },
+   "spd_auto": {
+    "wall_s": 25.17,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580",
+    "feasible": true,
+    "why": "ok",
+    "objective": 724.0,
+    "routes": 5
+   },
+   "own_over_auto": 1.01565,
+   "split_saving_pct": -5.939
+  },
+  {
+   "instance": "CMTX/CMT4",
+   "n": 150,
+   "ignored": {},
+   "capacity": 200,
+   "ddp_auto": {
+    "wall_s": 52.99,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580",
+    "feasible": true,
+    "why": "ok",
+    "objective": 1008.0,
+    "routes": 7
+   },
+   "ddp_own": {
+    "wall_s": 52.97,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": null,
+    "feasible": true,
+    "why": "ok",
+    "objective": 1014.0,
+    "routes": 7
+   },
+   "spd_auto": {
+    "wall_s": 25.14,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580",
+    "feasible": true,
+    "why": "ok",
+    "objective": 966.0,
+    "routes": 7
+   },
+   "own_over_auto": 1.00595,
+   "split_saving_pct": -4.348
+  },
+  {
+   "instance": "CMTY/CMT4",
+   "n": 150,
+   "ignored": {},
+   "capacity": 200,
+   "ddp_auto": {
+    "wall_s": 52.94,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580",
+    "feasible": true,
+    "why": "ok",
+    "objective": 991.0,
+    "routes": 7
+   },
+   "ddp_own": {
+    "wall_s": 52.94,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": null,
+    "feasible": true,
+    "why": "ok",
+    "objective": 992.0,
+    "routes": 7
+   },
+   "spd_auto": {
+    "wall_s": 25.22,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580",
+    "feasible": true,
+    "why": "ok",
+    "objective": 885.0,
+    "routes": 7
+   },
+   "own_over_auto": 1.00101,
+   "split_saving_pct": -11.977
+  },
+  {
+   "instance": "CMTX/CMT5",
+   "n": 199,
+   "ignored": {},
+   "capacity": 200,
+   "ddp_auto": {
+    "wall_s": 52.96,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580",
+    "feasible": true,
+    "why": "ok",
+    "objective": 1240.0,
+    "routes": 10
+   },
+   "ddp_own": {
+    "wall_s": 52.93,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": null,
+    "feasible": true,
+    "why": "ok",
+    "objective": 1338.0,
+    "routes": 10
+   },
+   "spd_auto": {
+    "wall_s": 25.13,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580",
+    "feasible": true,
+    "why": "ok",
+    "objective": 1107.0,
+    "routes": 10
+   },
+   "own_over_auto": 1.07903,
+   "split_saving_pct": -12.014
+  },
+  {
+   "instance": "CMTY/CMT5",
+   "n": 199,
+   "ignored": {},
+   "capacity": 200,
+   "ddp_auto": {
+    "wall_s": 52.95,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580",
+    "feasible": true,
+    "why": "ok",
+    "objective": 1142.0,
+    "routes": 10
+   },
+   "ddp_own": {
+    "wall_s": 52.93,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": null,
+    "feasible": true,
+    "why": "ok",
+    "objective": 1159.0,
+    "routes": 10
+   },
+   "spd_auto": {
+    "wall_s": 25.18,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580",
+    "feasible": true,
+    "why": "ok",
+    "objective": 1236.0,
+    "routes": 10
+   },
+   "own_over_auto": 1.01489,
+   "split_saving_pct": 7.605
+  },
+  {
+   "instance": "CMTX/CMT6",
+   "n": 50,
+   "ignored": {
+    "DISTANCE": "200",
+    "SERVICE_TIME": "10"
+   },
+   "capacity": 160,
+   "ddp_auto": {
+    "wall_s": 52.95,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580",
+    "feasible": true,
+    "why": "ok",
+    "objective": 476.0,
+    "routes": 3
+   },
+   "ddp_own": {
+    "wall_s": 52.92,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": null,
+    "feasible": true,
+    "why": "ok",
+    "objective": 476.0,
+    "routes": 3
+   },
+   "spd_auto": {
+    "wall_s": 25.13,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580",
+    "feasible": true,
+    "why": "ok",
+    "objective": 470.0,
+    "routes": 3
+   },
+   "own_over_auto": 1.0,
+   "split_saving_pct": -1.277
+  },
+  {
+   "instance": "CMTY/CMT6",
+   "n": 50,
+   "ignored": {
+    "DISTANCE": "200",
+    "SERVICE_TIME": "10"
+   },
+   "capacity": 160,
+   "ddp_auto": {
+    "wall_s": 52.97,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580",
+    "feasible": true,
+    "why": "ok",
+    "objective": 491.0,
+    "routes": 3
+   },
+   "ddp_own": {
+    "wall_s": 52.98,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": null,
+    "feasible": true,
+    "why": "ok",
+    "objective": 491.0,
+    "routes": 3
+   },
+   "spd_auto": {
+    "wall_s": 25.14,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580",
+    "feasible": true,
+    "why": "ok",
+    "objective": 470.0,
+    "routes": 3
+   },
+   "own_over_auto": 1.0,
+   "split_saving_pct": -4.468
+  },
+  {
+   "instance": "CMTX/CMT7",
+   "n": 75,
+   "ignored": {
+    "DISTANCE": "160",
+    "SERVICE_TIME": "10"
+   },
+   "capacity": 140,
+   "ddp_auto": {
+    "wall_s": 52.98,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580",
+    "feasible": true,
+    "why": "ok",
+    "objective": 801.0,
+    "routes": 6
+   },
+   "ddp_own": {
+    "wall_s": 53.03,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": null,
+    "feasible": true,
+    "why": "ok",
+    "objective": 798.0,
+    "routes": 6
+   },
+   "spd_auto": {
+    "wall_s": 25.15,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580",
+    "feasible": true,
+    "why": "ok",
+    "objective": 679.0,
+    "routes": 6
+   },
+   "own_over_auto": 0.99625,
+   "split_saving_pct": -17.968
+  },
+  {
+   "instance": "CMTY/CMT7",
+   "n": 75,
+   "ignored": {
+    "DISTANCE": "160",
+    "SERVICE_TIME": "10"
+   },
+   "capacity": 140,
+   "ddp_auto": {
+    "wall_s": 52.95,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580",
+    "feasible": true,
+    "why": "ok",
+    "objective": 760.0,
+    "routes": 6
+   },
+   "ddp_own": {
+    "wall_s": 52.97,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": null,
+    "feasible": true,
+    "why": "ok",
+    "objective": 789.0,
+    "routes": 6
+   },
+   "spd_auto": {
+    "wall_s": 25.14,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580",
+    "feasible": true,
+    "why": "ok",
+    "objective": 693.0,
+    "routes": 6
+   },
+   "own_over_auto": 1.03816,
+   "split_saving_pct": -9.668
+  },
+  {
+   "instance": "CMTX/CMT8",
+   "n": 100,
+   "ignored": {
+    "DISTANCE": "230",
+    "SERVICE_TIME": "10"
+   },
+   "capacity": 200,
+   "ddp_auto": {
+    "wall_s": 52.94,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580",
+    "feasible": true,
+    "why": "ok",
+    "objective": 793.0,
+    "routes": 5
+   },
+   "ddp_own": {
+    "wall_s": 52.94,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": null,
+    "feasible": true,
+    "why": "ok",
+    "objective": 793.0,
+    "routes": 5
+   },
+   "spd_auto": {
+    "wall_s": 25.13,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580",
+    "feasible": true,
+    "why": "ok",
+    "objective": 721.0,
+    "routes": 5
+   },
+   "own_over_auto": 1.0,
+   "split_saving_pct": -9.986
+  },
+  {
+   "instance": "CMTY/CMT8",
+   "n": 100,
+   "ignored": {
+    "DISTANCE": "230",
+    "SERVICE_TIME": "10"
+   },
+   "capacity": 200,
+   "ddp_auto": {
+    "wall_s": 52.94,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580",
+    "feasible": true,
+    "why": "ok",
+    "objective": 753.0,
+    "routes": 5
+   },
+   "ddp_own": {
+    "wall_s": 52.93,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": null,
+    "feasible": true,
+    "why": "ok",
+    "objective": 760.0,
+    "routes": 5
+   },
+   "spd_auto": {
+    "wall_s": 25.22,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580",
+    "feasible": true,
+    "why": "ok",
+    "objective": 716.0,
+    "routes": 5
+   },
+   "own_over_auto": 1.0093,
+   "split_saving_pct": -5.168
+  },
+  {
+   "instance": "CMTX/CMT9",
+   "n": 150,
+   "ignored": {
+    "DISTANCE": "200",
+    "SERVICE_TIME": "10"
+   },
+   "capacity": 200,
+   "ddp_auto": {
+    "wall_s": 52.99,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580",
+    "feasible": true,
+    "why": "ok",
+    "objective": 1016.0,
+    "routes": 7
+   },
+   "ddp_own": {
+    "wall_s": 52.95,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": null,
+    "feasible": true,
+    "why": "ok",
+    "objective": 1010.0,
+    "routes": 7
+   },
+   "spd_auto": {
+    "wall_s": 25.21,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580",
+    "feasible": true,
+    "why": "ok",
+    "objective": 966.0,
+    "routes": 7
+   },
+   "own_over_auto": 0.99409,
+   "split_saving_pct": -5.176
+  },
+  {
+   "instance": "CMTY/CMT9",
+   "n": 150,
+   "ignored": {
+    "DISTANCE": "200",
+    "SERVICE_TIME": "10"
+   },
+   "capacity": 200,
+   "ddp_auto": {
+    "wall_s": 52.99,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580",
+    "feasible": true,
+    "why": "ok",
+    "objective": 991.0,
+    "routes": 7
+   },
+   "ddp_own": {
+    "wall_s": 52.99,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": null,
+    "feasible": true,
+    "why": "ok",
+    "objective": 993.0,
+    "routes": 7
+   },
+   "spd_auto": {
+    "wall_s": 25.2,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580",
+    "feasible": true,
+    "why": "ok",
+    "objective": 885.0,
+    "routes": 7
+   },
+   "own_over_auto": 1.00202,
+   "split_saving_pct": -11.977
+  },
+  {
+   "instance": "CMTX/CMT10",
+   "n": 199,
+   "ignored": {
+    "DISTANCE": "200",
+    "SERVICE_TIME": "10"
+   },
+   "capacity": 200,
+   "ddp_auto": {
+    "wall_s": 53.0,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580",
+    "feasible": true,
+    "why": "ok",
+    "objective": 1262.0,
+    "routes": 10
+   },
+   "ddp_own": {
+    "wall_s": 52.92,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": null,
+    "feasible": true,
+    "why": "ok",
+    "objective": 1366.0,
+    "routes": 10
+   },
+   "spd_auto": {
+    "wall_s": 25.13,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580",
+    "feasible": true,
+    "why": "ok",
+    "objective": 1104.0,
+    "routes": 10
+   },
+   "own_over_auto": 1.08241,
+   "split_saving_pct": -14.312
+  },
+  {
+   "instance": "CMTY/CMT10",
+   "n": 199,
+   "ignored": {
+    "DISTANCE": "200",
+    "SERVICE_TIME": "10"
+   },
+   "capacity": 200,
+   "ddp_auto": {
+    "wall_s": 52.94,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580",
+    "feasible": true,
+    "why": "ok",
+    "objective": 1137.0,
+    "routes": 10
+   },
+   "ddp_own": {
+    "wall_s": 52.91,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": null,
+    "feasible": true,
+    "why": "ok",
+    "objective": 1137.0,
+    "routes": 10
+   },
+   "spd_auto": {
+    "wall_s": 25.16,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580",
+    "feasible": true,
+    "why": "ok",
+    "objective": 1157.0,
+    "routes": 10
+   },
+   "own_over_auto": 1.0,
+   "split_saving_pct": 1.729
+  },
+  {
+   "instance": "CMTX/CMT11",
+   "n": 120,
+   "ignored": {},
+   "capacity": 200,
+   "ddp_auto": {
+    "wall_s": 52.94,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580",
+    "feasible": true,
+    "why": "ok",
+    "objective": 937.0,
+    "routes": 4
+   },
+   "ddp_own": {
+    "wall_s": 52.91,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": null,
+    "feasible": true,
+    "why": "ok",
+    "objective": 936.0,
+    "routes": 4
+   },
+   "spd_auto": {
+    "wall_s": 25.12,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580",
+    "feasible": true,
+    "why": "ok",
+    "objective": 941.0,
+    "routes": 4
+   },
+   "own_over_auto": 0.99893,
+   "split_saving_pct": 0.425
+  },
+  {
+   "instance": "CMTY/CMT11",
+   "n": 120,
+   "ignored": {},
+   "capacity": 200,
+   "ddp_auto": {
+    "wall_s": 52.94,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580",
+    "feasible": true,
+    "why": "ok",
+    "objective": 917.0,
+    "routes": 4
+   },
+   "ddp_own": {
+    "wall_s": 52.95,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": null,
+    "feasible": true,
+    "why": "ok",
+    "objective": 916.0,
+    "routes": 4
+   },
+   "spd_auto": {
+    "wall_s": 25.12,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580",
+    "feasible": true,
+    "why": "ok",
+    "objective": 921.0,
+    "routes": 5
+   },
+   "own_over_auto": 0.99891,
+   "split_saving_pct": 0.434
+  },
+  {
+   "instance": "CMTX/CMT12",
+   "n": 100,
+   "ignored": {},
+   "capacity": 200,
+   "ddp_auto": {
+    "wall_s": 52.93,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580",
+    "feasible": true,
+    "why": "ok",
+    "objective": 646.0,
+    "routes": 5
+   },
+   "ddp_own": {
+    "wall_s": 52.94,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": null,
+    "feasible": true,
+    "why": "ok",
+    "objective": 672.0,
+    "routes": 5
+   },
+   "spd_auto": {
+    "wall_s": 25.19,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580",
+    "feasible": true,
+    "why": "ok",
+    "objective": 718.0,
+    "routes": 6
+   },
+   "own_over_auto": 1.04025,
+   "split_saving_pct": 10.028
+  },
+  {
+   "instance": "CMTY/CMT12",
+   "n": 100,
+   "ignored": {},
+   "capacity": 200,
+   "ddp_auto": {
+    "wall_s": 53.0,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580",
+    "feasible": true,
+    "why": "ok",
+    "objective": 797.0,
+    "routes": 5
+   },
+   "ddp_own": {
+    "wall_s": 52.94,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": null,
+    "feasible": true,
+    "why": "ok",
+    "objective": 808.0,
+    "routes": 5
+   },
+   "spd_auto": {
+    "wall_s": 25.21,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580",
+    "feasible": true,
+    "why": "ok",
+    "objective": 670.0,
+    "routes": 5
+   },
+   "own_over_auto": 1.0138,
+   "split_saving_pct": -18.955
+  },
+  {
+   "instance": "CMTX/CMT13",
+   "n": 120,
+   "ignored": {
+    "DISTANCE": "720",
+    "SERVICE_TIME": "50"
+   },
+   "capacity": 200,
+   "ddp_auto": {
+    "wall_s": 53.04,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580",
+    "feasible": true,
+    "why": "ok",
+    "objective": 937.0,
+    "routes": 4
+   },
+   "ddp_own": {
+    "wall_s": 52.97,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": null,
+    "feasible": true,
+    "why": "ok",
+    "objective": 934.0,
+    "routes": 4
+   },
+   "spd_auto": {
+    "wall_s": 25.17,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580",
+    "feasible": true,
+    "why": "ok",
+    "objective": 946.0,
+    "routes": 4
+   },
+   "own_over_auto": 0.9968,
+   "split_saving_pct": 0.951
+  },
+  {
+   "instance": "CMTY/CMT13",
+   "n": 120,
+   "ignored": {
+    "DISTANCE": "720",
+    "SERVICE_TIME": "50"
+   },
+   "capacity": 200,
+   "ddp_auto": {
+    "wall_s": 52.97,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580",
+    "feasible": true,
+    "why": "ok",
+    "objective": 915.0,
+    "routes": 4
+   },
+   "ddp_own": {
+    "wall_s": 52.95,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": null,
+    "feasible": true,
+    "why": "ok",
+    "objective": 915.0,
+    "routes": 4
+   },
+   "spd_auto": {
+    "wall_s": 25.18,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580",
+    "feasible": true,
+    "why": "ok",
+    "objective": 921.0,
+    "routes": 5
+   },
+   "own_over_auto": 1.0,
+   "split_saving_pct": 0.651
+  },
+  {
+   "instance": "CMTX/CMT14",
+   "n": 100,
+   "ignored": {
+    "DISTANCE": "1040",
+    "SERVICE_TIME": "90"
+   },
+   "capacity": 200,
+   "ddp_auto": {
+    "wall_s": 52.94,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580",
+    "feasible": true,
+    "why": "ok",
+    "objective": 669.0,
+    "routes": 5
+   },
+   "ddp_own": {
+    "wall_s": 52.95,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": null,
+    "feasible": true,
+    "why": "ok",
+    "objective": 650.0,
+    "routes": 5
+   },
+   "spd_auto": {
+    "wall_s": 25.15,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580",
+    "feasible": true,
+    "why": "ok",
+    "objective": 695.0,
+    "routes": 6
+   },
+   "own_over_auto": 0.9716,
+   "split_saving_pct": 3.741
+  },
+  {
+   "instance": "CMTY/CMT14",
+   "n": 100,
+   "ignored": {
+    "DISTANCE": "1040",
+    "SERVICE_TIME": "90"
+   },
+   "capacity": 200,
+   "ddp_auto": {
+    "wall_s": 52.94,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580",
+    "feasible": true,
+    "why": "ok",
+    "objective": 776.0,
+    "routes": 5
+   },
+   "ddp_own": {
+    "wall_s": 52.97,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": null,
+    "feasible": true,
+    "why": "ok",
+    "objective": 808.0,
+    "routes": 5
+   },
+   "spd_auto": {
+    "wall_s": 25.23,
+    "overtime": false,
+    "engine_used": "own",
+    "pyvrp_error": "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580",
+    "feasible": true,
+    "why": "ok",
+    "objective": 670.0,
+    "routes": 5
+   },
+   "own_over_auto": 1.04124,
+   "split_saving_pct": -15.821
+  }
+ ],
+ "tally": {
+  "instances_run": 28,
+  "skipped": [],
+  "auto_infeasible": [],
+  "auto_overtime": [],
+  "own_infeasible": [],
+  "own_overtime": [],
+  "auto_engines": [
+   "own"
+  ],
+  "pyvrp_errors": [
+   "TypeError: __init__(): incompatible constructor arguments. The following argument types are supported:\n    1. pyvrp._pyvrp.Depot(location: typing.SupportsInt, tw_early: int = 0, tw_late: int = 922337203685477580"
+  ],
+  "mean_own_over_auto": 1.00983,
+  "max_own_over_auto": 1.08241,
+  "ddp_le_spd": 8,
+  "ddp_lt_spd": 8,
+  "mean_split_saving_pct": -6.527,
+  "max_split_saving_pct": 10.028,
+  "tiny_auto_optimal": 0,
+  "tiny_own_optimal": 0,
+  "tiny_total": 12,
+  "anchor_gaps_pct": {
+   "CMTX/CMT1": 1.199,
+   "CMTY/CMT1": 3.33
+  }
+ }
+}
