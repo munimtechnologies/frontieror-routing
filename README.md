@@ -1,6 +1,6 @@
 # frontieror-routing
 
-Practice solvers for the routing problems of the [FrontierOR Challenge](https://frontieror-challenge.com/), built and calibrated on public benchmark instances by MV2 of Munim, Inc.
+Practice solvers for the routing and network-design problems of the [FrontierOR Challenge](https://frontieror-challenge.com/), built and calibrated on public benchmark instances by MV2 of Munim, Inc.
 
 Made with AI agents working in MV2's name. License: Apache-2.0 (code); notes and numbers CC BY 4.0.
 
@@ -17,6 +17,7 @@ These are practice solvers. They are not an official FrontierOR baseline, and th
 | [darp/](darp/) | cordeau2006 | Dial-a-ride | v2: 42/42 Cordeau (2006) instances feasible, mean gap 1.11% (a) and 0.72% (b) to the optimal or best known values, 14 within 0.1%; all six guesses held ([notes and score](darp/NOTES.md), [results](darp/results-v2.md)) |
 | [spp/](spp/) | hoffman1993 | Set partitioning (airline crew scheduling) | v0.1.0 failed its first calibration: on 4 of 52 OR-Library instances (the widest, up to 288,507 columns) it wrote no solution within 60 s; 3 of the 4 scorable guesses failed. v0.2.0 (LP, Lagrangian bound, restricted MIP, exact reduced-cost pruning) is being calibrated against new guesses ([NOTES.md](spp/NOTES.md)) |
 | [odimcf/](odimcf/) | barnhart2000 | Origin-destination integer multicommodity flow (unsplittable routing with rejection) | v0.1.0 (column generation with a Lagrangian bound, price-and-branch MIP, ruin-and-recreate) is being calibrated on 20 synthetic instances against arc-MIP optima; 7 guesses pre-registered before the run ([NOTES.md](odimcf/NOTES.md)). Code is published once its tests pass |
+| [scflp/](scflp/) | bodur2017 | Two-stage stochastic capacitated facility location | v0.1.0 (each open set evaluated exactly as one min-cost flow per scenario, sample-average MIPs, screened local search) is being calibrated on 20 synthetic instances against extensive-form MIP references and the expected-value solution; 7 guesses pre-registered before the run ([NOTES.md](scflp/NOTES.md)). Code is published once its tests pass |
 | [oplib-audit/](oplib-audit/) | (benchmark data) | OPLib consistency census | 337 of 344 stored EA4OP routes agree with their instance files. The other 7 were scored with the instance files as they were before OPLib's 2020 score fix: each earns exactly its stated score on the pre-fix file ([census](oplib-audit/score.md), [follow-up](oplib-audit/score-2.md)). Reported to the maintainers in [bcamath-ds/OPLib#2](https://github.com/bcamath-ds/OPLib/issues/2) |
 
 ## What the calibration runs have shown so far
@@ -27,6 +28,7 @@ These are practice solvers. They are not an official FrontierOR baseline, and th
 - **Set partitioning:** a branch-and-cut solver that proves optimality in minutes can still produce nothing at all in 60 s on a wide instance. In a contest where no output scores 0, get a feasible solution first (a restricted problem on the most promising columns), then use the remaining time to improve it.
 - **Benchmark data:** re-score stored reference solutions before comparing with them. In OPLib, 7 stored EA4OP routes (all Gen3, 50% budget) do not earn their stated score on the current instance files. The follow-up confirmed that they earn exactly that score on the files as they were before OPLib's commit 8e9cd01 (2020) changed those instances' node scores ([score-2](oplib-audit/score-2.md)). Our first write-up missed that commit.
 - **Host pauses:** every run reported as over time in these jobs (6 of 6) coincided with the host freezing the container, not with the solver. Harnesses now detect a freeze and re-run the instance.
+- **The official checkers are public.** All six practice problems are tasks of the FrontierOR benchmark (arXiv 2605.25246), published on Hugging Face as [frontieror/FrontierOR](https://huggingface.co/datasets/frontieror/FrontierOR) (CC BY 4.0). It has 180 tasks, each with its `feasibility_check.py`, instances and Gurobi reference solutions. From now on, calibrations also run on those instances, with the official checker, at a pinned dataset revision. Reading the barnhart2000 checker settled our open question: a rejected commodity costs `artificial_arc_cost x demand`. odimcf v0.1.0 assumed something else when `artificial_arc_cost` equals `revenue`, so its next version will follow the checker.
 
 ## Credits
 
@@ -35,6 +37,8 @@ These are practice solvers. They are not an official FrontierOR baseline, and th
 - DARP: Cordeau, "A branch-and-cut algorithm for the dial-a-ride problem", Operations Research 54 (2006); Ropke and Pisinger (2006); reference values from Ho et al. (2018); instance mirror github.com/garciparedes/jinete (MIT).
 - Set partitioning: Hoffman and Padberg, "Solving airline crew scheduling problems by branch-and-cut", Management Science 39 (1993); instances from J. E. Beasley's OR-Library (contributed by Hoffman and Levine). HiGHS (MIT) through SciPy (BSD-3-Clause); OR-Tools CP-SAT (Apache-2.0).
 - ODIMCF: Barnhart, Hane and Vance, "Using Branch-and-Price-and-Cut to Solve Origin-Destination Integer Multicommodity Flow Problems", Operations Research 48(2) (2000). Synthetic instances generated by our own odimcf_gen.py.
+- SCFLP: Bodur, Dash, Günlük and Luedtke, "Strengthened Benders Cuts for Stochastic Integer Programs with Continuous Recourse", INFORMS Journal on Computing 29(1) (2017). Synthetic instances generated by our own scflp_gen.py, following the capacitated facility location recipe of Cornuéjols, Sridharan and Thizy (EJOR 1991). Min-cost flows by OR-Tools (Apache-2.0).
 - PyVRP (MIT), Wouda, Lan and Kool, used as an optional engine in vrpddp/.
+- FrontierOR benchmark: "FrontierOR: Benchmarking LLMs' Capacity for Efficient Algorithm Design in Large-Scale Optimization" (arXiv 2605.25246); code github.com/Minw913/FrontierOR; tasks, checkers, instances and Gurobi references from the Hugging Face dataset frontieror/FrontierOR (CC BY 4.0), downloaded at run time and not copied here.
 
 MV2, Munim, Inc., mv2@munimtech.com
