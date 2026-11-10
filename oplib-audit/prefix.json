@@ -1,0 +1,1045 @@
+{
+ "tally": {
+  "parent": "2b8957e46dae9eb44c244fdfdc965382defdc310",
+  "fix": "8e9cd01bf2c81607ec2f08b58ec658d66fd127f3",
+  "current": "823ac3e8c156d45e868c295ee1c95c3fee05bdd2",
+  "checks": {
+   "Q1": "held",
+   "Q2": "held",
+   "Q3": "held",
+   "Q4": "did not hold",
+   "Q5": "held",
+   "Q6": "held"
+  },
+  "parent_consistent": [
+   "a280",
+   "fnl4461",
+   "kroA100",
+   "nrw1379",
+   "pa561",
+   "pr76",
+   "rat195",
+   "rat575",
+   "rat783",
+   "rat99",
+   "tsp225"
+  ],
+  "current_consistent": [
+   "kroA100",
+   "pa561",
+   "pr76",
+   "rat99"
+  ],
+  "floor_raw_ge_0_9_at_parent": [
+   "rat195",
+   "rat575",
+   "rat783"
+  ],
+  "fix_equals_current": [
+   "a280",
+   "fnl4461",
+   "nrw1379",
+   "rat195",
+   "rat575",
+   "rat783",
+   "rat99",
+   "tsp225"
+  ]
+ },
+ "rows": {
+  "a280": {
+   "parent": {
+    "status": "consistent",
+    "stated_score": 8684.0,
+    "score_with_depot": 8684.0,
+    "score_without_depot": 8684.0,
+    "score_diff": 0.0,
+    "stated_cost": 1290.0,
+    "cost": 1290.0,
+    "limit": 1290.0,
+    "fits_limit": true,
+    "reading_match_rates": {
+     "floor_tsplib": 0.0,
+     "floor_raw": 0.0,
+     "round_tsplib": 0.003584,
+     "round_raw": 0.003584,
+     "floor_raw_100": 0.003584,
+     "ceil_raw": 0.0
+    },
+    "follows": []
+   },
+   "fix": {
+    "status": "inconsistent",
+    "stated_score": 8684.0,
+    "score_with_depot": 7720.0,
+    "score_without_depot": 7720.0,
+    "score_diff": 964.0,
+    "stated_cost": 1290.0,
+    "cost": 1290.0,
+    "limit": 1290.0,
+    "fits_limit": true,
+    "reading_match_rates": {
+     "floor_tsplib": 1.0,
+     "floor_raw": 0.924731,
+     "round_tsplib": 0.501792,
+     "round_raw": 0.562724,
+     "floor_raw_100": 0.494624,
+     "ceil_raw": 0.921147
+    },
+    "follows": [
+     "floor_tsplib"
+    ]
+   },
+   "current": {
+    "status": "inconsistent",
+    "stated_score": 8684.0,
+    "score_with_depot": 7720.0,
+    "score_without_depot": 7720.0,
+    "score_diff": 964.0,
+    "stated_cost": 1290.0,
+    "cost": 1290.0,
+    "limit": 1290.0,
+    "fits_limit": true,
+    "reading_match_rates": {
+     "floor_tsplib": 1.0,
+     "floor_raw": 0.924731,
+     "round_tsplib": 0.501792,
+     "round_raw": 0.562724,
+     "floor_raw_100": 0.494624,
+     "ceil_raw": 0.921147
+    },
+    "follows": [
+     "floor_tsplib"
+    ]
+   },
+   "parent_vs_current": {
+    "head_diff": [],
+    "coords_same": true,
+    "matrix_same": true,
+    "depot_same": true,
+    "nodes": 280,
+    "scores_changed": 279,
+    "score_total_delta": -275.0,
+    "only_scores_differ": true
+   },
+   "route_score_delta_parent_to_current": -964.0,
+   "fix_vs_current": {
+    "head_diff": [],
+    "coords_same": true,
+    "matrix_same": true,
+    "depot_same": true,
+    "nodes": 280,
+    "scores_changed": 0,
+    "score_total_delta": 0.0,
+    "only_scores_differ": true
+   },
+   "solution_same_at_parent": true,
+   "solution_same_at_fix": true,
+   "status": "checked",
+   "family": "a280",
+   "group": "fixed"
+  },
+  "fnl4461": {
+   "parent": {
+    "status": "consistent",
+    "stated_score": 164201.0,
+    "score_with_depot": 164201.0,
+    "score_without_depot": 164201.0,
+    "score_diff": 0.0,
+    "stated_cost": 91281.0,
+    "cost": 91281.0,
+    "limit": 91283.0,
+    "fits_limit": true,
+    "reading_match_rates": {
+     "floor_tsplib": 0.03991,
+     "floor_raw": 0.03991,
+     "round_tsplib": 0.035426,
+     "round_raw": 0.035426,
+     "floor_raw_100": 0.052466,
+     "ceil_raw": 0.03991
+    },
+    "follows": []
+   },
+   "fix": {
+    "status": "inconsistent",
+    "stated_score": 164201.0,
+    "score_with_depot": 142782.0,
+    "score_without_depot": 142782.0,
+    "score_diff": 21419.0,
+    "stated_cost": 91281.0,
+    "cost": 91281.0,
+    "limit": 91283.0,
+    "fits_limit": true,
+    "reading_match_rates": {
+     "floor_tsplib": 1.0,
+     "floor_raw": 0.994619,
+     "round_tsplib": 0.509193,
+     "round_raw": 0.509641,
+     "floor_raw_100": 0.517489,
+     "ceil_raw": 0.994395
+    },
+    "follows": [
+     "floor_tsplib"
+    ]
+   },
+   "current": {
+    "status": "inconsistent",
+    "stated_score": 164201.0,
+    "score_with_depot": 142782.0,
+    "score_without_depot": 142782.0,
+    "score_diff": 21419.0,
+    "stated_cost": 91281.0,
+    "cost": 91281.0,
+    "limit": 91283.0,
+    "fits_limit": true,
+    "reading_match_rates": {
+     "floor_tsplib": 1.0,
+     "floor_raw": 0.994619,
+     "round_tsplib": 0.509193,
+     "round_raw": 0.509641,
+     "floor_raw_100": 0.517489,
+     "ceil_raw": 0.994395
+    },
+    "follows": [
+     "floor_tsplib"
+    ]
+   },
+   "parent_vs_current": {
+    "head_diff": [],
+    "coords_same": true,
+    "matrix_same": true,
+    "depot_same": true,
+    "nodes": 4461,
+    "scores_changed": 4282,
+    "score_total_delta": -23184.0,
+    "only_scores_differ": true
+   },
+   "route_score_delta_parent_to_current": -21419.0,
+   "fix_vs_current": {
+    "head_diff": [],
+    "coords_same": true,
+    "matrix_same": true,
+    "depot_same": true,
+    "nodes": 4461,
+    "scores_changed": 0,
+    "score_total_delta": 0.0,
+    "only_scores_differ": true
+   },
+   "solution_same_at_parent": true,
+   "solution_same_at_fix": true,
+   "status": "checked",
+   "family": "fnl4461",
+   "group": "fixed"
+  },
+  "nrw1379": {
+   "parent": {
+    "status": "consistent",
+    "stated_score": 43972.0,
+    "score_with_depot": 43972.0,
+    "score_without_depot": 43972.0,
+    "score_diff": 0.0,
+    "stated_cost": 28317.0,
+    "cost": 28317.0,
+    "limit": 28319.0,
+    "fits_limit": true,
+    "reading_match_rates": {
+     "floor_tsplib": 0.146589,
+     "floor_raw": 0.142961,
+     "round_tsplib": 0.145864,
+     "round_raw": 0.148766,
+     "floor_raw_100": 0.109579,
+     "ceil_raw": 0.142235
+    },
+    "follows": []
+   },
+   "fix": {
+    "status": "inconsistent",
+    "stated_score": 43972.0,
+    "score_with_depot": 42280.0,
+    "score_without_depot": 42280.0,
+    "score_diff": 1692.0,
+    "stated_cost": 28317.0,
+    "cost": 28317.0,
+    "limit": 28319.0,
+    "fits_limit": true,
+    "reading_match_rates": {
+     "floor_tsplib": 1.0,
+     "floor_raw": 0.990566,
+     "round_tsplib": 0.467344,
+     "round_raw": 0.474601,
+     "floor_raw_100": 0.473875,
+     "ceil_raw": 0.98984
+    },
+    "follows": [
+     "floor_tsplib"
+    ]
+   },
+   "current": {
+    "status": "inconsistent",
+    "stated_score": 43972.0,
+    "score_with_depot": 42280.0,
+    "score_without_depot": 42280.0,
+    "score_diff": 1692.0,
+    "stated_cost": 28317.0,
+    "cost": 28317.0,
+    "limit": 28319.0,
+    "fits_limit": true,
+    "reading_match_rates": {
+     "floor_tsplib": 1.0,
+     "floor_raw": 0.990566,
+     "round_tsplib": 0.467344,
+     "round_raw": 0.474601,
+     "floor_raw_100": 0.473875,
+     "ceil_raw": 0.98984
+    },
+    "follows": [
+     "floor_tsplib"
+    ]
+   },
+   "parent_vs_current": {
+    "head_diff": [],
+    "coords_same": true,
+    "matrix_same": true,
+    "depot_same": true,
+    "nodes": 1379,
+    "scores_changed": 1176,
+    "score_total_delta": -2051.0,
+    "only_scores_differ": true
+   },
+   "route_score_delta_parent_to_current": -1692.0,
+   "fix_vs_current": {
+    "head_diff": [],
+    "coords_same": true,
+    "matrix_same": true,
+    "depot_same": true,
+    "nodes": 1379,
+    "scores_changed": 0,
+    "score_total_delta": 0.0,
+    "only_scores_differ": true
+   },
+   "solution_same_at_parent": true,
+   "solution_same_at_fix": true,
+   "status": "checked",
+   "family": "nrw1379",
+   "group": "fixed"
+  },
+  "rat195": {
+   "parent": {
+    "status": "consistent",
+    "stated_score": 6139.0,
+    "score_with_depot": 6139.0,
+    "score_without_depot": 6139.0,
+    "score_diff": 0.0,
+    "stated_cost": 1162.0,
+    "cost": 1162.0,
+    "limit": 1162.0,
+    "fits_limit": true,
+    "reading_match_rates": {
+     "floor_tsplib": 0.845361,
+     "floor_raw": 0.907216,
+     "round_tsplib": 0.556701,
+     "round_raw": 0.628866,
+     "floor_raw_100": 0.42268,
+     "ceil_raw": 0.902062
+    },
+    "follows": []
+   },
+   "fix": {
+    "status": "inconsistent",
+    "stated_score": 6139.0,
+    "score_with_depot": 6141.0,
+    "score_without_depot": 6141.0,
+    "score_diff": -2.0,
+    "stated_cost": 1162.0,
+    "cost": 1162.0,
+    "limit": 1162.0,
+    "fits_limit": true,
+    "reading_match_rates": {
+     "floor_tsplib": 1.0,
+     "floor_raw": 0.917526,
+     "round_tsplib": 0.556701,
+     "round_raw": 0.628866,
+     "floor_raw_100": 0.417526,
+     "ceil_raw": 0.912371
+    },
+    "follows": [
+     "floor_tsplib"
+    ]
+   },
+   "current": {
+    "status": "inconsistent",
+    "stated_score": 6139.0,
+    "score_with_depot": 6141.0,
+    "score_without_depot": 6141.0,
+    "score_diff": -2.0,
+    "stated_cost": 1162.0,
+    "cost": 1162.0,
+    "limit": 1162.0,
+    "fits_limit": true,
+    "reading_match_rates": {
+     "floor_tsplib": 1.0,
+     "floor_raw": 0.917526,
+     "round_tsplib": 0.556701,
+     "round_raw": 0.628866,
+     "floor_raw_100": 0.417526,
+     "ceil_raw": 0.912371
+    },
+    "follows": [
+     "floor_tsplib"
+    ]
+   },
+   "parent_vs_current": {
+    "head_diff": [],
+    "coords_same": true,
+    "matrix_same": true,
+    "depot_same": true,
+    "nodes": 195,
+    "scores_changed": 30,
+    "score_total_delta": 0.0,
+    "only_scores_differ": true
+   },
+   "route_score_delta_parent_to_current": 2.0,
+   "fix_vs_current": {
+    "head_diff": [],
+    "coords_same": true,
+    "matrix_same": true,
+    "depot_same": true,
+    "nodes": 195,
+    "scores_changed": 0,
+    "score_total_delta": 0.0,
+    "only_scores_differ": true
+   },
+   "solution_same_at_parent": true,
+   "solution_same_at_fix": true,
+   "status": "checked",
+   "family": "rat195",
+   "group": "fixed"
+  },
+  "rat575": {
+   "parent": {
+    "status": "consistent",
+    "stated_score": 19879.0,
+    "score_with_depot": 19879.0,
+    "score_without_depot": 19879.0,
+    "score_diff": 0.0,
+    "stated_cost": 3387.0,
+    "cost": 3387.0,
+    "limit": 3387.0,
+    "fits_limit": true,
+    "reading_match_rates": {
+     "floor_tsplib": 0.909408,
+     "floor_raw": 0.900697,
+     "round_tsplib": 0.552265,
+     "round_raw": 0.545296,
+     "floor_raw_100": 0.472125,
+     "ceil_raw": 0.898955
+    },
+    "follows": []
+   },
+   "fix": {
+    "status": "inconsistent",
+    "stated_score": 19879.0,
+    "score_with_depot": 19857.0,
+    "score_without_depot": 19857.0,
+    "score_diff": 22.0,
+    "stated_cost": 3387.0,
+    "cost": 3387.0,
+    "limit": 3387.0,
+    "fits_limit": true,
+    "reading_match_rates": {
+     "floor_tsplib": 1.0,
+     "floor_raw": 0.949477,
+     "round_tsplib": 0.461672,
+     "round_raw": 0.454704,
+     "floor_raw_100": 0.560976,
+     "ceil_raw": 0.947735
+    },
+    "follows": [
+     "floor_tsplib"
+    ]
+   },
+   "current": {
+    "status": "inconsistent",
+    "stated_score": 19879.0,
+    "score_with_depot": 19857.0,
+    "score_without_depot": 19857.0,
+    "score_diff": 22.0,
+    "stated_cost": 3387.0,
+    "cost": 3387.0,
+    "limit": 3387.0,
+    "fits_limit": true,
+    "reading_match_rates": {
+     "floor_tsplib": 1.0,
+     "floor_raw": 0.949477,
+     "round_tsplib": 0.461672,
+     "round_raw": 0.454704,
+     "floor_raw_100": 0.560976,
+     "ceil_raw": 0.947735
+    },
+    "follows": [
+     "floor_tsplib"
+    ]
+   },
+   "parent_vs_current": {
+    "head_diff": [],
+    "coords_same": true,
+    "matrix_same": true,
+    "depot_same": true,
+    "nodes": 575,
+    "scores_changed": 52,
+    "score_total_delta": -52.0,
+    "only_scores_differ": true
+   },
+   "route_score_delta_parent_to_current": -22.0,
+   "fix_vs_current": {
+    "head_diff": [],
+    "coords_same": true,
+    "matrix_same": true,
+    "depot_same": true,
+    "nodes": 575,
+    "scores_changed": 0,
+    "score_total_delta": 0.0,
+    "only_scores_differ": true
+   },
+   "solution_same_at_parent": true,
+   "solution_same_at_fix": true,
+   "status": "checked",
+   "family": "rat575",
+   "group": "fixed"
+  },
+  "rat783": {
+   "parent": {
+    "status": "consistent",
+    "stated_score": 26797.0,
+    "score_with_depot": 26797.0,
+    "score_without_depot": 26797.0,
+    "score_diff": 0.0,
+    "stated_cost": 4403.0,
+    "cost": 4403.0,
+    "limit": 4403.0,
+    "fits_limit": true,
+    "reading_match_rates": {
+     "floor_tsplib": 0.921995,
+     "floor_raw": 0.919437,
+     "round_tsplib": 0.59335,
+     "round_raw": 0.580563,
+     "floor_raw_100": 0.429668,
+     "ceil_raw": 0.918159
+    },
+    "follows": []
+   },
+   "fix": {
+    "status": "inconsistent",
+    "stated_score": 26797.0,
+    "score_with_depot": 26762.0,
+    "score_without_depot": 26762.0,
+    "score_diff": 35.0,
+    "stated_cost": 4403.0,
+    "cost": 4403.0,
+    "limit": 4403.0,
+    "fits_limit": true,
+    "reading_match_rates": {
+     "floor_tsplib": 1.0,
+     "floor_raw": 0.964194,
+     "round_tsplib": 0.515345,
+     "round_raw": 0.502558,
+     "floor_raw_100": 0.503836,
+     "ceil_raw": 0.962916
+    },
+    "follows": [
+     "floor_tsplib"
+    ]
+   },
+   "current": {
+    "status": "inconsistent",
+    "stated_score": 26797.0,
+    "score_with_depot": 26762.0,
+    "score_without_depot": 26762.0,
+    "score_diff": 35.0,
+    "stated_cost": 4403.0,
+    "cost": 4403.0,
+    "limit": 4403.0,
+    "fits_limit": true,
+    "reading_match_rates": {
+     "floor_tsplib": 1.0,
+     "floor_raw": 0.964194,
+     "round_tsplib": 0.515345,
+     "round_raw": 0.502558,
+     "floor_raw_100": 0.503836,
+     "ceil_raw": 0.962916
+    },
+    "follows": [
+     "floor_tsplib"
+    ]
+   },
+   "parent_vs_current": {
+    "head_diff": [],
+    "coords_same": true,
+    "matrix_same": true,
+    "depot_same": true,
+    "nodes": 783,
+    "scores_changed": 61,
+    "score_total_delta": -61.0,
+    "only_scores_differ": true
+   },
+   "route_score_delta_parent_to_current": -35.0,
+   "fix_vs_current": {
+    "head_diff": [],
+    "coords_same": true,
+    "matrix_same": true,
+    "depot_same": true,
+    "nodes": 783,
+    "scores_changed": 0,
+    "score_total_delta": 0.0,
+    "only_scores_differ": true
+   },
+   "solution_same_at_parent": true,
+   "solution_same_at_fix": true,
+   "status": "checked",
+   "family": "rat783",
+   "group": "fixed"
+  },
+  "rat99": {
+   "parent": {
+    "status": "consistent",
+    "stated_score": 2886.0,
+    "score_with_depot": 2886.0,
+    "score_without_depot": 2886.0,
+    "score_diff": 0.0,
+    "stated_cost": 606.0,
+    "cost": 606.0,
+    "limit": 606.0,
+    "fits_limit": true,
+    "reading_match_rates": {
+     "floor_tsplib": 0.816327,
+     "floor_raw": 0.877551,
+     "round_tsplib": 0.479592,
+     "round_raw": 0.571429,
+     "floor_raw_100": 0.55102,
+     "ceil_raw": 0.867347
+    },
+    "follows": []
+   },
+   "fix": {
+    "status": "consistent",
+    "stated_score": 2886.0,
+    "score_with_depot": 2886.0,
+    "score_without_depot": 2886.0,
+    "score_diff": 0.0,
+    "stated_cost": 606.0,
+    "cost": 606.0,
+    "limit": 606.0,
+    "fits_limit": true,
+    "reading_match_rates": {
+     "floor_tsplib": 1.0,
+     "floor_raw": 0.897959,
+     "round_tsplib": 0.479592,
+     "round_raw": 0.571429,
+     "floor_raw_100": 0.540816,
+     "ceil_raw": 0.887755
+    },
+    "follows": [
+     "floor_tsplib"
+    ]
+   },
+   "current": {
+    "status": "consistent",
+    "stated_score": 2886.0,
+    "score_with_depot": 2886.0,
+    "score_without_depot": 2886.0,
+    "score_diff": 0.0,
+    "stated_cost": 606.0,
+    "cost": 606.0,
+    "limit": 606.0,
+    "fits_limit": true,
+    "reading_match_rates": {
+     "floor_tsplib": 1.0,
+     "floor_raw": 0.897959,
+     "round_tsplib": 0.479592,
+     "round_raw": 0.571429,
+     "floor_raw_100": 0.540816,
+     "ceil_raw": 0.887755
+    },
+    "follows": [
+     "floor_tsplib"
+    ]
+   },
+   "parent_vs_current": {
+    "head_diff": [],
+    "coords_same": true,
+    "matrix_same": true,
+    "depot_same": true,
+    "nodes": 99,
+    "scores_changed": 18,
+    "score_total_delta": 0.0,
+    "only_scores_differ": true
+   },
+   "route_score_delta_parent_to_current": 0.0,
+   "fix_vs_current": {
+    "head_diff": [],
+    "coords_same": true,
+    "matrix_same": true,
+    "depot_same": true,
+    "nodes": 99,
+    "scores_changed": 0,
+    "score_total_delta": 0.0,
+    "only_scores_differ": true
+   },
+   "solution_same_at_parent": true,
+   "solution_same_at_fix": true,
+   "status": "checked",
+   "family": "rat99",
+   "group": "fixed"
+  },
+  "tsp225": {
+   "parent": {
+    "status": "consistent",
+    "stated_score": 7488.0,
+    "score_with_depot": 7488.0,
+    "score_without_depot": 7488.0,
+    "score_diff": 0.0,
+    "stated_cost": 1958.0,
+    "cost": 1958.0,
+    "limit": 1958.0,
+    "fits_limit": true,
+    "reading_match_rates": {
+     "floor_tsplib": 0.0,
+     "floor_raw": 0.0,
+     "round_tsplib": 0.013393,
+     "round_raw": 0.013393,
+     "floor_raw_100": 0.008929,
+     "ceil_raw": 0.0
+    },
+    "follows": []
+   },
+   "fix": {
+    "status": "inconsistent",
+    "stated_score": 7488.0,
+    "score_with_depot": 7584.0,
+    "score_without_depot": 7584.0,
+    "score_diff": -96.0,
+    "stated_cost": 1958.0,
+    "cost": 1958.0,
+    "limit": 1958.0,
+    "fits_limit": true,
+    "reading_match_rates": {
+     "floor_tsplib": 1.0,
+     "floor_raw": 0.959821,
+     "round_tsplib": 0.450893,
+     "round_raw": 0.428571,
+     "floor_raw_100": 0.660714,
+     "ceil_raw": 0.955357
+    },
+    "follows": [
+     "floor_tsplib"
+    ]
+   },
+   "current": {
+    "status": "inconsistent",
+    "stated_score": 7488.0,
+    "score_with_depot": 7584.0,
+    "score_without_depot": 7584.0,
+    "score_diff": -96.0,
+    "stated_cost": 1958.0,
+    "cost": 1958.0,
+    "limit": 1958.0,
+    "fits_limit": true,
+    "reading_match_rates": {
+     "floor_tsplib": 1.0,
+     "floor_raw": 0.959821,
+     "round_tsplib": 0.450893,
+     "round_raw": 0.428571,
+     "floor_raw_100": 0.660714,
+     "ceil_raw": 0.955357
+    },
+    "follows": [
+     "floor_tsplib"
+    ]
+   },
+   "parent_vs_current": {
+    "head_diff": [],
+    "coords_same": true,
+    "matrix_same": true,
+    "depot_same": true,
+    "nodes": 225,
+    "scores_changed": 224,
+    "score_total_delta": 1140.0,
+    "only_scores_differ": true
+   },
+   "route_score_delta_parent_to_current": 96.0,
+   "fix_vs_current": {
+    "head_diff": [],
+    "coords_same": true,
+    "matrix_same": true,
+    "depot_same": true,
+    "nodes": 225,
+    "scores_changed": 0,
+    "score_total_delta": 0.0,
+    "only_scores_differ": true
+   },
+   "solution_same_at_parent": true,
+   "solution_same_at_fix": true,
+   "status": "checked",
+   "family": "tsp225",
+   "group": "fixed"
+  },
+  "pa561": {
+   "parent": {
+    "status": "consistent",
+    "stated_score": 14034.0,
+    "score_with_depot": 14034.0,
+    "score_without_depot": 14034.0,
+    "score_diff": 0.0,
+    "stated_cost": 1382.0,
+    "cost": 1382.0,
+    "limit": 1382.0,
+    "fits_limit": true,
+    "reading_match_rates": {},
+    "follows": []
+   },
+   "fix": {
+    "status": "consistent",
+    "stated_score": 14034.0,
+    "score_with_depot": 14034.0,
+    "score_without_depot": 14034.0,
+    "score_diff": 0.0,
+    "stated_cost": 1382.0,
+    "cost": 1382.0,
+    "limit": 1382.0,
+    "fits_limit": true,
+    "reading_match_rates": {},
+    "follows": []
+   },
+   "current": {
+    "status": "consistent",
+    "stated_score": 14034.0,
+    "score_with_depot": 14034.0,
+    "score_without_depot": 14034.0,
+    "score_diff": 0.0,
+    "stated_cost": 1382.0,
+    "cost": 1382.0,
+    "limit": 1382.0,
+    "fits_limit": true,
+    "reading_match_rates": {},
+    "follows": []
+   },
+   "parent_vs_current": {
+    "head_diff": [],
+    "coords_same": true,
+    "matrix_same": true,
+    "depot_same": true,
+    "nodes": 561,
+    "scores_changed": 0,
+    "score_total_delta": 0.0,
+    "only_scores_differ": true
+   },
+   "route_score_delta_parent_to_current": 0.0,
+   "fix_vs_current": {
+    "head_diff": [],
+    "coords_same": true,
+    "matrix_same": true,
+    "depot_same": true,
+    "nodes": 561,
+    "scores_changed": 0,
+    "score_total_delta": 0.0,
+    "only_scores_differ": true
+   },
+   "solution_same_at_parent": true,
+   "solution_same_at_fix": true,
+   "status": "checked",
+   "family": "pa561",
+   "group": "control"
+  },
+  "kroA100": {
+   "parent": {
+    "status": "consistent",
+    "stated_score": 3180.0,
+    "score_with_depot": 3180.0,
+    "score_without_depot": 3180.0,
+    "score_diff": 0.0,
+    "stated_cost": 10631.0,
+    "cost": 10631.0,
+    "limit": 10641.0,
+    "fits_limit": true,
+    "reading_match_rates": {
+     "floor_tsplib": 1.0,
+     "floor_raw": 0.979798,
+     "round_tsplib": 0.464646,
+     "round_raw": 0.464646,
+     "floor_raw_100": 0.474747,
+     "ceil_raw": 0.969697
+    },
+    "follows": [
+     "floor_tsplib"
+    ]
+   },
+   "fix": {
+    "status": "consistent",
+    "stated_score": 3180.0,
+    "score_with_depot": 3180.0,
+    "score_without_depot": 3180.0,
+    "score_diff": 0.0,
+    "stated_cost": 10631.0,
+    "cost": 10631.0,
+    "limit": 10641.0,
+    "fits_limit": true,
+    "reading_match_rates": {
+     "floor_tsplib": 1.0,
+     "floor_raw": 0.979798,
+     "round_tsplib": 0.464646,
+     "round_raw": 0.464646,
+     "floor_raw_100": 0.474747,
+     "ceil_raw": 0.969697
+    },
+    "follows": [
+     "floor_tsplib"
+    ]
+   },
+   "current": {
+    "status": "consistent",
+    "stated_score": 3180.0,
+    "score_with_depot": 3180.0,
+    "score_without_depot": 3180.0,
+    "score_diff": 0.0,
+    "stated_cost": 10631.0,
+    "cost": 10631.0,
+    "limit": 10641.0,
+    "fits_limit": true,
+    "reading_match_rates": {
+     "floor_tsplib": 1.0,
+     "floor_raw": 0.979798,
+     "round_tsplib": 0.464646,
+     "round_raw": 0.464646,
+     "floor_raw_100": 0.474747,
+     "ceil_raw": 0.969697
+    },
+    "follows": [
+     "floor_tsplib"
+    ]
+   },
+   "parent_vs_current": {
+    "head_diff": [],
+    "coords_same": true,
+    "matrix_same": true,
+    "depot_same": true,
+    "nodes": 100,
+    "scores_changed": 0,
+    "score_total_delta": 0.0,
+    "only_scores_differ": true
+   },
+   "route_score_delta_parent_to_current": 0.0,
+   "fix_vs_current": {
+    "head_diff": [],
+    "coords_same": true,
+    "matrix_same": true,
+    "depot_same": true,
+    "nodes": 100,
+    "scores_changed": 0,
+    "score_total_delta": 0.0,
+    "only_scores_differ": true
+   },
+   "solution_same_at_parent": true,
+   "solution_same_at_fix": true,
+   "status": "checked",
+   "family": "kroA100",
+   "group": "control"
+  },
+  "pr76": {
+   "parent": {
+    "status": "consistent",
+    "stated_score": 2430.0,
+    "score_with_depot": 2430.0,
+    "score_without_depot": 2430.0,
+    "score_diff": 0.0,
+    "stated_cost": 53943.0,
+    "cost": 53943.0,
+    "limit": 54080.0,
+    "fits_limit": true,
+    "reading_match_rates": {
+     "floor_tsplib": 1.0,
+     "floor_raw": 1.0,
+     "round_tsplib": 0.533333,
+     "round_raw": 0.533333,
+     "floor_raw_100": 0.493333,
+     "ceil_raw": 0.986667
+    },
+    "follows": [
+     "floor_raw",
+     "floor_tsplib"
+    ]
+   },
+   "fix": {
+    "status": "consistent",
+    "stated_score": 2430.0,
+    "score_with_depot": 2430.0,
+    "score_without_depot": 2430.0,
+    "score_diff": 0.0,
+    "stated_cost": 53943.0,
+    "cost": 53943.0,
+    "limit": 54080.0,
+    "fits_limit": true,
+    "reading_match_rates": {
+     "floor_tsplib": 1.0,
+     "floor_raw": 1.0,
+     "round_tsplib": 0.533333,
+     "round_raw": 0.533333,
+     "floor_raw_100": 0.493333,
+     "ceil_raw": 0.986667
+    },
+    "follows": [
+     "floor_raw",
+     "floor_tsplib"
+    ]
+   },
+   "current": {
+    "status": "consistent",
+    "stated_score": 2430.0,
+    "score_with_depot": 2430.0,
+    "score_without_depot": 2430.0,
+    "score_diff": 0.0,
+    "stated_cost": 53943.0,
+    "cost": 53943.0,
+    "limit": 54080.0,
+    "fits_limit": true,
+    "reading_match_rates": {
+     "floor_tsplib": 1.0,
+     "floor_raw": 1.0,
+     "round_tsplib": 0.533333,
+     "round_raw": 0.533333,
+     "floor_raw_100": 0.493333,
+     "ceil_raw": 0.986667
+    },
+    "follows": [
+     "floor_raw",
+     "floor_tsplib"
+    ]
+   },
+   "parent_vs_current": {
+    "head_diff": [],
+    "coords_same": true,
+    "matrix_same": true,
+    "depot_same": true,
+    "nodes": 76,
+    "scores_changed": 0,
+    "score_total_delta": 0.0,
+    "only_scores_differ": true
+   },
+   "route_score_delta_parent_to_current": 0.0,
+   "fix_vs_current": {
+    "head_diff": [],
+    "coords_same": true,
+    "matrix_same": true,
+    "depot_same": true,
+    "nodes": 76,
+    "scores_changed": 0,
+    "score_total_delta": 0.0,
+    "only_scores_differ": true
+   },
+   "solution_same_at_parent": true,
+   "solution_same_at_fix": true,
+   "status": "checked",
+   "family": "pr76",
+   "group": "control"
+  }
+ }
+}
