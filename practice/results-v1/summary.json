@@ -1,0 +1,523 @@
+{
+ "repo_sha": "36131580d332b820baed72df5f323b279abbacf3",
+ "time_limit": 60.0,
+ "variants": {
+  "spp-v030": {
+   "slug": "hoffman1993",
+   "sense": "min",
+   "cases": 6,
+   "official_feasible": 3,
+   "official_rejected": [],
+   "official_violated": {},
+   "official_violations": {},
+   "no_output_or_overtime": [
+    "large_1",
+    "large_4",
+    "large_5"
+   ],
+   "ours_status": {
+    "tiny": "ok",
+    "large_1": "no_output",
+    "large_2": "ok",
+    "large_3": "ok",
+    "large_4": "no_output",
+    "large_5": "no_output"
+   },
+   "official_score_large_mean": 0.273929,
+   "official_score_all": {
+    "tiny": 1.0,
+    "large_1": 0.0,
+    "large_2": 1.0,
+    "large_3": 0.369643,
+    "large_4": 0.0,
+    "large_5": 0.0
+   },
+   "gurobi_official_feasible": 6,
+   "checkers_agree": 9,
+   "checker_comparisons": 9,
+   "max_wall_s": 57.726,
+   "revision": "ef42a2eac13595453f986d9df0b62e86e75ab596",
+   "size": {
+    "tiny": {
+     "rows": 30,
+     "cols": 25,
+     "listed_columns": 25,
+     "out_of_range_indices": 0
+    },
+    "large_1": {
+     "rows": 100,
+     "cols": 15000,
+     "listed_columns": 15000,
+     "out_of_range_indices": 0
+    },
+    "large_2": {
+     "rows": 100,
+     "cols": 15000,
+     "listed_columns": 15000,
+     "out_of_range_indices": 0
+    },
+    "large_3": {
+     "rows": 100,
+     "cols": 15000,
+     "listed_columns": 15000,
+     "out_of_range_indices": 0
+    },
+    "large_4": {
+     "rows": 100,
+     "cols": 15000,
+     "listed_columns": 15000,
+     "out_of_range_indices": 0
+    },
+    "large_5": {
+     "rows": 100,
+     "cols": 15000,
+     "listed_columns": 15000,
+     "out_of_range_indices": 0
+    }
+   }
+  },
+  "spp-v020": {
+   "slug": "hoffman1993",
+   "sense": "min",
+   "cases": 6,
+   "official_feasible": 3,
+   "official_rejected": [],
+   "official_violated": {},
+   "official_violations": {},
+   "no_output_or_overtime": [
+    "large_1",
+    "large_4",
+    "large_5"
+   ],
+   "ours_status": {
+    "tiny": "ok",
+    "large_1": "no_output",
+    "large_2": "ok",
+    "large_3": "ok",
+    "large_4": "no_output",
+    "large_5": "no_output"
+   },
+   "official_score_large_mean": 0.273929,
+   "official_score_all": {
+    "tiny": 1.0,
+    "large_1": 0.0,
+    "large_2": 1.0,
+    "large_3": 0.369643,
+    "large_4": 0.0,
+    "large_5": 0.0
+   },
+   "gurobi_official_feasible": 6,
+   "checkers_agree": 9,
+   "checker_comparisons": 9,
+   "max_wall_s": 57.725,
+   "revision": "ef42a2eac13595453f986d9df0b62e86e75ab596",
+   "size": {
+    "tiny": {
+     "rows": 30,
+     "cols": 25,
+     "listed_columns": 25,
+     "out_of_range_indices": 0
+    },
+    "large_1": {
+     "rows": 100,
+     "cols": 15000,
+     "listed_columns": 15000,
+     "out_of_range_indices": 0
+    },
+    "large_2": {
+     "rows": 100,
+     "cols": 15000,
+     "listed_columns": 15000,
+     "out_of_range_indices": 0
+    },
+    "large_3": {
+     "rows": 100,
+     "cols": 15000,
+     "listed_columns": 15000,
+     "out_of_range_indices": 0
+    },
+    "large_4": {
+     "rows": 100,
+     "cols": 15000,
+     "listed_columns": 15000,
+     "out_of_range_indices": 0
+    },
+    "large_5": {
+     "rows": 100,
+     "cols": 15000,
+     "listed_columns": 15000,
+     "out_of_range_indices": 0
+    }
+   }
+  },
+  "darp-v3": {
+   "slug": "cordeau2006",
+   "sense": "min",
+   "cases": 6,
+   "official_feasible": 6,
+   "official_rejected": [],
+   "official_violated": {},
+   "official_violations": {},
+   "no_output_or_overtime": [],
+   "ours_status": {
+    "tiny": "ok",
+    "large_1": "ok",
+    "large_2": "ok",
+    "large_3": "ok",
+    "large_4": "ok",
+    "large_5": "ok"
+   },
+   "official_score_large_mean": 1.012069,
+   "official_score_all": {
+    "tiny": 1.0,
+    "large_1": 1.045926,
+    "large_2": 1.014703,
+    "large_3": 0.999803,
+    "large_4": 0.999912,
+    "large_5": 1.0
+   },
+   "gurobi_official_feasible": 6,
+   "checkers_agree": 12,
+   "checker_comparisons": 12,
+   "max_wall_s": 52.807,
+   "revision": "ef42a2eac13595453f986d9df0b62e86e75ab596",
+   "size": {
+    "tiny": {
+     "users": 16,
+     "vehicles": 2,
+     "user_id_min": 1,
+     "user_id_equals_pickup_node": true,
+     "pickups_are_1_to_n": true,
+     "routes_listed": 2,
+     "routes_used": 2
+    },
+    "large_1": {
+     "users": 36,
+     "vehicles": 4,
+     "user_id_min": 1,
+     "user_id_equals_pickup_node": true,
+     "pickups_are_1_to_n": true,
+     "routes_listed": 4,
+     "routes_used": 4
+    },
+    "large_2": {
+     "users": 36,
+     "vehicles": 4,
+     "user_id_min": 1,
+     "user_id_equals_pickup_node": true,
+     "pickups_are_1_to_n": true,
+     "routes_listed": 4,
+     "routes_used": 3
+    },
+    "large_3": {
+     "users": 36,
+     "vehicles": 4,
+     "user_id_min": 1,
+     "user_id_equals_pickup_node": true,
+     "pickups_are_1_to_n": true,
+     "routes_listed": 4,
+     "routes_used": 4
+    },
+    "large_4": {
+     "users": 36,
+     "vehicles": 4,
+     "user_id_min": 1,
+     "user_id_equals_pickup_node": true,
+     "pickups_are_1_to_n": true,
+     "routes_listed": 4,
+     "routes_used": 4
+    },
+    "large_5": {
+     "users": 16,
+     "vehicles": 4,
+     "user_id_min": 1,
+     "user_id_equals_pickup_node": true,
+     "pickups_are_1_to_n": true,
+     "routes_listed": 4,
+     "routes_used": 3
+    }
+   }
+  },
+  "darp-v2": {
+   "slug": "cordeau2006",
+   "sense": "min",
+   "cases": 6,
+   "official_feasible": 4,
+   "official_rejected": [
+    "large_2",
+    "large_5"
+   ],
+   "official_violated": {
+    "large_2": [
+     1,
+     4,
+     6,
+     7
+    ],
+    "large_5": [
+     1,
+     4,
+     6,
+     7
+    ]
+   },
+   "official_violations": {
+    "large_2": "['Route map must contain exactly one route for every vehicle: expected=[0, 1, 2, 3], got=[0, 1, 2]', \"service_times must exactly cover every request node and both depot endpoints per vehicle; missing=['depot_end_3', 'depot_start_3'], extra=[]\", 'Constraint (4): Vehicle 3 has 0 arcs leaving origin de",
+    "large_5": "['Route map must contain exactly one route for every vehicle: expected=[0, 1, 2, 3], got=[0, 1, 2]', \"service_times must exactly cover every request node and both depot endpoints per vehicle; missing=['depot_end_3', 'depot_start_3'], extra=[]\", 'Constraint (4): Vehicle 3 has 0 arcs leaving origin de"
+   },
+   "no_output_or_overtime": [],
+   "ours_status": {
+    "tiny": "ok",
+    "large_1": "ok",
+    "large_2": "ok",
+    "large_3": "ok",
+    "large_4": "ok",
+    "large_5": "ok"
+   },
+   "official_score_large_mean": 0.609549,
+   "official_score_all": {
+    "tiny": 1.0,
+    "large_1": 1.045926,
+    "large_2": 0.0,
+    "large_3": 0.998265,
+    "large_4": 1.003555,
+    "large_5": 0.0
+   },
+   "gurobi_official_feasible": 6,
+   "checkers_agree": 10,
+   "checker_comparisons": 12,
+   "max_wall_s": 55.378,
+   "revision": "ef42a2eac13595453f986d9df0b62e86e75ab596",
+   "size": {
+    "tiny": {
+     "users": 16,
+     "vehicles": 2,
+     "user_id_min": 1,
+     "user_id_equals_pickup_node": true,
+     "pickups_are_1_to_n": true,
+     "routes_listed": 2,
+     "routes_used": 2
+    },
+    "large_1": {
+     "users": 36,
+     "vehicles": 4,
+     "user_id_min": 1,
+     "user_id_equals_pickup_node": true,
+     "pickups_are_1_to_n": true,
+     "routes_listed": 4,
+     "routes_used": 4
+    },
+    "large_2": {
+     "users": 36,
+     "vehicles": 4,
+     "user_id_min": 1,
+     "user_id_equals_pickup_node": true,
+     "pickups_are_1_to_n": true,
+     "routes_listed": 3,
+     "routes_used": 3
+    },
+    "large_3": {
+     "users": 36,
+     "vehicles": 4,
+     "user_id_min": 1,
+     "user_id_equals_pickup_node": true,
+     "pickups_are_1_to_n": true,
+     "routes_listed": 4,
+     "routes_used": 4
+    },
+    "large_4": {
+     "users": 36,
+     "vehicles": 4,
+     "user_id_min": 1,
+     "user_id_equals_pickup_node": true,
+     "pickups_are_1_to_n": true,
+     "routes_listed": 4,
+     "routes_used": 4
+    },
+    "large_5": {
+     "users": 16,
+     "vehicles": 4,
+     "user_id_min": 1,
+     "user_id_equals_pickup_node": true,
+     "pickups_are_1_to_n": true,
+     "routes_listed": 3,
+     "routes_used": 3
+    }
+   }
+  },
+  "nagy-v3": {
+   "slug": "nagy2015",
+   "sense": "min",
+   "cases": 6,
+   "official_feasible": 6,
+   "official_rejected": [],
+   "official_violated": {},
+   "official_violations": {},
+   "no_output_or_overtime": [],
+   "ours_status": {
+    "tiny": "ok",
+    "large_1": "ok",
+    "large_2": "ok",
+    "large_3": "ok",
+    "large_4": "ok",
+    "large_5": "ok"
+   },
+   "official_score_large_mean": 1.100338,
+   "official_score_all": {
+    "tiny": 1.0,
+    "large_1": 1.06204,
+    "large_2": 1.195417,
+    "large_3": 1.079764,
+    "large_4": 1.119359,
+    "large_5": 1.045109
+   },
+   "gurobi_official_feasible": 6,
+   "checkers_agree": 12,
+   "checker_comparisons": 12,
+   "max_wall_s": 50.507,
+   "revision": "ef42a2eac13595453f986d9df0b62e86e75ab596",
+   "size": {
+    "tiny": {
+     "customers": 10
+    },
+    "large_1": {
+     "customers": 199
+    },
+    "large_2": {
+     "customers": 199
+    },
+    "large_3": {
+     "customers": 199
+    },
+    "large_4": {
+     "customers": 199
+    },
+    "large_5": {
+     "customers": 199
+    }
+   }
+  },
+  "nagy-v2": {
+   "slug": "nagy2015",
+   "sense": "min",
+   "cases": 6,
+   "official_feasible": 3,
+   "official_rejected": [
+    "large_2",
+    "large_3",
+    "large_4"
+   ],
+   "official_violated": {
+    "large_2": [
+     15
+    ],
+    "large_3": [
+     15
+    ],
+    "large_4": [
+     15
+    ]
+   },
+   "official_violations": {
+    "large_2": "['Constraint 15: Arc from backhaul 202 to linehaul 3 (customer 3): x = 1, expected 0', 'Constraint 15: Arc from backhaul 204 to linehaul 5 (customer 5): x = 1, expected 0', '... and 58 more violations of constraint 15']",
+    "large_3": "['Constraint 15: Arc from backhaul 220 to linehaul 21 (customer 21): x = 1, expected 0', 'Constraint 15: Arc from backhaul 222 to linehaul 23 (customer 23): x = 1, expected 0', '... and 3 more violations of constraint 15']",
+    "large_4": "['Constraint 15: Arc from backhaul 200 to linehaul 1 (customer 1): x = 1, expected 0', 'Constraint 15: Arc from backhaul 202 to linehaul 3 (customer 3): x = 1, expected 0', '... and 59 more violations of constraint 15']"
+   },
+   "no_output_or_overtime": [],
+   "ours_status": {
+    "tiny": "ok",
+    "large_1": "ok",
+    "large_2": "ok",
+    "large_3": "ok",
+    "large_4": "ok",
+    "large_5": "ok"
+   },
+   "official_score_large_mean": 0.421414,
+   "official_score_all": {
+    "tiny": 1.0,
+    "large_1": 1.061959,
+    "large_2": 0.0,
+    "large_3": 0.0,
+    "large_4": 0.0,
+    "large_5": 1.045109
+   },
+   "gurobi_official_feasible": 6,
+   "checkers_agree": 9,
+   "checker_comparisons": 12,
+   "max_wall_s": 53.004,
+   "revision": "ef42a2eac13595453f986d9df0b62e86e75ab596",
+   "size": {
+    "tiny": {
+     "customers": 10
+    },
+    "large_1": {
+     "customers": 199
+    },
+    "large_2": {
+     "customers": 199
+    },
+    "large_3": {
+     "customers": 199
+    },
+    "large_4": {
+     "customers": 199
+    },
+    "large_5": {
+     "customers": 199
+    }
+   }
+  },
+  "op-v1": {
+   "slug": "fischetti1998",
+   "sense": "max",
+   "cases": 6,
+   "official_feasible": 6,
+   "official_rejected": [],
+   "official_violated": {},
+   "official_violations": {},
+   "no_output_or_overtime": [],
+   "ours_status": {
+    "tiny": "ok",
+    "large_1": "ok",
+    "large_2": "ok",
+    "large_3": "ok",
+    "large_4": "ok",
+    "large_5": "ok"
+   },
+   "official_score_large_mean": 0.893785,
+   "official_score_all": {
+    "tiny": 1.0,
+    "large_1": 0.862491,
+    "large_2": 0.866289,
+    "large_3": 0.873172,
+    "large_4": 0.904613,
+    "large_5": 0.962359
+   },
+   "gurobi_official_feasible": 6,
+   "checkers_agree": 12,
+   "checker_comparisons": 12,
+   "max_wall_s": 51.478,
+   "revision": "ef42a2eac13595453f986d9df0b62e86e75ab596",
+   "size": {
+    "tiny": {
+     "n": 25
+    },
+    "large_1": {
+     "n": 500
+    },
+    "large_2": {
+     "n": 500
+    },
+    "large_3": {
+     "n": 500
+    },
+    "large_4": {
+     "n": 500
+    },
+    "large_5": {
+     "n": 500
+    }
+   }
+  }
+ }
+}
