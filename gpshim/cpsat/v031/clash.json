@@ -1,0 +1,347 @@
+{
+ "versions": {
+  "python": "3.12.15",
+  "highspy": "1.15.1",
+  "ortools": "9.15.6755",
+  "scipy": "1.18.1",
+  "numpy": "2.5.4"
+ },
+ "platform": "linux",
+ "rows": [
+  {
+   "order": [
+    "highspy"
+   ],
+   "exit": 0,
+   "seconds": 0.41,
+   "ok": [
+    "highspy"
+   ],
+   "failed": null,
+   "error": null
+  },
+  {
+   "order": [
+    "cpsat"
+   ],
+   "exit": 0,
+   "seconds": 1.08,
+   "ok": [
+    "cpsat"
+   ],
+   "failed": null,
+   "error": null
+  },
+  {
+   "order": [
+    "glop"
+   ],
+   "exit": 0,
+   "seconds": 0.2,
+   "ok": [
+    "glop"
+   ],
+   "failed": null,
+   "error": null
+  },
+  {
+   "order": [
+    "routing"
+   ],
+   "exit": 0,
+   "seconds": 0.32,
+   "ok": [
+    "routing"
+   ],
+   "failed": null,
+   "error": null
+  },
+  {
+   "order": [
+    "scipy_milp"
+   ],
+   "exit": 0,
+   "seconds": 1.24,
+   "ok": [
+    "scipy_milp"
+   ],
+   "failed": null,
+   "error": null
+  },
+  {
+   "order": [
+    "highspy",
+    "cpsat"
+   ],
+   "exit": 0,
+   "seconds": 0.95,
+   "ok": [
+    "highspy"
+   ],
+   "failed": "cpsat",
+   "error": "ImportError('/usr/local/lib/python3.12/site-packages/ortools/sat/python/../../../ortools/.libs/libortools.so.9: undefined symbol: _Z19setLocalOptionValueRK15HighsLogOptionsRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERS_RSt6vectorIP12OptionRecordSaISD_EES7_')"
+  },
+  {
+   "order": [
+    "highspy",
+    "glop"
+   ],
+   "exit": 0,
+   "seconds": 0.44,
+   "ok": [
+    "highspy"
+   ],
+   "failed": "glop",
+   "error": "ImportError('/usr/local/lib/python3.12/site-packages/ortools/linear_solver/../../ortools/.libs/libortools.so.9: undefined symbol: _Z19setLocalOptionValueRK15HighsLogOptionsRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERS_RSt6vectorIP12OptionRecordSaISD_EES7_')"
+  },
+  {
+   "order": [
+    "highspy",
+    "routing"
+   ],
+   "exit": 0,
+   "seconds": 0.48,
+   "ok": [
+    "highspy"
+   ],
+   "failed": "routing",
+   "error": "ImportError('/usr/local/lib/python3.12/site-packages/ortools/constraint_solver/../../ortools/.libs/libortools.so.9: undefined symbol: _Z19setLocalOptionValueRK15HighsLogOptionsRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERS_RSt6vectorIP12OptionRecordSaISD_EES7_')"
+  },
+  {
+   "order": [
+    "highspy",
+    "scipy_milp"
+   ],
+   "exit": 0,
+   "seconds": 1.04,
+   "ok": [
+    "highspy",
+    "scipy_milp"
+   ],
+   "failed": null,
+   "error": null
+  },
+  {
+   "order": [
+    "cpsat",
+    "highspy"
+   ],
+   "exit": 0,
+   "seconds": 1.03,
+   "ok": [
+    "cpsat"
+   ],
+   "failed": "highspy",
+   "error": "ImportError('/usr/local/lib/python3.12/site-packages/highspy/_core.cpython-312-x86_64-linux-gnu.so: undefined symbol: _ZN5Highs13releaseMemoryEv')"
+  },
+  {
+   "order": [
+    "cpsat",
+    "glop"
+   ],
+   "exit": 0,
+   "seconds": 1.02,
+   "ok": [
+    "cpsat",
+    "glop"
+   ],
+   "failed": null,
+   "error": null
+  },
+  {
+   "order": [
+    "cpsat",
+    "routing"
+   ],
+   "exit": 0,
+   "seconds": 1.03,
+   "ok": [
+    "cpsat",
+    "routing"
+   ],
+   "failed": null,
+   "error": null
+  },
+  {
+   "order": [
+    "cpsat",
+    "scipy_milp"
+   ],
+   "exit": 0,
+   "seconds": 1.45,
+   "ok": [
+    "cpsat",
+    "scipy_milp"
+   ],
+   "failed": null,
+   "error": null
+  },
+  {
+   "order": [
+    "glop",
+    "highspy"
+   ],
+   "exit": 0,
+   "seconds": 0.19,
+   "ok": [
+    "glop"
+   ],
+   "failed": "highspy",
+   "error": "ImportError('/usr/local/lib/python3.12/site-packages/highspy/_core.cpython-312-x86_64-linux-gnu.so: undefined symbol: _ZN5Highs13releaseMemoryEv')"
+  },
+  {
+   "order": [
+    "glop",
+    "cpsat"
+   ],
+   "exit": 0,
+   "seconds": 0.88,
+   "ok": [
+    "glop",
+    "cpsat"
+   ],
+   "failed": null,
+   "error": null
+  },
+  {
+   "order": [
+    "glop",
+    "routing"
+   ],
+   "exit": 0,
+   "seconds": 0.26,
+   "ok": [
+    "glop",
+    "routing"
+   ],
+   "failed": null,
+   "error": null
+  },
+  {
+   "order": [
+    "glop",
+    "scipy_milp"
+   ],
+   "exit": 0,
+   "seconds": 1.12,
+   "ok": [
+    "glop",
+    "scipy_milp"
+   ],
+   "failed": null,
+   "error": null
+  },
+  {
+   "order": [
+    "routing",
+    "highspy"
+   ],
+   "exit": 0,
+   "seconds": 0.26,
+   "ok": [
+    "routing"
+   ],
+   "failed": "highspy",
+   "error": "ImportError('/usr/local/lib/python3.12/site-packages/highspy/_core.cpython-312-x86_64-linux-gnu.so: undefined symbol: _ZN5Highs13releaseMemoryEv')"
+  },
+  {
+   "order": [
+    "routing",
+    "cpsat"
+   ],
+   "exit": 0,
+   "seconds": 0.94,
+   "ok": [
+    "routing",
+    "cpsat"
+   ],
+   "failed": null,
+   "error": null
+  },
+  {
+   "order": [
+    "routing",
+    "glop"
+   ],
+   "exit": 0,
+   "seconds": 0.27,
+   "ok": [
+    "routing",
+    "glop"
+   ],
+   "failed": null,
+   "error": null
+  },
+  {
+   "order": [
+    "routing",
+    "scipy_milp"
+   ],
+   "exit": 0,
+   "seconds": 1.31,
+   "ok": [
+    "routing",
+    "scipy_milp"
+   ],
+   "failed": null,
+   "error": null
+  },
+  {
+   "order": [
+    "scipy_milp",
+    "highspy"
+   ],
+   "exit": 0,
+   "seconds": 1.48,
+   "ok": [
+    "scipy_milp",
+    "highspy"
+   ],
+   "failed": null,
+   "error": null
+  },
+  {
+   "order": [
+    "scipy_milp",
+    "cpsat"
+   ],
+   "exit": 0,
+   "seconds": 1.67,
+   "ok": [
+    "scipy_milp",
+    "cpsat"
+   ],
+   "failed": null,
+   "error": null
+  },
+  {
+   "order": [
+    "scipy_milp",
+    "glop"
+   ],
+   "exit": 0,
+   "seconds": 1.55,
+   "ok": [
+    "scipy_milp",
+    "glop"
+   ],
+   "failed": null,
+   "error": null
+  },
+  {
+   "order": [
+    "scipy_milp",
+    "routing"
+   ],
+   "exit": 0,
+   "seconds": 1.13,
+   "ok": [
+    "scipy_milp",
+    "routing"
+   ],
+   "failed": null,
+   "error": null
+  }
+ ],
+ "at": "2026-11-12T09:40:03Z"
+}

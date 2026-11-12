@@ -1,0 +1,165 @@
+{
+ "meta": {
+  "repo": "munimtechnologies/frontieror-routing",
+  "sha": "dc12249d66a244daf6bc25d74876c8ac0fd935cd",
+  "benchmark_revision": "ef42a2eac13595453f986d9df0b62e86e75ab596",
+  "versions": {
+   "highspy": "1.15.1",
+   "ortools": "9.15.6755",
+   "numpy": "2.5.4"
+  },
+  "gpshim_base": {
+   "repo": "munimtechnologies/frontieror-routing",
+   "path": "gpshim/next/gpshim.py",
+   "commit": "0bea743ade89ee77bae0058bceaad18b93cc5e77",
+   "bytes": 76636
+  },
+  "gpshim_cpsat": "0.3.1",
+  "python": "3.12.15 (main, Oct  6 2026, 04:38:21) [GCC 14.2.0]",
+  "cpu_count": 8,
+  "started": "2026-11-12T09:40:12Z",
+  "tiny_limit": 20.0,
+  "large_limit": 60.0,
+  "large_max_bytes": 1500000,
+  "arm3_max": 15,
+  "cpsat_mem_mb": 1200,
+  "selected_tasks": 55
+ },
+ "tasks": 55,
+ "tiny_cpsat_runs": 55,
+ "cpsat_eligible": 54,
+ "eligible_tasks": [
+  "alba2013",
+  "alfieri2020",
+  "araujo2020",
+  "armbruster2012",
+  "barnhart2000",
+  "bettinelli2017",
+  "bode2012",
+  "boland2019",
+  "bragin2022",
+  "brandao2016",
+  "caprara1999",
+  "carvalho1999",
+  "chebil2015",
+  "chebil2019",
+  "cordeau2014",
+  "cote2018",
+  "delorme2020",
+  "fischetti1997",
+  "fischetti1998",
+  "forrest2006",
+  "furini2016",
+  "furini2017",
+  "furini2019",
+  "furini2021",
+  "gschwind2021",
+  "gualandi2012",
+  "guo2021",
+  "hadjar2006",
+  "hoffman1993",
+  "hosseinian2020",
+  "kobeaga2024",
+  "letelier2022",
+  "mansini2020",
+  "martello1999",
+  "mehrotra1996",
+  "morrison2016",
+  "pettersson2020",
+  "rahimian2017",
+  "ribeiro1994",
+  "rothenbacher2019",
+  "sadykov2013",
+  "sansegundo2016",
+  "sansegundo2023",
+  "savelsbergh1997",
+  "segundo2019",
+  "segundo2019b",
+  "seker2021",
+  "walteros2020",
+  "watermeyer2020",
+  "watermeyer2022",
+  "watermeyer2023",
+  "wei2020",
+  "wei2020b",
+  "zhang2025"
+ ],
+ "not_eligible_reasons": [
+  [
+   "worker died ",
+   1,
+   [
+    "mingozzi1999"
+   ]
+  ]
+ ],
+ "large_eligible": 35,
+ "skipped_for_budget": [],
+ "sense_mixed_in_code_check_by_hand": [
+  "barnhart2000",
+  "furini2017",
+  "gschwind2021",
+  "hadjar2006",
+  "mehrotra1996",
+  "ribeiro1994"
+ ],
+ "sense_code_vs_last_solve_differ": [],
+ "tiny_highs_vs_cpsat2": {
+  "pairs": 54,
+  "cpsat2_better": [
+   "armbruster2012",
+   "furini2017",
+   "pettersson2020",
+   "sadykov2013",
+   "segundo2019",
+   "walteros2020"
+  ],
+  "highs_better": [],
+  "ties": 48,
+  "mean_highs": 0.890245,
+  "mean_cpsat2": 0.947317,
+  "accepted_highs": 50,
+  "accepted_cpsat2": 51,
+  "best_of_both_mean": 0.947317
+ },
+ "large_highs_vs_cpsat2": {
+  "pairs": 35,
+  "cpsat2_better": [
+   "barnhart2000",
+   "caprara1999",
+   "forrest2006",
+   "gualandi2012",
+   "hosseinian2020",
+   "rahimian2017",
+   "rothenbacher2019",
+   "sadykov2013"
+  ],
+  "highs_better": [
+   "boland2019",
+   "chebil2015",
+   "watermeyer2020"
+  ],
+  "ties": 24,
+  "mean_highs": 0.214844,
+  "mean_cpsat2": 0.329427,
+  "accepted_highs": 10,
+  "accepted_cpsat2": 13,
+  "best_of_both_mean": 0.371226
+ },
+ "large_cpsat2_vs_cpsat8": {
+  "pairs": 15,
+  "cpsat8_better": [],
+  "cpsat2_better": [
+   "rothenbacher2019",
+   "savelsbergh1997"
+  ],
+  "ties": 13,
+  "mean_cpsat2": 0.189655,
+  "mean_cpsat8": 0.177853,
+  "accepted_cpsat2": 3,
+  "accepted_cpsat8": 3,
+  "best_of_both_mean": 0.189655
+ },
+ "finished": "2026-11-12T11:07:50Z",
+ "elapsed_min": 87.65
+}

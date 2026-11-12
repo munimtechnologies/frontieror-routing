@@ -1,0 +1,34 @@
+test_assignment_decimal_costs (test_gpshim_cpsat.TestCpsatBackend.test_assignment_decimal_costs) ... ok
+test_continuous_column_falls_back_to_highs (test_gpshim_cpsat.TestCpsatBackend.test_continuous_column_falls_back_to_highs) ... ok
+test_fractional_row_coefficients (test_gpshim_cpsat.TestCpsatBackend.test_fractional_row_coefficients) ... ok
+test_hierarchical_multiobjective (test_gpshim_cpsat.TestCpsatBackend.test_hierarchical_multiobjective) ... ok
+test_infeasible_found_by_cpsat_search (test_gpshim_cpsat.TestCpsatBackend.test_infeasible_found_by_cpsat_search) ... ok
+test_infinite_bounds_are_capped_and_logged (test_gpshim_cpsat.TestCpsatBackend.test_infinite_bounds_are_capped_and_logged) ... ok
+test_integer_infeasible (test_gpshim_cpsat.TestCpsatBackend.test_integer_infeasible) ... ok
+test_irrational_objective_is_rounded_but_objval_exact (test_gpshim_cpsat.TestCpsatBackend.test_irrational_objective_is_rounded_but_objval_exact) ... ok
+test_knapsack_brute_force (test_gpshim_cpsat.TestCpsatBackend.test_knapsack_brute_force) ... ok
+test_objective_constant_and_maximise (test_gpshim_cpsat.TestCpsatBackend.test_objective_constant_and_maximise) ... ok
+test_random_small_integer_programs_match_brute_force (test_gpshim_cpsat.TestCpsatBackend.test_random_small_integer_programs_match_brute_force) ... ok
+test_range_and_hints (test_gpshim_cpsat.TestCpsatBackend.test_range_and_hints) ... ok
+test_too_many_decimals_falls_back (test_gpshim_cpsat.TestCpsatBackend.test_too_many_decimals_falls_back) ... ok
+test_tsp_lazy_callback (test_gpshim_cpsat.TestCpsatBackend.test_tsp_lazy_callback) ... ok
+test_highs_is_default (test_gpshim_cpsat.TestDefaultStaysHighs.test_highs_is_default) ... ok
+test_backend_file_selects_cpsat (test_gpshim_cpsat.TestEntryPoint.test_backend_file_selects_cpsat) ... ok
+test_both_backends_in_one_process (test_gpshim_cpsat.TestIsolation.test_both_backends_in_one_process) ... ok
+test_dead_worker_falls_back_to_highs (test_gpshim_cpsat.TestIsolation.test_dead_worker_falls_back_to_highs) ... /tmp/abt/test_gpshim_cpsat.py:367: ResourceWarning: unclosed file <_io.TextIOWrapper name=6 encoding='UTF-8'>
+  cs.stop_worker()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/tmp/abt/gpshim_cpsat.py:228: ResourceWarning: unclosed file <_io.TextIOWrapper name=5 encoding='UTF-8'>
+  p, q = _worker(deadline_abs)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/tmp/abt/gpshim_cpsat.py:228: ResourceWarning: unclosed file <_io.TextIOWrapper name=6 encoding='UTF-8'>
+  p, q = _worker(deadline_abs)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_worker_restarts_after_stop (test_gpshim_cpsat.TestIsolation.test_worker_restarts_after_stop) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 4.764s
+
+OK
+unittest_exit=0
