@@ -1,0 +1,6 @@
+{"name": "tiny", "vars": 391, "status": 0, "proven": true, "bound": 64.0, "mip_fun": 64.0, "objective": 64.0, "time_s": 0.023, "checker": "ok"}
+{"name": "large_1", "vars": 76635, "status": 1, "proven": false, "bound": 4941.0, "mip_fun": 4985.0, "objective": 4985.0, "time_s": 120.515, "checker": "ok"}
+{"name": "large_2", "vars": 76635, "status": 1, "proven": false, "bound": 4365.0, "mip_fun": 4373.0, "objective": 4373.0, "time_s": 120.388, "checker": "ok"}
+{"name": "large_3", "vars": 76635, "status": 1, "proven": false, "bound": 4761.0, "mip_fun": 4813.0, "objective": 4813.0, "time_s": 120.485, "checker": "ok"}
+{"name": "large_4", "vars": 76635, "status": 0, "proven": true, "bound": 5180.0, "mip_fun": 5180.0, "objective": 5180.0, "time_s": 67.223, "checker": "ok"}
+{"name": "large_5", "vars": 76635, "status": 1, "proven": false, "bound": 4750.0, "mip_fun": 5143.0, "objective": 5143.0, "time_s": 120.527, "checker": "ok"}
