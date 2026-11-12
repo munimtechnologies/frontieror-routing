@@ -1,0 +1,38 @@
+test_gp_solve_runs_reference_code (test_gpshim.TestEntryPoint.test_gp_solve_runs_reference_code) ... ok
+test_abs (test_gpshim.TestGeneral.test_abs) ... Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+ok
+test_and_or (test_gpshim.TestGeneral.test_and_or) ... ok
+test_max_and_constant (test_gpshim.TestGeneral.test_max_and_constant) ... ok
+test_min (test_gpshim.TestGeneral.test_min) ... ok
+test_pwl (test_gpshim.TestGeneral.test_pwl) ... ok
+test_lazy_terminate_and_plain (test_gpshim.TestLazyCallbacks.test_lazy_terminate_and_plain) ... ok
+test_tsp_subtour_callback_matches_brute_force (test_gpshim.TestLazyCallbacks.test_tsp_subtour_callback_matches_brute_force) ... ok
+test_assignment_tupledict (test_gpshim.TestModelling.test_assignment_tupledict) ... ok
+test_case_insensitive_attributes_and_user_attrs (test_gpshim.TestModelling.test_case_insensitive_attributes_and_user_attrs) ... ok
+test_deadline_caps_time_limit (test_gpshim.TestModelling.test_deadline_caps_time_limit) ... ok
+test_indicator_big_m (test_gpshim.TestModelling.test_indicator_big_m) ... ok
+test_infeasible_and_hasattr (test_gpshim.TestModelling.test_infeasible_and_hasattr) ... ok
+test_injection_as_gurobipy (test_gpshim.TestModelling.test_injection_as_gurobipy) ... ok
+test_knapsack_brute_force (test_gpshim.TestModelling.test_knapsack_brute_force) ... ok
+test_lp_duals (test_gpshim.TestModelling.test_lp_duals) ... ok
+test_model_sense_attribute_and_constant (test_gpshim.TestModelling.test_model_sense_attribute_and_constant) ... ok
+test_numpy_scalars (test_gpshim.TestModelling.test_numpy_scalars) ... ok
+test_old_style_constraint_and_linexpr_forms (test_gpshim.TestModelling.test_old_style_constraint_and_linexpr_forms) ... ok
+test_relax_bound (test_gpshim.TestModelling.test_relax_bound) ... ok
+test_unsupported_raise (test_gpshim.TestModelling.test_unsupported_raise) ... ok
+test_hierarchical_matches_brute_force (test_gpshim.TestMultiObjective.test_hierarchical_matches_brute_force) ... ok
+test_binary_products_exact_brute_force (test_gpshim.TestQuadratic.test_binary_products_exact_brute_force) ... ok
+test_binary_times_bounded_continuous_in_constraint (test_gpshim.TestQuadratic.test_binary_times_bounded_continuous_in_constraint) ... ok
+test_concave_max_qp_flips_sense (test_gpshim.TestQuadratic.test_concave_max_qp_flips_sense) ... ok
+test_convex_qp_continuous (test_gpshim.TestQuadratic.test_convex_qp_continuous) ... ok
+test_nonconvex_raises (test_gpshim.TestQuadratic.test_nonconvex_raises) ... ok
+test_secant_quadratic_constraint_is_conservative (test_gpshim.TestQuadratic.test_secant_quadratic_constraint_is_conservative) ... ok
+test_secant_square_in_mip_objective (test_gpshim.TestQuadratic.test_secant_square_in_mip_objective) ... ok
+test_secant_uses_bounds_implied_by_constraints (test_gpshim.TestQuadratic.test_secant_uses_bounds_implied_by_constraints) ... ok
+
+----------------------------------------------------------------------
+Ran 30 tests in 1.542s
+
+OK
+unittest_exit=0

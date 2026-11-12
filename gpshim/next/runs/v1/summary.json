@@ -1,0 +1,172 @@
+{
+ "meta": {
+  "repo": "munimtechnologies/frontieror-routing",
+  "sha": "a5d4e7be76148477afe198c9acf56aa147e82bd1",
+  "benchmark_revision": "ef42a2eac13595453f986d9df0b62e86e75ab596",
+  "highspy": "present",
+  "python": "3.12.15 (main, Oct  6 2026, 04:38:21) [GCC 14.2.0]",
+  "cpu_count": 8,
+  "started": "2026-11-12T16:43:42Z",
+  "tiny_limit": 20.0,
+  "large_limit": 60.0,
+  "large_max_bytes": 1500000
+ },
+ "tasks": 37,
+ "skipped_for_budget": [],
+ "large_eligible": 28,
+ "stages": {
+  "tiny": {
+   "runs": 37,
+   "by_status": {
+    "rejected": 3,
+    "accepted": 24,
+    "crash": 4,
+    "no_solution": 5,
+    "overtime": 1
+   },
+   "accepted": 24,
+   "mean_score_all_runs": 0.648649,
+   "median_score_accepted": 1.0,
+   "score_ge_0_99": 23,
+   "score_gt_1": [
+    "frey2017"
+   ],
+   "static_callback_accepted": [
+    "alba2013",
+    "archetti2007",
+    "colombi2017",
+    "cordeau2014",
+    "fischetti1997",
+    "fischetti1998",
+    "fragkos2021",
+    "furini2021",
+    "kobeaga2024",
+    "laporte2003",
+    "lee1996",
+    "pessoa2021"
+   ],
+   "static_callback_runs": 17,
+   "failure_kinds": [
+    [
+     "gpshim.GurobiError: gpshim: quadratic constraint 'norm_N' has a term that is neither a product with a binary variable nor a bounded convex square",
+     1,
+     [
+      "amaldi2013"
+     ]
+    ],
+    [
+     "gpshim.GurobiError: gpshim: quadratic constraint 'persp_N' has a term that is neither a product with a binary variable nor a bounded convex square",
+     1,
+     [
+      "bertsimas2022"
+     ]
+    ],
+    [
+     "gpshim.GurobiError: gpshim: quadratic constraint 'weymouth_N_N' has a term that is neither a product with a binary variable nor a bounded convex square",
+     1,
+     [
+      "byeon2022"
+     ]
+    ],
+    [
+     "gpshim.GurobiError: gpshim: the objective has a quadratic term that is neither a product with a binary variable nor a bounded convex square (or the model is a M",
+     1,
+     [
+      "hassannayebi2016"
+     ]
+    ]
+   ],
+   "accepted_tasks": [
+    "alba2013",
+    "archetti2007",
+    "bergman2019",
+    "castro2021",
+    "colombi2017",
+    "cordeau2014",
+    "fischetti1997",
+    "fischetti1998",
+    "fleszar2022b",
+    "fragkos2021",
+    "frey2017",
+    "furini2021",
+    "gualandi2012",
+    "kobayashi2021",
+    "kobeaga2024",
+    "lai2021",
+    "laporte2003",
+    "lee1996",
+    "nagy2015",
+    "pessoa2021",
+    "pettersson2020",
+    "rothenbacher2018",
+    "yang2013",
+    "zetina2020"
+   ]
+  },
+  "large_1": {
+   "runs": 28,
+   "by_status": {
+    "crash": 8,
+    "no_solution": 10,
+    "accepted": 5,
+    "rejected": 1,
+    "overtime_no_output": 2,
+    "overtime": 2
+   },
+   "accepted": 5,
+   "mean_score_all_runs": 0.121865,
+   "median_score_accepted": 0.890494,
+   "score_ge_0_99": 1,
+   "score_gt_1": [],
+   "static_callback_accepted": [
+    "cote2019",
+    "furini2021",
+    "colombi2017"
+   ],
+   "static_callback_runs": 13,
+   "failure_kinds": [
+    [
+     "",
+     5,
+     [
+      "kress2019",
+      "frey2017",
+      "rothenbacher2018",
+      "lai2021",
+      "kobeaga2024"
+     ]
+    ],
+    [
+     "gpshim.GurobiError: gpshim: the objective has a quadratic term that is neither a product with a binary variable nor a bounded convex square (or the model is a M",
+     1,
+     [
+      "hassannayebi2016"
+     ]
+    ],
+    [
+     "gpshim.GurobiError: gpshim: quadratic constraint 'norm_N' has a term that is neither a product with a binary variable nor a bounded convex square",
+     1,
+     [
+      "amaldi2013"
+     ]
+    ],
+    [
+     "isolation\" cuts: sum_{v in C} x_v <= sum_{u in N(C)\\C} x_u for each",
+     1,
+     [
+      "gschwind2021"
+     ]
+    ]
+   ],
+   "accepted_tasks": [
+    "bergman2019",
+    "colombi2017",
+    "cote2019",
+    "furini2021",
+    "zetina2020"
+   ]
+  }
+ },
+ "finished": "2026-11-12T17:10:49Z",
+ "elapsed_min": 27.15
+}
