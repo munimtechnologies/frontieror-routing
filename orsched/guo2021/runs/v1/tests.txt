@@ -1,0 +1,14 @@
+test_cli_in_time (test_guo2021.TestCli.test_cli_in_time) ... ok
+test_pareto_matches_bruteforce (test_guo2021.TestRecourse.test_pareto_matches_bruteforce) ... ok
+test_rec_dp_branch_matches_enumeration (test_guo2021.TestRecourse.test_rec_dp_branch_matches_enumeration) ... ok
+test_rec_matches_bruteforce (test_guo2021.TestRecourse.test_rec_matches_bruteforce) ... ok
+test_all_mandatory_keeps_w_nonempty (test_guo2021.TestSearch.test_all_mandatory_keeps_w_nonempty) ... ok
+test_model_cost_equals_checker_objective (test_guo2021.TestSearch.test_model_cost_equals_checker_objective) ... ok
+test_solution_contract (test_guo2021.TestSearch.test_solution_contract) ... ok
+test_tiny_optimum_by_enumeration (test_guo2021.TestSearch.test_tiny_optimum_by_enumeration) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 6.932s
+
+OK
+exit=0
