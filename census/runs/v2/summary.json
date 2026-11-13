@@ -1,0 +1,19 @@
+{
+ "census_version": "0.2.0",
+ "revision": "ef42a2eac13595453f986d9df0b62e86e75ab596",
+ "tasks": 7,
+ "cases": 42,
+ "ran": 28,
+ "with_stored_result": 28,
+ "reproduced": 28,
+ "mismatches": 0,
+ "checker_failed": 0,
+ "skipped": {
+  "too_big": 14
+ },
+ "tasks_with_instance_default_reads": 0,
+ "tasks_with_instance_default_reads_list": [],
+ "tasks_with_any_absent_instance_key_read": 0,
+ "he2020_instance_keys": [],
+ "traced_timeouts": 0
+}

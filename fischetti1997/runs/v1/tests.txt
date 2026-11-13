@@ -1,0 +1,18 @@
+test_agreement (test_fischetti1997.TestAgainstOfficialChecker.test_agreement) ... ok
+test_one_worker (test_fischetti1997.TestCLI.test_one_worker) ... ok
+test_tiny_budget_still_answers (test_fischetti1997.TestCLI.test_tiny_budget_still_answers) ... ok
+test_two_workers_within_time (test_fischetti1997.TestCLI.test_two_workers_within_time) ... ok
+test_cluster_opt_matches_brute_force_for_fixed_order (test_fischetti1997.TestMoves.test_cluster_opt_matches_brute_force_for_fixed_order) ... ok
+test_moves_never_worsen_and_keep_tours_valid (test_fischetti1997.TestMoves.test_moves_never_worsen_and_keep_tours_valid) ... ok
+test_perturb_is_a_permutation (test_fischetti1997.TestMoves.test_perturb_is_a_permutation) ... ok
+test_search_finds_brute_force_optimum (test_fischetti1997.TestMoves.test_search_finds_brute_force_optimum) ... ok
+test_bad_sizes_raise (test_fischetti1997.TestProblem.test_bad_sizes_raise) ... ok
+test_matrix_matches_checker_indexing (test_fischetti1997.TestProblem.test_matrix_matches_checker_indexing) ... ok
+test_accepts_valid (test_fischetti1997.TestVerify.test_accepts_valid) ... ok
+test_rejections (test_fischetti1997.TestVerify.test_rejections) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 8.554s
+
+OK
+exit=0
