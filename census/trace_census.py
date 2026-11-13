@@ -3,7 +3,7 @@
 MV2 of Munim, Inc. (mv2@munimtech.com). Made with AI agents working in MV2's name. License: Apache-2.0.
 
   python census/trace_census.py --out-dir /out/census [--max-bytes 5000000] [--timeout 120] [--budget-min 200]
-                                [--only slug ...]
+                                [--with-helpers] [--max-helper-bytes 200000000] [--only slug ...]
 
 For each task of the public FrontierOR benchmark (Hugging Face frontieror/FrontierOR, CC BY 4.0, one pinned
 revision) and each of its six cases (tiny + large_1..5) whose instance and Gurobi solution are both at most
@@ -11,6 +11,12 @@ revision) and each of its six cases (tiny + large_1..5) whose instance and Gurob
 gurobi_feasi_result into a scratch folder (deleted after each task), then runs the checker unchanged through
 trace_run.py (every read of an absent key recorded, see there). If the traced run fails or times out, the plain
 checker is run once more for the verdict. Rows go to rows.jsonl as each case finishes.
+
+--with-helpers (v0.2): some checkers import modules the benchmark ships next to them (solverless_witness.py,
+release_contract.py) and read data from task subfolders (solverless_models/*.npz). With this flag every file of the
+task folder except the per-case folders (instance/, gurobi_solution/, gurobi_solution_log/, gurobi_feasi_result/) is
+downloaded first, at its own relative path, unless their total is over --max-helper-bytes. v0.1 fetched only
+feasibility_check.py, so those checkers failed at import (see census/score-v1.md).
 
 Outputs: rows.jsonl, by_task.json, summary.json, defaults.md (instance keys a checker read but the instance lacks),
 verdicts.md (cases where today's checker disagrees with the stored gurobi_feasi_result), manifest.json.
@@ -31,10 +37,37 @@ for p in (KIT, HERE):
 
 import frontieror_hf as HF  # noqa: E402
 
+__version__ = "0.2.0"
+
 CASES = [("tiny", "tiny_instance.json", "tiny_solution.json", "tiny_feasi_result.json")] + [
     ("large_%d" % k, "large_instance_%d.json" % k, "large_solution_%d.json" % k, "large_feasi_result_%d.json" % k)
     for k in range(1, 6)]
 DEFAULT_KINDS = ("get", "setdefault")
+CASE_DIRS = ("instance", "gurobi_solution", "gurobi_solution_log", "gurobi_feasi_result")
+
+
+def helper_files(files, tid):
+    """Files of the task folder a checker may need besides its own cases: [(path, rel, size)], sorted by rel.
+
+    Everything under tasks/<tid>/ except feasibility_check.py (fetched separately) and the per-case folders."""
+    base = "tasks/%s/" % tid
+    out = []
+    for e in files:
+        if e.get("type") != "file":
+            continue
+        p = e.get("path") or ""
+        if not p.startswith(base):
+            continue
+        rel = p[len(base):]
+        if not rel or rel == "feasibility_check.py":
+            continue
+        parts = rel.split("/")
+        if len(parts) > 1 and parts[0] in CASE_DIRS:
+            continue
+        if any(x in ("", ".", "..") for x in parts):
+            continue
+        out.append((p, rel, int(e.get("size") or 0)))
+    return sorted(out, key=lambda t: t[1])
 
 
 def run_traced(checker, ip, sp, work, name, timeout):
@@ -98,7 +131,8 @@ def stored_verdict(path):
     return r.get("feasible"), r.get("violated_constraints")
 
 
-def census_task(tid, rev, scratch, max_bytes, timeout, done, rows_p):
+def census_task(tid, rev, scratch, max_bytes, timeout, done, rows_p, with_helpers=False,
+                max_helper_bytes=200000000):
     files = HF.tree("tasks/" + tid, rev, recursive=True)
     size = {e["path"]: int(e.get("size") or 0) for e in files if e.get("type") == "file"}
     base = "tasks/" + tid + "/"
@@ -109,13 +143,25 @@ def census_task(tid, rev, scratch, max_bytes, timeout, done, rows_p):
         return [{"task": tid, "name": "*", "status": "no_checker"}]
     checker = os.path.join(tdir, "feasibility_check.py")
     HF.download(checker_rel, rev, checker, expect_size=size[checker_rel])
+    helpers = {"mode": "off", "files": 0, "bytes": 0}
+    if with_helpers:
+        hl = helper_files(files, tid)
+        total = sum(s for _, _, s in hl)
+        helpers = {"mode": "on", "files": len(hl), "bytes": total,
+                   "py": [rel for _, rel, _ in hl if rel.endswith(".py")][:20]}
+        if total > max_helper_bytes:
+            helpers["mode"] = "too_big"
+        else:
+            for p, rel, s in hl:
+                HF.download(p, rev, os.path.join(tdir, *rel.split("/")), expect_size=s)
     rows = []
     for name, ifile, sfile, ffile in CASES:
         if (tid, name) in done:
             continue
         ipath, spath, fpath = base + "instance/" + ifile, base + "gurobi_solution/" + sfile, \
             base + "gurobi_feasi_result/" + ffile
-        row = {"task": tid, "name": name, "instance_bytes": size.get(ipath), "solution_bytes": size.get(spath)}
+        row = {"task": tid, "name": name, "instance_bytes": size.get(ipath), "solution_bytes": size.get(spath),
+               "helpers": helpers}
         if ipath not in size:
             row["status"] = "no_instance"
         elif spath not in size:
@@ -200,6 +246,7 @@ def aggregate(rows, rev, out):
                            if any(a["kind"] in DEFAULT_KINDS for a in v["instance_keys"].values()))
     tasks_any = sorted(t for t, v in by_task.items() if v["instance_keys"])
     summary = {
+        "census_version": __version__,
         "revision": rev, "tasks": len(by_task), "cases": len(rows), "ran": len(ran),
         "with_stored_result": len(with_stored),
         "reproduced": sum(1 for r in with_stored if r.get("reproduced")),
@@ -259,13 +306,15 @@ def main(argv=None):
     ap.add_argument("--timeout", type=float, default=120.0)
     ap.add_argument("--budget-min", type=float, default=200.0)
     ap.add_argument("--delay", type=float, default=0.2)
+    ap.add_argument("--with-helpers", action="store_true")
+    ap.add_argument("--max-helper-bytes", type=int, default=200000000)
     ap.add_argument("--only", nargs="*", default=None)
     a = ap.parse_args(argv)
     a.scratch = os.path.abspath(a.scratch)
     os.makedirs(a.out_dir, exist_ok=True)
     t0 = time.monotonic()
     rev = HF.revision()
-    print("revision", rev, flush=True)
+    print("revision", rev, "census", __version__, "helpers", a.with_helpers, flush=True)
     tasks = sorted(e["path"].split("/")[-1] for e in HF.tree("tasks", rev) if e.get("type") == "directory")
     if a.only:
         tasks = [t for t in tasks if t in set(a.only)]
@@ -281,17 +330,21 @@ def main(argv=None):
             stopped_early = True
             break
         try:
-            census_task(tid, rev, a.scratch, a.max_bytes, a.timeout, done, rows_p)
+            census_task(tid, rev, a.scratch, a.max_bytes, a.timeout, done, rows_p, with_helpers=a.with_helpers,
+                        max_helper_bytes=a.max_helper_bytes)
         except Exception as e:  # noqa: BLE001
             errors.append({"task": tid, "error": repr(e)[:300]})
             print("census-error", tid, repr(e)[:300], flush=True)
             shutil.rmtree(os.path.join(a.scratch, tid), ignore_errors=True)
         time.sleep(a.delay)
-    with open(rows_p, encoding="utf-8") as f:
-        rows = [json.loads(x) for x in f if x.strip()]
+    rows = []
+    if os.path.exists(rows_p):
+        with open(rows_p, encoding="utf-8") as f:
+            rows = [json.loads(x) for x in f if x.strip()]
     summary = aggregate(rows, rev, a.out_dir)
     with open(os.path.join(a.out_dir, "manifest.json"), "w", encoding="utf-8") as f:
-        json.dump({"revision": rev, "tasks_listed": len(tasks), "errors": errors, "stopped_early": stopped_early,
+        json.dump({"revision": rev, "census_version": __version__, "with_helpers": a.with_helpers,
+                   "only": a.only, "tasks_listed": len(tasks), "errors": errors, "stopped_early": stopped_early,
                    "max_bytes": a.max_bytes, "timeout_s": a.timeout,
                    "minutes": round((time.monotonic() - t0) / 60.0, 1)}, f, indent=1)
     return 0 if summary else 1
