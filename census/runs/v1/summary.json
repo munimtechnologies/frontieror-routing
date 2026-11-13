@@ -1,0 +1,28 @@
+{
+ "revision": "ef42a2eac13595453f986d9df0b62e86e75ab596",
+ "tasks": 180,
+ "cases": 1080,
+ "ran": 869,
+ "with_stored_result": 869,
+ "reproduced": 869,
+ "mismatches": 0,
+ "checker_failed": 28,
+ "skipped": {
+  "too_big": 183
+ },
+ "tasks_with_instance_default_reads": 9,
+ "tasks_with_instance_default_reads_list": [
+  "bertsimas2022",
+  "carosi2019",
+  "legrain2024",
+  "rothenbacher2018",
+  "vidal2011",
+  "wang2019",
+  "wei2020",
+  "wu2018",
+  "zohali2022"
+ ],
+ "tasks_with_any_absent_instance_key_read": 10,
+ "he2020_instance_keys": [],
+ "traced_timeouts": 5
+}

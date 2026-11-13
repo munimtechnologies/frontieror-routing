@@ -1,0 +1,297 @@
+{
+ "tally": {
+  "cases": 6,
+  "ok": 6,
+  "by_status": {
+   "ok": 6
+  },
+  "at_reference": 2,
+  "better_than_reference": 4,
+  "mean_score": 1.081575,
+  "mean_gap_pct": -7.139,
+  "max_wall_s": 55.454,
+  "time_limit": 60.0,
+  "paused_attempts": 1,
+  "still_paused": [],
+  "task": "he2020",
+  "revision": "ef42a2eac13595453f986d9df0b62e86e75ab596",
+  "official_feasible": 6,
+  "checkers_agree": 6,
+  "checker_comparisons": 12,
+  "large_mean_score": 1.09789,
+  "large_within_1pct": 5,
+  "large_strictly_better": 4
+ },
+ "rows": [
+  {
+   "name": "tiny",
+   "attempts": [
+    {
+     "exit": 0,
+     "wall_s": 55.315,
+     "max_tick_gap_s": 0.252,
+     "paused": false
+    }
+   ],
+   "wall_s": 55.315,
+   "exit": 0,
+   "paused": false,
+   "reference": 1102.6980000000003,
+   "reference_proven": null,
+   "stated": 1102.6980000000003,
+   "objective": 1102.6980000000003,
+   "status": "ok",
+   "score": 1.0,
+   "gap_pct": 0.0,
+   "n_customers": 25,
+   "vehicles": 14,
+   "capacity": 200,
+   "rho": 0.01,
+   "rho_source": "inconvenience_cost_function.rho",
+   "has_top_level_rho_key": true,
+   "gurobi_ours_feasible": false,
+   "gurobi_ours_objective": null,
+   "gurobi_ours_reason": "route shape [0, 26]",
+   "gurobi_official_feasible": true,
+   "gurobi_official_violated": [],
+   "gurobi_log": {
+    "lines": 2,
+    "last": {
+     "time": 0.499,
+     "objective_value": 1102.6980000000049
+    }
+   },
+   "official_feasible": true,
+   "official_violated": [],
+   "official_violations": "[]",
+   "official_exit": 0,
+   "ours_feasible": true
+  },
+  {
+   "name": "large_1",
+   "attempts": [
+    {
+     "exit": 0,
+     "wall_s": 55.294,
+     "max_tick_gap_s": 0.282,
+     "paused": false
+    }
+   ],
+   "wall_s": 55.294,
+   "exit": 0,
+   "paused": false,
+   "reference": 980.0219999997644,
+   "reference_proven": null,
+   "stated": 980.0219999999999,
+   "objective": 980.0219999999999,
+   "status": "ok",
+   "score": 1.0,
+   "gap_pct": 0.0,
+   "n_customers": 30,
+   "vehicles": 30,
+   "capacity": 200,
+   "rho": 0.1,
+   "rho_source": "inconvenience_cost_function.rho",
+   "has_top_level_rho_key": true,
+   "gurobi_ours_feasible": false,
+   "gurobi_ours_objective": null,
+   "gurobi_ours_reason": "route shape [0, 31]",
+   "gurobi_official_feasible": true,
+   "gurobi_official_violated": [],
+   "gurobi_log": {
+    "lines": 13,
+    "last": {
+     "time": 109.134,
+     "objective_value": 980.0219999999972
+    }
+   },
+   "official_feasible": true,
+   "official_violated": [],
+   "official_violations": "[]",
+   "official_exit": 0,
+   "ours_feasible": true
+  },
+  {
+   "name": "large_2",
+   "attempts": [
+    {
+     "exit": 0,
+     "wall_s": 55.318,
+     "max_tick_gap_s": 0.303,
+     "paused": false
+    }
+   ],
+   "wall_s": 55.318,
+   "exit": 0,
+   "paused": false,
+   "reference": 1208.6100000000079,
+   "reference_proven": null,
+   "stated": 1148.9885000000004,
+   "objective": 1148.9885000000004,
+   "status": "ok",
+   "score": 1.05189,
+   "gap_pct": -4.9331,
+   "n_customers": 50,
+   "vehicles": 50,
+   "capacity": 200,
+   "rho": 0.1,
+   "rho_source": "inconvenience_cost_function.rho",
+   "has_top_level_rho_key": true,
+   "gurobi_ours_feasible": false,
+   "gurobi_ours_objective": null,
+   "gurobi_ours_reason": "route shape [0, 51]",
+   "gurobi_official_feasible": true,
+   "gurobi_official_violated": [],
+   "gurobi_log": {
+    "lines": 31,
+    "last": {
+     "time": 3196.063,
+     "objective_value": 1208.6100000000079
+    }
+   },
+   "official_feasible": true,
+   "official_violated": [],
+   "official_violations": "[]",
+   "official_exit": 0,
+   "ours_feasible": true
+  },
+  {
+   "name": "large_3",
+   "attempts": [
+    {
+     "exit": 0,
+     "wall_s": 55.381,
+     "max_tick_gap_s": 0.251,
+     "paused": false
+    }
+   ],
+   "wall_s": 55.381,
+   "exit": 0,
+   "paused": false,
+   "reference": 1254.448499999009,
+   "reference_proven": null,
+   "stated": 1045.398,
+   "objective": 1045.398,
+   "status": "ok",
+   "score": 1.199972,
+   "gap_pct": -16.6647,
+   "n_customers": 100,
+   "vehicles": 100,
+   "capacity": 200,
+   "rho": 0.1,
+   "rho_source": "inconvenience_cost_function.rho",
+   "has_top_level_rho_key": true,
+   "gurobi_ours_feasible": false,
+   "gurobi_ours_objective": null,
+   "gurobi_ours_reason": "route shape [0, 101]",
+   "gurobi_official_feasible": true,
+   "gurobi_official_violated": [],
+   "gurobi_log": {
+    "lines": 40,
+    "last": {
+     "time": 3411.294,
+     "objective_value": 1254.4485000008717
+    }
+   },
+   "official_feasible": true,
+   "official_violated": [],
+   "official_violations": "[]",
+   "official_exit": 0,
+   "ours_feasible": true
+  },
+  {
+   "name": "large_4",
+   "attempts": [
+    {
+     "exit": "killed",
+     "wall_s": 310.824,
+     "max_tick_gap_s": 295.536,
+     "paused": true
+    },
+    {
+     "exit": 0,
+     "wall_s": 55.454,
+     "max_tick_gap_s": 0.262,
+     "paused": false
+    }
+   ],
+   "wall_s": 55.454,
+   "exit": 0,
+   "paused": false,
+   "reference": 822.1126666665077,
+   "reference_proven": null,
+   "stated": 735.2485000000001,
+   "objective": 735.2485000000001,
+   "status": "ok",
+   "score": 1.118143,
+   "gap_pct": -10.566,
+   "n_customers": 100,
+   "vehicles": 100,
+   "capacity": 700,
+   "rho": 0.1,
+   "rho_source": "inconvenience_cost_function.rho",
+   "has_top_level_rho_key": true,
+   "gurobi_ours_feasible": false,
+   "gurobi_ours_objective": null,
+   "gurobi_ours_reason": "route shape [0, 101]",
+   "gurobi_official_feasible": true,
+   "gurobi_official_violated": [],
+   "gurobi_log": {
+    "lines": 21,
+    "last": {
+     "time": 2784.963,
+     "objective_value": 822.1126666590571
+    }
+   },
+   "official_feasible": true,
+   "official_violated": [],
+   "official_violations": "[]",
+   "official_exit": 0,
+   "ours_feasible": true
+  },
+  {
+   "name": "large_5",
+   "attempts": [
+    {
+     "exit": 0,
+     "wall_s": 55.384,
+     "max_tick_gap_s": 0.311,
+     "paused": false
+    }
+   ],
+   "wall_s": 55.384,
+   "exit": 0,
+   "paused": false,
+   "reference": 2898.068550188211,
+   "reference_proven": null,
+   "stated": 2588.846366666667,
+   "objective": 2588.846366666667,
+   "status": "ok",
+   "score": 1.119444,
+   "gap_pct": -10.6699,
+   "n_customers": 100,
+   "vehicles": 100,
+   "capacity": 200,
+   "rho": 0.1,
+   "rho_source": "inconvenience_cost_function.rho",
+   "has_top_level_rho_key": true,
+   "gurobi_ours_feasible": false,
+   "gurobi_ours_objective": null,
+   "gurobi_ours_reason": "route shape [0, 101]",
+   "gurobi_official_feasible": true,
+   "gurobi_official_violated": [],
+   "gurobi_log": {
+    "lines": 12,
+    "last": {
+     "time": 1073.29,
+     "objective_value": 2898.0685501881817
+    }
+   },
+   "official_feasible": true,
+   "official_violated": [],
+   "official_violations": "[]",
+   "official_exit": 0,
+   "ours_feasible": true
+  }
+ ]
+}
