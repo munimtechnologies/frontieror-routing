@@ -1,0 +1,47 @@
+{
+ "revision": "ef42a2eac13595453f986d9df0b62e86e75ab596",
+ "tasks": 180,
+ "tasks_scanned": 180,
+ "tasks_all_six_scanned": 161,
+ "cases_scanned": 992,
+ "cases_skipped": {
+  "too_big": 88
+ },
+ "schema_errors": [],
+ "tasks_with_extra": 177,
+ "tasks_with_extra_checker_mentions": 17,
+ "tasks_with_missing": 13,
+ "tasks_with_missing_checker_mentions": 5,
+ "tasks_with_checker_get_absent": [
+  "carosi2019",
+  "vidal2011",
+  "wei2020",
+  "wu2018",
+  "zohali2022"
+ ],
+ "extra_paths": 1218,
+ "missing_paths": 48,
+ "watch": {
+  "cordeau2019": {
+   "problem_types": "6/6"
+  },
+  "vidal2011": {
+   "p": "0/6",
+   "t": "6/6"
+  },
+  "wei2020": {
+   "conflicts": "0/6",
+   "edges": "0/6"
+  },
+  "gangammanavar2020": {
+   "seed": "6/6"
+  },
+  "xie2019": {
+   "random_seed": "6/6"
+  },
+  "he2020": {
+   "inconvenience_cost_factor_rho": "6/6",
+   "inconvenience_cost_function": "6/6"
+  }
+ }
+}
