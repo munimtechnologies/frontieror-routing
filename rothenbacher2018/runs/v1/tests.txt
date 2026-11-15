@@ -1,0 +1,24 @@
+test_gurobi_tiny_both_checkers (test_rothenbacher2018.TestContestWay.test_gurobi_tiny_both_checkers) ... skipped 'needs MV2_FROC_HF'
+test_synthetic_official_accepts (test_rothenbacher2018.TestContestWay.test_synthetic_official_accepts) ... skipped 'needs MV2_FROC_HF'
+test_tiny_official_and_mirror_agree_on_mutations (test_rothenbacher2018.TestContestWay.test_tiny_official_and_mirror_agree_on_mutations) ... skipped 'needs MV2_FROC_HF'
+test_cheapest_feasible_insertion_matches_brute_force (test_rothenbacher2018.TestInsertion.test_cheapest_feasible_insertion_matches_brute_force) ... ok
+test_make_route_matches_independent_rules (test_rothenbacher2018.TestRoute.test_make_route_matches_independent_rules) ... ok
+test_finds_brute_force_optimum_tiny (test_rothenbacher2018.TestSearch.test_finds_brute_force_optimum_tiny) ... FAIL
+test_main_contest_way (test_rothenbacher2018.TestSearch.test_main_contest_way) ... ok
+test_medium_feasible_and_improves (test_rothenbacher2018.TestSearch.test_medium_feasible_and_improves) ... ok
+test_accepts_built_solution (test_rothenbacher2018.TestVerify.test_accepts_built_solution) ... ok
+test_rejections (test_rothenbacher2018.TestVerify.test_rejections) ... ok
+
+======================================================================
+FAIL: test_finds_brute_force_optimum_tiny (test_rothenbacher2018.TestSearch.test_finds_brute_force_optimum_tiny)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/work/test_rothenbacher2018.py", line 437, in test_finds_brute_force_optimum_tiny
+    self.assertAlmostEqual(sol["objective_value"], opt, places=6, msg="seed %d" % seed)
+AssertionError: 187.14299999999997 != 150.29999999999998 within 6 places (36.84299999999999 difference) : seed 1
+
+----------------------------------------------------------------------
+Ran 10 tests in 8.595s
+
+FAILED (failures=1, skipped=3)
+exit=0

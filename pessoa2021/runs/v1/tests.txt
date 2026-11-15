@@ -1,0 +1,18 @@
+test_agreement (test_pessoa2021.TestAgainstOfficialChecker.test_agreement) ... ok
+test_one_worker_asymmetric (test_pessoa2021.TestCLI.test_one_worker_asymmetric) ... ok
+test_tiny_budget_still_answers (test_pessoa2021.TestCLI.test_tiny_budget_still_answers) ... ok
+test_two_workers_within_time (test_pessoa2021.TestCLI.test_two_workers_within_time) ... ok
+test_search_finds_brute_force_optimum (test_pessoa2021.TestOptimum.test_search_finds_brute_force_optimum) ... ok
+test_tight_capacity_found (test_pessoa2021.TestOptimum.test_tight_capacity_found) ... ok
+test_incremental_insertion_load (test_pessoa2021.TestRobustLoad.test_incremental_insertion_load) ... ok
+test_worst_case_is_max_over_budget_vertices (test_pessoa2021.TestRobustLoad.test_worst_case_is_max_over_budget_vertices) ... ok
+test_polish_never_worsens (test_pessoa2021.TestState.test_polish_never_worsens) ... ok
+test_ruin_recreate_keeps_caches_exact (test_pessoa2021.TestState.test_ruin_recreate_keeps_caches_exact) ... ok
+test_accepts_valid (test_pessoa2021.TestVerify.test_accepts_valid) ... ok
+test_rejections (test_pessoa2021.TestVerify.test_rejections) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 29.281s
+
+OK
+exit=0

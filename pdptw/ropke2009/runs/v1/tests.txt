@@ -1,0 +1,13 @@
+test_contest_cli (test_ropke2009.Cli.test_contest_cli) ... ok
+test_matches_brute_force (test_ropke2009.Insertion.test_matches_brute_force) ... ok
+test_solo_cost (test_ropke2009.Insertion.test_solo_cost) ... ok
+test_official_checker_agrees (test_ropke2009.Official.test_official_checker_agrees) ... ok
+test_reaches_brute_force_optimum (test_ropke2009.Search.test_reaches_brute_force_optimum) ... brute-force optimum vs ours: [(11, 190.20715786470532, 190.20715786470535), (12, 145.07892994822916, 145.07892994822916), (13, 163.20497086660328, 163.20497086660328)]
+ok
+test_verify_rejects_bad (test_ropke2009.Search.test_verify_rejects_bad) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 7.336s
+
+OK
+exit=0

@@ -1,0 +1,9 @@
+test_gurobi_tiny_both_checkers (test_rothenbacher2018.TestContestWay.test_gurobi_tiny_both_checkers) ... ok
+test_synthetic_official_accepts (test_rothenbacher2018.TestContestWay.test_synthetic_official_accepts) ... ok
+test_tiny_official_and_mirror_agree_on_mutations (test_rothenbacher2018.TestContestWay.test_tiny_official_and_mirror_agree_on_mutations) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 8.054s
+
+OK
+exit=0

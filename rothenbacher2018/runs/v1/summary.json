@@ -1,0 +1,2010 @@
+{
+ "repo_sha": "ab8189c944560facaab73150a017956dd685ec92",
+ "version": "0.1.0",
+ "strict": true,
+ "python": "3.12.16 (main, Oct 28 2026, 04:34:44) [GCC 14.2.0]",
+ "cpu_count": 8,
+ "variants": {
+  "ttr-60s": {
+   "time_limit": 60.0,
+   "revision": "ef42a2eac13595453f986d9df0b62e86e75ab596",
+   "cases": 6,
+   "official_feasible": 6,
+   "ours_agree_official": 6,
+   "official_rejected": {},
+   "status": {
+    "tiny": "ok",
+    "large_1": "ok",
+    "large_2": "ok",
+    "large_3": "ok",
+    "large_4": "ok",
+    "large_5": "ok"
+   },
+   "objective": {
+    "tiny": 398.57,
+    "large_1": 1722.4470000000001,
+    "large_2": 2062.752,
+    "large_3": 1401.7549999999999,
+    "large_4": 2003.5549999999998,
+    "large_5": 1574.788
+   },
+   "reference": {
+    "tiny": 345.846,
+    "large_1": 2107.68,
+    "large_2": 2399.929,
+    "large_3": 1570.066,
+    "large_4": 2775.561,
+    "large_5": 2151.54
+   },
+   "score": {
+    "tiny": 0.867717,
+    "large_1": 1.223654,
+    "large_2": 1.16346,
+    "large_3": 1.120072,
+    "large_4": 1.385318,
+    "large_5": 1.366241
+   },
+   "gap_pct": {
+    "tiny": 15.2449,
+    "large_1": -18.2776,
+    "large_2": -14.0495,
+    "large_3": -10.72,
+    "large_4": -27.8144,
+    "large_5": -26.8065
+   },
+   "large_mean_score": 1.251749,
+   "large_strictly_better": 5,
+   "wall_s": {
+    "tiny": 53.127,
+    "large_1": 53.149,
+    "large_2": 53.13,
+    "large_3": 53.114,
+    "large_4": 53.229,
+    "large_5": 53.141
+   },
+   "gurobi_official_feasible": {
+    "tiny": true,
+    "large_1": true,
+    "large_2": true,
+    "large_3": true,
+    "large_4": true,
+    "large_5": true
+   },
+   "gurobi_ours_feasible": {
+    "tiny": true,
+    "large_1": true,
+    "large_2": true,
+    "large_3": true,
+    "large_4": true,
+    "large_5": true
+   },
+   "size": {
+    "tiny": {
+     "n_truck_customers": 3,
+     "n_trailer_customers": 3,
+     "n_transshipment": 3,
+     "n_locations": 10,
+     "classes": 4,
+     "trucks": 2,
+     "trailers": 2,
+     "supply": 135,
+     "planning_horizon": [
+      0,
+      345.0
+     ],
+     "max_route_duration": 345.0,
+     "with_time_window": 0,
+     "mean_window_width": null,
+     "customer_time_windows": false,
+     "strict_parking_rule": false,
+     "transfer_time_type": "constant",
+     "handling": [
+      2.0,
+      2.0,
+      0.0
+     ]
+    },
+    "large_1": {
+     "n_truck_customers": 25,
+     "n_trailer_customers": 25,
+     "n_transshipment": 25,
+     "n_locations": 76,
+     "classes": 4,
+     "trucks": 18,
+     "trailers": 14,
+     "supply": 1011,
+     "planning_horizon": [
+      0,
+      675.0
+     ],
+     "max_route_duration": 675.0,
+     "with_time_window": 0,
+     "mean_window_width": null,
+     "customer_time_windows": false,
+     "strict_parking_rule": false,
+     "transfer_time_type": "constant",
+     "handling": [
+      2.0,
+      2.0,
+      0.0
+     ]
+    },
+    "large_2": {
+     "n_truck_customers": 25,
+     "n_trailer_customers": 25,
+     "n_transshipment": 25,
+     "n_locations": 76,
+     "classes": 4,
+     "trucks": 18,
+     "trailers": 14,
+     "supply": 1057,
+     "planning_horizon": [
+      0.0,
+      1000.0
+     ],
+     "max_route_duration": 1000.0,
+     "with_time_window": 50,
+     "mean_window_width": 92.536,
+     "customer_time_windows": true,
+     "strict_parking_rule": true,
+     "transfer_time_type": "constant",
+     "handling": [
+      2.0,
+      2.0,
+      0.0
+     ]
+    },
+    "large_3": {
+     "n_truck_customers": 25,
+     "n_trailer_customers": 25,
+     "n_transshipment": 25,
+     "n_locations": 76,
+     "classes": 4,
+     "trucks": 18,
+     "trailers": 14,
+     "supply": 1117,
+     "planning_horizon": [
+      0.0,
+      675.0
+     ],
+     "max_route_duration": 675.0,
+     "with_time_window": 50,
+     "mean_window_width": 19.38,
+     "customer_time_windows": true,
+     "strict_parking_rule": true,
+     "transfer_time_type": "constant",
+     "handling": [
+      2.0,
+      2.0,
+      0.0
+     ]
+    },
+    "large_4": {
+     "n_truck_customers": 25,
+     "n_trailer_customers": 25,
+     "n_transshipment": 25,
+     "n_locations": 76,
+     "classes": 4,
+     "trucks": 18,
+     "trailers": 14,
+     "supply": 1010,
+     "planning_horizon": [
+      0.0,
+      675.0
+     ],
+     "max_route_duration": 675.0,
+     "with_time_window": 50,
+     "mean_window_width": 19.452,
+     "customer_time_windows": true,
+     "strict_parking_rule": true,
+     "transfer_time_type": "constant",
+     "handling": [
+      2.0,
+      2.0,
+      0.0
+     ]
+    },
+    "large_5": {
+     "n_truck_customers": 25,
+     "n_trailer_customers": 25,
+     "n_transshipment": 25,
+     "n_locations": 76,
+     "classes": 4,
+     "trucks": 18,
+     "trailers": 14,
+     "supply": 1031,
+     "planning_horizon": [
+      0.0,
+      1000.0
+     ],
+     "max_route_duration": 1000.0,
+     "with_time_window": 50,
+     "mean_window_width": 92.364,
+     "customer_time_windows": true,
+     "strict_parking_rule": true,
+     "transfer_time_type": "constant",
+     "handling": [
+      2.0,
+      2.0,
+      0.0
+     ]
+    }
+   },
+   "parts": {
+    "tiny": {
+     "routes": 2,
+     "solo": 2,
+     "complete": 0,
+     "parkings": 0,
+     "fixed": 120.0,
+     "trucks_by_type": {
+      "1": 1,
+      "2": 1
+     }
+    },
+    "large_1": {
+     "routes": 9,
+     "solo": 5,
+     "complete": 4,
+     "parkings": 3,
+     "fixed": 530.0,
+     "trucks_by_type": {
+      "1": 5,
+      "2": 4
+     }
+    },
+    "large_2": {
+     "routes": 10,
+     "solo": 6,
+     "complete": 4,
+     "parkings": 4,
+     "fixed": 580.0,
+     "trucks_by_type": {
+      "2": 4,
+      "1": 6
+     }
+    },
+    "large_3": {
+     "routes": 11,
+     "solo": 7,
+     "complete": 4,
+     "parkings": 4,
+     "fixed": 610.0,
+     "trucks_by_type": {
+      "2": 3,
+      "1": 8
+     }
+    },
+    "large_4": {
+     "routes": 11,
+     "solo": 8,
+     "complete": 3,
+     "parkings": 3,
+     "fixed": 610.0,
+     "trucks_by_type": {
+      "1": 8,
+      "2": 3
+     }
+    },
+    "large_5": {
+     "routes": 8,
+     "solo": 3,
+     "complete": 5,
+     "parkings": 5,
+     "fixed": 440.0,
+     "trucks_by_type": {
+      "1": 6,
+      "2": 2
+     }
+    }
+   },
+   "solver_log": {
+    "tiny": {
+     "iterations": 777512,
+     "accepted": 398018,
+     "improved": 0,
+     "recreate_failed": 120956,
+     "moves": {
+      "sisr": [
+       653360,
+       351764,
+       0
+      ],
+      "route": [
+       46682,
+       46254,
+       0
+      ],
+      "class": [
+       38556,
+       0,
+       0
+      ],
+      "repark": [
+       0,
+       0,
+       0
+      ]
+     },
+     "events": [
+      [
+       0.0,
+       398.57,
+       "construct"
+      ]
+     ],
+     "version": "0.1.0",
+     "seed": 1,
+     "strict": true,
+     "n_truck_customers": 3,
+     "n_trailer_customers": 3,
+     "n_transshipment": 3,
+     "classes": 4,
+     "routes": 2,
+     "solo_routes": 2,
+     "complete_routes": 0,
+     "parkings": 0,
+     "parked_at_transshipment": 0,
+     "fixed_cost": 120.0,
+     "objective": 398.57,
+     "best_source": "construct",
+     "time_used_s": 53.0
+    },
+    "large_1": {
+     "iterations": 105460,
+     "accepted": 31295,
+     "improved": 110,
+     "recreate_failed": 0,
+     "moves": {
+      "sisr": [
+       88360,
+       29395,
+       103
+      ],
+      "route": [
+       6515,
+       1826,
+       3
+      ],
+      "class": [
+       5185,
+       18,
+       0
+      ],
+      "repark": [
+       5378,
+       56,
+       4
+      ]
+     },
+     "events": [
+      [
+       0.0,
+       2945.439,
+       "construct"
+      ],
+      [
+       0.0,
+       2860.121,
+       "sisr"
+      ],
+      [
+       0.0,
+       2815.954,
+       "sisr"
+      ],
+      [
+       3.06,
+       1737.781,
+       "sisr"
+      ],
+      [
+       3.06,
+       1737.751,
+       "sisr"
+      ],
+      [
+       3.07,
+       1737.454,
+       "sisr"
+      ],
+      [
+       3.12,
+       1736.454,
+       "sisr"
+      ],
+      [
+       3.28,
+       1736.025,
+       "sisr"
+      ],
+      [
+       3.4,
+       1728.272,
+       "sisr"
+      ],
+      [
+       3.4,
+       1726.794,
+       "sisr"
+      ],
+      [
+       3.42,
+       1724.469,
+       "sisr"
+      ],
+      [
+       5.13,
+       1724.312,
+       "sisr"
+      ],
+      [
+       7.3,
+       1723.124,
+       "sisr"
+      ],
+      [
+       7.31,
+       1723.097,
+       "sisr"
+      ],
+      [
+       10.49,
+       1722.447,
+       "sisr"
+      ]
+     ],
+     "version": "0.1.0",
+     "seed": 1,
+     "strict": true,
+     "n_truck_customers": 25,
+     "n_trailer_customers": 25,
+     "n_transshipment": 25,
+     "classes": 4,
+     "routes": 9,
+     "solo_routes": 5,
+     "complete_routes": 4,
+     "parkings": 3,
+     "parked_at_transshipment": 0,
+     "fixed_cost": 530.0,
+     "objective": 1722.4470000000001,
+     "best_source": "search",
+     "time_used_s": 53.001
+    },
+    "large_2": {
+     "iterations": 124180,
+     "accepted": 40386,
+     "improved": 73,
+     "recreate_failed": 0,
+     "moves": {
+      "sisr": [
+       104102,
+       36514,
+       68
+      ],
+      "route": [
+       7598,
+       3819,
+       1
+      ],
+      "class": [
+       6254,
+       27,
+       0
+      ],
+      "repark": [
+       6222,
+       26,
+       4
+      ]
+     },
+     "events": [
+      [
+       0.0,
+       3555.392,
+       "construct"
+      ],
+      [
+       0.0,
+       3384.707,
+       "sisr"
+      ],
+      [
+       0.0,
+       3359.152,
+       "sisr"
+      ],
+      [
+       4.1,
+       2083.993,
+       "sisr"
+      ],
+      [
+       4.11,
+       2078.003,
+       "sisr"
+      ],
+      [
+       4.19,
+       2076.369,
+       "sisr"
+      ],
+      [
+       4.3,
+       2073.097,
+       "sisr"
+      ],
+      [
+       4.31,
+       2072.927,
+       "sisr"
+      ],
+      [
+       4.31,
+       2070.997,
+       "sisr"
+      ],
+      [
+       4.37,
+       2069.054,
+       "sisr"
+      ],
+      [
+       4.58,
+       2067.019,
+       "route"
+      ],
+      [
+       6.0,
+       2067.006,
+       "sisr"
+      ],
+      [
+       6.01,
+       2065.076,
+       "sisr"
+      ],
+      [
+       6.56,
+       2063.762,
+       "sisr"
+      ],
+      [
+       52.31,
+       2062.752,
+       "sisr"
+      ]
+     ],
+     "version": "0.1.0",
+     "seed": 1,
+     "strict": true,
+     "n_truck_customers": 25,
+     "n_trailer_customers": 25,
+     "n_transshipment": 25,
+     "classes": 4,
+     "routes": 10,
+     "solo_routes": 6,
+     "complete_routes": 4,
+     "parkings": 4,
+     "parked_at_transshipment": 3,
+     "fixed_cost": 580.0,
+     "objective": 2062.752,
+     "best_source": "search",
+     "time_used_s": 53.002
+    },
+    "large_3": {
+     "iterations": 150369,
+     "accepted": 43022,
+     "improved": 90,
+     "recreate_failed": 0,
+     "moves": {
+      "sisr": [
+       126491,
+       37803,
+       84
+      ],
+      "route": [
+       8975,
+       5207,
+       3
+      ],
+      "class": [
+       7561,
+       8,
+       2
+      ],
+      "repark": [
+       7329,
+       4,
+       1
+      ]
+     },
+     "events": [
+      [
+       0.0,
+       2245.349,
+       "construct"
+      ],
+      [
+       0.0,
+       2213.202,
+       "sisr"
+      ],
+      [
+       0.0,
+       2138.48,
+       "sisr"
+      ],
+      [
+       3.27,
+       1461.246,
+       "sisr"
+      ],
+      [
+       9.58,
+       1444.769,
+       "class"
+      ],
+      [
+       9.58,
+       1441.165,
+       "route"
+      ],
+      [
+       9.58,
+       1436.995,
+       "sisr"
+      ],
+      [
+       9.6,
+       1427.961,
+       "sisr"
+      ],
+      [
+       9.61,
+       1420.413,
+       "sisr"
+      ],
+      [
+       9.74,
+       1419.651,
+       "sisr"
+      ],
+      [
+       9.8,
+       1415.325,
+       "sisr"
+      ],
+      [
+       9.8,
+       1412.735,
+       "sisr"
+      ],
+      [
+       9.9,
+       1402.415,
+       "sisr"
+      ],
+      [
+       9.92,
+       1402.325,
+       "sisr"
+      ],
+      [
+       9.92,
+       1401.755,
+       "sisr"
+      ]
+     ],
+     "version": "0.1.0",
+     "seed": 1,
+     "strict": true,
+     "n_truck_customers": 25,
+     "n_trailer_customers": 25,
+     "n_transshipment": 25,
+     "classes": 4,
+     "routes": 11,
+     "solo_routes": 7,
+     "complete_routes": 4,
+     "parkings": 4,
+     "parked_at_transshipment": 4,
+     "fixed_cost": 610.0,
+     "objective": 1401.7549999999999,
+     "best_source": "final",
+     "time_used_s": 53.002
+    },
+    "large_4": {
+     "iterations": 143122,
+     "accepted": 39934,
+     "improved": 62,
+     "recreate_failed": 0,
+     "moves": {
+      "sisr": [
+       120208,
+       34829,
+       57
+      ],
+      "route": [
+       8592,
+       5078,
+       4
+      ],
+      "class": [
+       7202,
+       19,
+       0
+      ],
+      "repark": [
+       7106,
+       8,
+       1
+      ]
+     },
+     "events": [
+      [
+       0.0,
+       2863.506,
+       "construct"
+      ],
+      [
+       0.0,
+       2862.599,
+       "sisr"
+      ],
+      [
+       0.0,
+       2733.758,
+       "sisr"
+      ],
+      [
+       0.78,
+       2103.76,
+       "sisr"
+      ],
+      [
+       0.83,
+       2096.259,
+       "sisr"
+      ],
+      [
+       0.86,
+       2090.965,
+       "sisr"
+      ],
+      [
+       0.87,
+       2049.739,
+       "sisr"
+      ],
+      [
+       0.88,
+       2041.151,
+       "sisr"
+      ],
+      [
+       0.9,
+       2040.789,
+       "repark"
+      ],
+      [
+       1.41,
+       2028.95,
+       "sisr"
+      ],
+      [
+       1.42,
+       2019.023,
+       "sisr"
+      ],
+      [
+       1.67,
+       2017.24,
+       "sisr"
+      ],
+      [
+       1.69,
+       2016.95,
+       "sisr"
+      ],
+      [
+       3.17,
+       2006.607,
+       "sisr"
+      ],
+      [
+       4.03,
+       2003.555,
+       "sisr"
+      ]
+     ],
+     "version": "0.1.0",
+     "seed": 1,
+     "strict": true,
+     "n_truck_customers": 25,
+     "n_trailer_customers": 25,
+     "n_transshipment": 25,
+     "classes": 4,
+     "routes": 11,
+     "solo_routes": 8,
+     "complete_routes": 3,
+     "parkings": 3,
+     "parked_at_transshipment": 3,
+     "fixed_cost": 610.0,
+     "objective": 2003.5549999999998,
+     "best_source": "final",
+     "time_used_s": 53.001
+    },
+    "large_5": {
+     "iterations": 114379,
+     "accepted": 35926,
+     "improved": 125,
+     "recreate_failed": 0,
+     "moves": {
+      "sisr": [
+       95996,
+       33013,
+       119
+      ],
+      "route": [
+       6856,
+       2873,
+       1
+      ],
+      "class": [
+       5794,
+       28,
+       2
+      ],
+      "repark": [
+       5706,
+       12,
+       3
+      ]
+     },
+     "events": [
+      [
+       0.0,
+       2922.969,
+       "construct"
+      ],
+      [
+       0.0,
+       2820.887,
+       "sisr"
+      ],
+      [
+       0.0,
+       2776.139,
+       "sisr"
+      ],
+      [
+       4.12,
+       1648.152,
+       "sisr"
+      ],
+      [
+       4.13,
+       1646.351,
+       "sisr"
+      ],
+      [
+       4.13,
+       1645.16,
+       "sisr"
+      ],
+      [
+       4.18,
+       1641.011,
+       "sisr"
+      ],
+      [
+       4.19,
+       1640.979,
+       "sisr"
+      ],
+      [
+       4.2,
+       1632.963,
+       "sisr"
+      ],
+      [
+       4.21,
+       1622.547,
+       "sisr"
+      ],
+      [
+       4.27,
+       1621.397,
+       "sisr"
+      ],
+      [
+       4.28,
+       1588.607,
+       "class"
+      ],
+      [
+       4.52,
+       1580.374,
+       "sisr"
+      ],
+      [
+       4.53,
+       1575.074,
+       "sisr"
+      ],
+      [
+       4.55,
+       1574.788,
+       "sisr"
+      ]
+     ],
+     "version": "0.1.0",
+     "seed": 1,
+     "strict": true,
+     "n_truck_customers": 25,
+     "n_trailer_customers": 25,
+     "n_transshipment": 25,
+     "classes": 4,
+     "routes": 8,
+     "solo_routes": 3,
+     "complete_routes": 5,
+     "parkings": 5,
+     "parked_at_transshipment": 5,
+     "fixed_cost": 440.0,
+     "objective": 1574.788,
+     "best_source": "final",
+     "time_used_s": 53.002
+    }
+   }
+  },
+  "ttr-10s": {
+   "time_limit": 10.0,
+   "revision": "ef42a2eac13595453f986d9df0b62e86e75ab596",
+   "cases": 6,
+   "official_feasible": 6,
+   "ours_agree_official": 6,
+   "official_rejected": {},
+   "status": {
+    "tiny": "ok",
+    "large_1": "ok",
+    "large_2": "ok",
+    "large_3": "ok",
+    "large_4": "ok",
+    "large_5": "ok"
+   },
+   "objective": {
+    "tiny": 398.57,
+    "large_1": 1815.3999999999999,
+    "large_2": 1982.1220000000003,
+    "large_3": 1505.0989999999997,
+    "large_4": 1924.7789999999998,
+    "large_5": 1895.357
+   },
+   "reference": {
+    "tiny": 345.846,
+    "large_1": 2107.68,
+    "large_2": 2399.929,
+    "large_3": 1570.066,
+    "large_4": 2775.561,
+    "large_5": 2151.54
+   },
+   "score": {
+    "tiny": 0.867717,
+    "large_1": 1.161,
+    "large_2": 1.210788,
+    "large_3": 1.043165,
+    "large_4": 1.442015,
+    "large_5": 1.135163
+   },
+   "gap_pct": {
+    "tiny": 15.2449,
+    "large_1": -13.8674,
+    "large_2": -17.4091,
+    "large_3": -4.1379,
+    "large_4": -30.6526,
+    "large_5": -11.907
+   },
+   "large_mean_score": 1.198426,
+   "large_strictly_better": 5,
+   "wall_s": {
+    "tiny": 6.14,
+    "large_1": 6.161,
+    "large_2": 6.12,
+    "large_3": 6.116,
+    "large_4": 6.122,
+    "large_5": 6.163
+   },
+   "gurobi_official_feasible": {
+    "tiny": true,
+    "large_1": true,
+    "large_2": true,
+    "large_3": true,
+    "large_4": true,
+    "large_5": true
+   },
+   "gurobi_ours_feasible": {
+    "tiny": true,
+    "large_1": true,
+    "large_2": true,
+    "large_3": true,
+    "large_4": true,
+    "large_5": true
+   },
+   "size": {
+    "tiny": {
+     "n_truck_customers": 3,
+     "n_trailer_customers": 3,
+     "n_transshipment": 3,
+     "n_locations": 10,
+     "classes": 4,
+     "trucks": 2,
+     "trailers": 2,
+     "supply": 135,
+     "planning_horizon": [
+      0,
+      345.0
+     ],
+     "max_route_duration": 345.0,
+     "with_time_window": 0,
+     "mean_window_width": null,
+     "customer_time_windows": false,
+     "strict_parking_rule": false,
+     "transfer_time_type": "constant",
+     "handling": [
+      2.0,
+      2.0,
+      0.0
+     ]
+    },
+    "large_1": {
+     "n_truck_customers": 25,
+     "n_trailer_customers": 25,
+     "n_transshipment": 25,
+     "n_locations": 76,
+     "classes": 4,
+     "trucks": 18,
+     "trailers": 14,
+     "supply": 1011,
+     "planning_horizon": [
+      0,
+      675.0
+     ],
+     "max_route_duration": 675.0,
+     "with_time_window": 0,
+     "mean_window_width": null,
+     "customer_time_windows": false,
+     "strict_parking_rule": false,
+     "transfer_time_type": "constant",
+     "handling": [
+      2.0,
+      2.0,
+      0.0
+     ]
+    },
+    "large_2": {
+     "n_truck_customers": 25,
+     "n_trailer_customers": 25,
+     "n_transshipment": 25,
+     "n_locations": 76,
+     "classes": 4,
+     "trucks": 18,
+     "trailers": 14,
+     "supply": 1057,
+     "planning_horizon": [
+      0.0,
+      1000.0
+     ],
+     "max_route_duration": 1000.0,
+     "with_time_window": 50,
+     "mean_window_width": 92.536,
+     "customer_time_windows": true,
+     "strict_parking_rule": true,
+     "transfer_time_type": "constant",
+     "handling": [
+      2.0,
+      2.0,
+      0.0
+     ]
+    },
+    "large_3": {
+     "n_truck_customers": 25,
+     "n_trailer_customers": 25,
+     "n_transshipment": 25,
+     "n_locations": 76,
+     "classes": 4,
+     "trucks": 18,
+     "trailers": 14,
+     "supply": 1117,
+     "planning_horizon": [
+      0.0,
+      675.0
+     ],
+     "max_route_duration": 675.0,
+     "with_time_window": 50,
+     "mean_window_width": 19.38,
+     "customer_time_windows": true,
+     "strict_parking_rule": true,
+     "transfer_time_type": "constant",
+     "handling": [
+      2.0,
+      2.0,
+      0.0
+     ]
+    },
+    "large_4": {
+     "n_truck_customers": 25,
+     "n_trailer_customers": 25,
+     "n_transshipment": 25,
+     "n_locations": 76,
+     "classes": 4,
+     "trucks": 18,
+     "trailers": 14,
+     "supply": 1010,
+     "planning_horizon": [
+      0.0,
+      675.0
+     ],
+     "max_route_duration": 675.0,
+     "with_time_window": 50,
+     "mean_window_width": 19.452,
+     "customer_time_windows": true,
+     "strict_parking_rule": true,
+     "transfer_time_type": "constant",
+     "handling": [
+      2.0,
+      2.0,
+      0.0
+     ]
+    },
+    "large_5": {
+     "n_truck_customers": 25,
+     "n_trailer_customers": 25,
+     "n_transshipment": 25,
+     "n_locations": 76,
+     "classes": 4,
+     "trucks": 18,
+     "trailers": 14,
+     "supply": 1031,
+     "planning_horizon": [
+      0.0,
+      1000.0
+     ],
+     "max_route_duration": 1000.0,
+     "with_time_window": 50,
+     "mean_window_width": 92.364,
+     "customer_time_windows": true,
+     "strict_parking_rule": true,
+     "transfer_time_type": "constant",
+     "handling": [
+      2.0,
+      2.0,
+      0.0
+     ]
+    }
+   },
+   "parts": {
+    "tiny": {
+     "routes": 2,
+     "solo": 2,
+     "complete": 0,
+     "parkings": 0,
+     "fixed": 120.0,
+     "trucks_by_type": {
+      "1": 1,
+      "2": 1
+     }
+    },
+    "large_1": {
+     "routes": 10,
+     "solo": 6,
+     "complete": 4,
+     "parkings": 4,
+     "fixed": 560.0,
+     "trucks_by_type": {
+      "1": 7,
+      "2": 3
+     }
+    },
+    "large_2": {
+     "routes": 10,
+     "solo": 5,
+     "complete": 5,
+     "parkings": 4,
+     "fixed": 520.0,
+     "trucks_by_type": {
+      "1": 9,
+      "2": 1
+     }
+    },
+    "large_3": {
+     "routes": 12,
+     "solo": 9,
+     "complete": 3,
+     "parkings": 2,
+     "fixed": 700.0,
+     "trucks_by_type": {
+      "2": 5,
+      "1": 7
+     }
+    },
+    "large_4": {
+     "routes": 10,
+     "solo": 6,
+     "complete": 4,
+     "parkings": 2,
+     "fixed": 540.0,
+     "trucks_by_type": {
+      "2": 2,
+      "1": 8
+     }
+    },
+    "large_5": {
+     "routes": 12,
+     "solo": 9,
+     "complete": 3,
+     "parkings": 2,
+     "fixed": 660.0,
+     "trucks_by_type": {
+      "1": 9,
+      "2": 3
+     }
+    }
+   },
+   "solver_log": {
+    "tiny": {
+     "iterations": 91462,
+     "accepted": 46749,
+     "improved": 0,
+     "recreate_failed": 14208,
+     "moves": {
+      "sisr": [
+       76733,
+       41285,
+       0
+      ],
+      "route": [
+       5521,
+       5464,
+       0
+      ],
+      "class": [
+       4590,
+       0,
+       0
+      ],
+      "repark": [
+       0,
+       0,
+       0
+      ]
+     },
+     "events": [
+      [
+       0.0,
+       398.57,
+       "construct"
+      ]
+     ],
+     "version": "0.1.0",
+     "seed": 1,
+     "strict": true,
+     "n_truck_customers": 3,
+     "n_trailer_customers": 3,
+     "n_transshipment": 3,
+     "classes": 4,
+     "routes": 2,
+     "solo_routes": 2,
+     "complete_routes": 0,
+     "parkings": 0,
+     "parked_at_transshipment": 0,
+     "fixed_cost": 120.0,
+     "objective": 398.57,
+     "best_source": "construct",
+     "time_used_s": 6.0
+    },
+    "large_1": {
+     "iterations": 12727,
+     "accepted": 3724,
+     "improved": 101,
+     "recreate_failed": 0,
+     "moves": {
+      "sisr": [
+       10735,
+       3382,
+       99
+      ],
+      "route": [
+       730,
+       324,
+       2
+      ],
+      "class": [
+       638,
+       6,
+       0
+      ],
+      "repark": [
+       590,
+       12,
+       0
+      ]
+     },
+     "events": [
+      [
+       0.0,
+       2945.439,
+       "construct"
+      ],
+      [
+       0.0,
+       2860.121,
+       "sisr"
+      ],
+      [
+       0.0,
+       2815.954,
+       "sisr"
+      ],
+      [
+       1.71,
+       1938.271,
+       "sisr"
+      ],
+      [
+       1.72,
+       1933.525,
+       "sisr"
+      ],
+      [
+       1.87,
+       1930.705,
+       "sisr"
+      ],
+      [
+       2.01,
+       1928.849,
+       "sisr"
+      ],
+      [
+       2.03,
+       1921.226,
+       "sisr"
+      ],
+      [
+       2.05,
+       1911.232,
+       "sisr"
+      ],
+      [
+       2.05,
+       1850.03,
+       "route"
+      ],
+      [
+       2.06,
+       1849.262,
+       "sisr"
+      ],
+      [
+       2.08,
+       1826.682,
+       "sisr"
+      ],
+      [
+       2.08,
+       1823.692,
+       "sisr"
+      ],
+      [
+       2.09,
+       1820.872,
+       "sisr"
+      ],
+      [
+       2.28,
+       1815.4,
+       "sisr"
+      ]
+     ],
+     "version": "0.1.0",
+     "seed": 1,
+     "strict": true,
+     "n_truck_customers": 25,
+     "n_trailer_customers": 25,
+     "n_transshipment": 25,
+     "classes": 4,
+     "routes": 10,
+     "solo_routes": 6,
+     "complete_routes": 4,
+     "parkings": 4,
+     "parked_at_transshipment": 1,
+     "fixed_cost": 560.0,
+     "objective": 1815.3999999999999,
+     "best_source": "final",
+     "time_used_s": 6.002
+    },
+    "large_2": {
+     "iterations": 15809,
+     "accepted": 4243,
+     "improved": 64,
+     "recreate_failed": 0,
+     "moves": {
+      "sisr": [
+       13237,
+       3722,
+       62
+      ],
+      "route": [
+       982,
+       508,
+       0
+      ],
+      "class": [
+       774,
+       5,
+       0
+      ],
+      "repark": [
+       810,
+       8,
+       2
+      ]
+     },
+     "events": [
+      [
+       0.0,
+       3555.392,
+       "construct"
+      ],
+      [
+       0.0,
+       3384.707,
+       "sisr"
+      ],
+      [
+       0.0,
+       3359.152,
+       "sisr"
+      ],
+      [
+       1.04,
+       2109.933,
+       "sisr"
+      ],
+      [
+       1.08,
+       2050.615,
+       "sisr"
+      ],
+      [
+       1.13,
+       2045.311,
+       "sisr"
+      ],
+      [
+       1.51,
+       2040.033,
+       "sisr"
+      ],
+      [
+       1.52,
+       2039.163,
+       "sisr"
+      ],
+      [
+       1.63,
+       2022.485,
+       "sisr"
+      ],
+      [
+       1.99,
+       2017.534,
+       "sisr"
+      ],
+      [
+       2.26,
+       2011.544,
+       "sisr"
+      ],
+      [
+       5.01,
+       1984.642,
+       "sisr"
+      ],
+      [
+       5.01,
+       1984.572,
+       "sisr"
+      ],
+      [
+       5.03,
+       1983.866,
+       "sisr"
+      ],
+      [
+       5.05,
+       1982.122,
+       "repark"
+      ]
+     ],
+     "version": "0.1.0",
+     "seed": 1,
+     "strict": true,
+     "n_truck_customers": 25,
+     "n_trailer_customers": 25,
+     "n_transshipment": 25,
+     "classes": 4,
+     "routes": 10,
+     "solo_routes": 5,
+     "complete_routes": 5,
+     "parkings": 4,
+     "parked_at_transshipment": 3,
+     "fixed_cost": 520.0,
+     "objective": 1982.1220000000003,
+     "best_source": "final",
+     "time_used_s": 6.001
+    },
+    "large_3": {
+     "iterations": 17816,
+     "accepted": 4525,
+     "improved": 62,
+     "recreate_failed": 0,
+     "moves": {
+      "sisr": [
+       14959,
+       3941,
+       59
+      ],
+      "route": [
+       1108,
+       577,
+       1
+      ],
+      "class": [
+       834,
+       5,
+       1
+      ],
+      "repark": [
+       902,
+       2,
+       1
+      ]
+     },
+     "events": [
+      [
+       0.0,
+       2245.349,
+       "construct"
+      ],
+      [
+       0.0,
+       2213.202,
+       "sisr"
+      ],
+      [
+       0.0,
+       2138.48,
+       "sisr"
+      ],
+      [
+       1.21,
+       1555.621,
+       "sisr"
+      ],
+      [
+       1.32,
+       1554.933,
+       "sisr"
+      ],
+      [
+       1.54,
+       1543.216,
+       "sisr"
+      ],
+      [
+       1.54,
+       1541.863,
+       "sisr"
+      ],
+      [
+       1.54,
+       1538.199,
+       "sisr"
+      ],
+      [
+       1.58,
+       1530.121,
+       "sisr"
+      ],
+      [
+       1.59,
+       1529.411,
+       "sisr"
+      ],
+      [
+       1.64,
+       1529.373,
+       "sisr"
+      ],
+      [
+       1.66,
+       1520.087,
+       "sisr"
+      ],
+      [
+       1.73,
+       1517.468,
+       "sisr"
+      ],
+      [
+       4.64,
+       1509.605,
+       "sisr"
+      ],
+      [
+       4.67,
+       1505.099,
+       "sisr"
+      ]
+     ],
+     "version": "0.1.0",
+     "seed": 1,
+     "strict": true,
+     "n_truck_customers": 25,
+     "n_trailer_customers": 25,
+     "n_transshipment": 25,
+     "classes": 4,
+     "routes": 12,
+     "solo_routes": 9,
+     "complete_routes": 3,
+     "parkings": 2,
+     "parked_at_transshipment": 2,
+     "fixed_cost": 700.0,
+     "objective": 1505.0989999999997,
+     "best_source": "final",
+     "time_used_s": 6.001
+    },
+    "large_4": {
+     "iterations": 14046,
+     "accepted": 4108,
+     "improved": 79,
+     "recreate_failed": 0,
+     "moves": {
+      "sisr": [
+       11761,
+       3653,
+       75
+      ],
+      "route": [
+       867,
+       447,
+       4
+      ],
+      "class": [
+       696,
+       7,
+       0
+      ],
+      "repark": [
+       662,
+       1,
+       0
+      ]
+     },
+     "events": [
+      [
+       0.0,
+       2863.506,
+       "construct"
+      ],
+      [
+       0.0,
+       2862.599,
+       "sisr"
+      ],
+      [
+       0.0,
+       2733.758,
+       "sisr"
+      ],
+      [
+       0.66,
+       1997.254,
+       "sisr"
+      ],
+      [
+       0.7,
+       1984.321,
+       "sisr"
+      ],
+      [
+       0.7,
+       1976.531,
+       "sisr"
+      ],
+      [
+       0.71,
+       1973.311,
+       "sisr"
+      ],
+      [
+       0.72,
+       1962.251,
+       "sisr"
+      ],
+      [
+       0.73,
+       1943.421,
+       "sisr"
+      ],
+      [
+       1.14,
+       1942.473,
+       "sisr"
+      ],
+      [
+       1.5,
+       1940.997,
+       "sisr"
+      ],
+      [
+       1.67,
+       1938.791,
+       "sisr"
+      ],
+      [
+       1.67,
+       1930.681,
+       "sisr"
+      ],
+      [
+       1.76,
+       1926.789,
+       "sisr"
+      ],
+      [
+       4.45,
+       1924.779,
+       "sisr"
+      ]
+     ],
+     "version": "0.1.0",
+     "seed": 1,
+     "strict": true,
+     "n_truck_customers": 25,
+     "n_trailer_customers": 25,
+     "n_transshipment": 25,
+     "classes": 4,
+     "routes": 10,
+     "solo_routes": 6,
+     "complete_routes": 4,
+     "parkings": 2,
+     "parked_at_transshipment": 2,
+     "fixed_cost": 540.0,
+     "objective": 1924.7789999999998,
+     "best_source": "final",
+     "time_used_s": 6.002
+    },
+    "large_5": {
+     "iterations": 16421,
+     "accepted": 4301,
+     "improved": 75,
+     "recreate_failed": 0,
+     "moves": {
+      "sisr": [
+       13854,
+       3706,
+       70
+      ],
+      "route": [
+       935,
+       582,
+       2
+      ],
+      "class": [
+       865,
+       6,
+       1
+      ],
+      "repark": [
+       732,
+       7,
+       2
+      ]
+     },
+     "events": [
+      [
+       0.0,
+       2922.969,
+       "construct"
+      ],
+      [
+       0.0,
+       2820.887,
+       "sisr"
+      ],
+      [
+       0.0,
+       2776.139,
+       "sisr"
+      ],
+      [
+       1.18,
+       1919.937,
+       "sisr"
+      ],
+      [
+       1.2,
+       1919.597,
+       "sisr"
+      ],
+      [
+       1.27,
+       1910.571,
+       "sisr"
+      ],
+      [
+       1.28,
+       1910.127,
+       "sisr"
+      ],
+      [
+       1.29,
+       1907.451,
+       "repark"
+      ],
+      [
+       1.3,
+       1903.811,
+       "sisr"
+      ],
+      [
+       1.33,
+       1903.551,
+       "sisr"
+      ],
+      [
+       1.9,
+       1900.284,
+       "sisr"
+      ],
+      [
+       1.96,
+       1900.061,
+       "sisr"
+      ],
+      [
+       2.27,
+       1897.477,
+       "sisr"
+      ],
+      [
+       2.49,
+       1896.636,
+       "sisr"
+      ],
+      [
+       3.75,
+       1895.357,
+       "sisr"
+      ]
+     ],
+     "version": "0.1.0",
+     "seed": 1,
+     "strict": true,
+     "n_truck_customers": 25,
+     "n_trailer_customers": 25,
+     "n_transshipment": 25,
+     "classes": 4,
+     "routes": 12,
+     "solo_routes": 9,
+     "complete_routes": 3,
+     "parkings": 2,
+     "parked_at_transshipment": 2,
+     "fixed_cost": 660.0,
+     "objective": 1895.357,
+     "best_source": "final",
+     "time_used_s": 6.001
+    }
+   }
+  }
+ },
+ "gurobi": {
+  "tiny": {
+   "objective_value": 345.846,
+   "status": "optimal",
+   "mip_gap": 0.0,
+   "best_bound": null,
+   "runtime": 3.81,
+   "routes": 1,
+   "solo": 0,
+   "complete": 1,
+   "parkings": 1,
+   "fixed": 50.0,
+   "trucks_by_type": {
+    "1": 1
+   }
+  },
+  "large_1": {
+   "objective_value": 2107.68,
+   "status": "time_limit_with_solution",
+   "mip_gap": 0.6483609890090575,
+   "best_bound": 741.142511,
+   "runtime": 3626.85,
+   "routes": 11,
+   "solo": 8,
+   "complete": 3,
+   "parkings": 2,
+   "fixed": 710.0,
+   "trucks_by_type": {
+    "1": 3,
+    "2": 8
+   }
+  },
+  "large_2": {
+   "objective_value": 2399.929,
+   "status": "time_limit_with_solution",
+   "mip_gap": 0.5787016151504635,
+   "best_bound": 1011.086211,
+   "runtime": 3628.77,
+   "routes": 14,
+   "solo": 11,
+   "complete": 3,
+   "parkings": 1,
+   "fixed": 840.0,
+   "trucks_by_type": {
+    "1": 7,
+    "2": 7
+   }
+  },
+  "large_3": {
+   "objective_value": 1570.066,
+   "status": "time_limit_with_solution",
+   "mip_gap": 0.4930119837575645,
+   "best_bound": 796.004647,
+   "runtime": 3626.12,
+   "routes": 13,
+   "solo": 10,
+   "complete": 3,
+   "parkings": 0,
+   "fixed": 730.0,
+   "trucks_by_type": {
+    "1": 9,
+    "2": 4
+   }
+  },
+  "large_4": {
+   "objective_value": 2775.561,
+   "status": "time_limit_with_solution",
+   "mip_gap": 0.6249742571488657,
+   "best_bound": 1040.906826,
+   "runtime": 3625.33,
+   "routes": 17,
+   "solo": 12,
+   "complete": 5,
+   "parkings": 4,
+   "fixed": 1010.0,
+   "trucks_by_type": {
+    "1": 9,
+    "2": 8
+   }
+  },
+  "large_5": {
+   "objective_value": 2151.54,
+   "status": "time_limit_with_solution",
+   "mip_gap": 0.7397207786185838,
+   "best_bound": 560.001156,
+   "runtime": 3626.55,
+   "routes": 13,
+   "solo": 10,
+   "complete": 3,
+   "parkings": 1,
+   "fixed": 790.0,
+   "trucks_by_type": {
+    "1": 6,
+    "2": 7
+   }
+  }
+ }
+}

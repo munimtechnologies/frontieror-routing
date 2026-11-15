@@ -1,0 +1,16 @@
+test_agreement (test_archetti2007.TestAgainstOfficialChecker.test_agreement) ... skipped 'official checker not available'
+test_fifty_retailers_tiny_budget_still_answers (test_archetti2007.TestCLI.test_fifty_retailers_tiny_budget_still_answers) ... ok
+test_one_worker (test_archetti2007.TestCLI.test_one_worker) ... ok
+test_two_workers_within_time (test_archetti2007.TestCLI.test_two_workers_within_time) ... ok
+test_cost_decomposition_matches_the_checker_objective (test_archetti2007.TestModel.test_cost_decomposition_matches_the_checker_objective) ... ok
+test_patterns_are_exactly_the_useful_stockout_free_visit_sets (test_archetti2007.TestModel.test_patterns_are_exactly_the_useful_stockout_free_visit_sets) ... ok
+test_search_matches_brute_force (test_archetti2007.TestOptimum.test_search_matches_brute_force) ... ok
+test_tight_capacity_is_repaired (test_archetti2007.TestOptimum.test_tight_capacity_is_repaired) ... ok
+test_accepts_and_rejects (test_archetti2007.TestVerify.test_accepts_and_rejects) ... ok
+test_single_retailer_round_trip_uses_two (test_archetti2007.TestVerify.test_single_retailer_round_trip_uses_two) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 23.001s
+
+OK (skipped=1)
+exit=0

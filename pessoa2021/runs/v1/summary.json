@@ -1,0 +1,7149 @@
+{
+ "repo_sha": "ab8189c944560facaab73150a017956dd685ec92",
+ "solver_version": "0.1.0",
+ "python": "3.12.15 (main, Oct  6 2026, 04:38:21) [GCC 14.2.0]",
+ "cpu_count": 16,
+ "variants": {
+  "v010-60s": {
+   "time_limit": 60.0,
+   "revision": "ef42a2eac13595453f986d9df0b62e86e75ab596",
+   "cases": 6,
+   "official_feasible": 6,
+   "official_rejected": {},
+   "status": {
+    "tiny": "ok",
+    "large_1": "ok",
+    "large_2": "ok",
+    "large_3": "ok",
+    "large_4": "ok",
+    "large_5": "ok"
+   },
+   "objective": {
+    "tiny": 380.0,
+    "large_1": 2698.0,
+    "large_2": 2315.0,
+    "large_3": 2698.0,
+    "large_4": 2312.0,
+    "large_5": 2702.0
+   },
+   "reference": {
+    "tiny": 380.0,
+    "large_1": 2698.0,
+    "large_2": 2315.0,
+    "large_3": 2698.0,
+    "large_4": 2312.0,
+    "large_5": 2702.0
+   },
+   "score": {
+    "tiny": 1.0,
+    "large_1": 1.0,
+    "large_2": 1.0,
+    "large_3": 1.0,
+    "large_4": 1.0,
+    "large_5": 1.0
+   },
+   "gap_pct": {
+    "tiny": 0.0,
+    "large_1": 0.0,
+    "large_2": 0.0,
+    "large_3": 0.0,
+    "large_4": 0.0,
+    "large_5": 0.0
+   },
+   "large_mean_score": 1.0,
+   "large_strictly_better": 0,
+   "large_matched_or_better": 5,
+   "wall_s": {
+    "tiny": 54.223,
+    "large_1": 54.515,
+    "large_2": 54.234,
+    "large_3": 54.371,
+    "large_4": 54.192,
+    "large_5": 54.207
+   },
+   "gurobi_official_feasible": {
+    "tiny": true,
+    "large_1": true,
+    "large_2": true,
+    "large_3": true,
+    "large_4": true,
+    "large_5": true
+   },
+   "gurobi_ours_feasible": {
+    "tiny": true,
+    "large_1": true,
+    "large_2": true,
+    "large_3": true,
+    "large_4": true,
+    "large_5": true
+   },
+   "gurobi_log": {
+    "tiny": {
+     "lines": 2,
+     "last": {
+      "time": 0.309,
+      "objective_value": 432.0
+     }
+    },
+    "large_1": {
+     "lines": 13,
+     "last": {
+      "time": 6.017,
+      "objective_value": 2698.0
+     }
+    },
+    "large_2": {
+     "lines": 8,
+     "last": {
+      "time": 2.657,
+      "objective_value": 2314.0
+     }
+    },
+    "large_3": {
+     "lines": 6,
+     "last": {
+      "time": 4.892,
+      "objective_value": 2698.0
+     }
+    },
+    "large_4": {
+     "lines": 9,
+     "last": {
+      "time": 17.964,
+      "objective_value": 2312.0
+     }
+    },
+    "large_5": {
+     "lines": 10,
+     "last": {
+      "time": 69.87,
+      "objective_value": 2702.0
+     }
+    }
+   },
+   "size": {
+    "tiny": {
+     "n": 12,
+     "m": 3,
+     "C": 131,
+     "Gamma": 3,
+     "symmetric": true,
+     "tight_nominal": 0.6972,
+     "tight_full_deviation": 0.9059,
+     "max_dist": 99.0
+    },
+    "large_1": {
+     "n": 80,
+     "m": 37,
+     "C": 276,
+     "Gamma": 6,
+     "symmetric": true,
+     "tight_nominal": 0.1987,
+     "tight_full_deviation": 0.2583,
+     "max_dist": 135.0
+    },
+    "large_2": {
+     "n": 75,
+     "m": 31,
+     "C": 223,
+     "Gamma": 5,
+     "symmetric": true,
+     "tight_nominal": 0.2879,
+     "tight_full_deviation": 0.3171,
+     "max_dist": 135.0
+    },
+    "large_3": {
+     "n": 80,
+     "m": 37,
+     "C": 313,
+     "Gamma": 6,
+     "symmetric": true,
+     "tight_nominal": 0.1752,
+     "tight_full_deviation": 0.2629,
+     "max_dist": 135.0
+    },
+    "large_4": {
+     "n": 75,
+     "m": 31,
+     "C": 257,
+     "Gamma": 3,
+     "symmetric": true,
+     "tight_nominal": 0.2498,
+     "tight_full_deviation": 0.3251,
+     "max_dist": 135.0
+    },
+    "large_5": {
+     "n": 80,
+     "m": 37,
+     "C": 276,
+     "Gamma": 8,
+     "symmetric": true,
+     "tight_nominal": 0.1987,
+     "tight_full_deviation": 0.2583,
+     "max_dist": 135.0
+    }
+   },
+   "construction": {
+    "tiny": 420,
+    "large_1": 3101,
+    "large_2": 2791,
+    "large_3": 3101,
+    "large_4": 2791,
+    "large_5": 3101
+   },
+   "construction_feasible": {
+    "tiny": true,
+    "large_1": true,
+    "large_2": true,
+    "large_3": true,
+    "large_4": true,
+    "large_5": true
+   },
+   "best_source": {
+    "tiny": "parent",
+    "large_1": "parent",
+    "large_2": "parent",
+    "large_3": "parent",
+    "large_4": "parent",
+    "large_5": "child"
+   },
+   "iterations_parent": {
+    "tiny": 629184,
+    "large_1": 175056,
+    "large_2": 168304,
+    "large_3": 164048,
+    "large_4": 189904,
+    "large_5": 170368
+   },
+   "iterations_child": {
+    "tiny": 627712,
+    "large_1": 174240,
+    "large_2": 171200,
+    "large_3": 166992,
+    "large_4": 196736,
+    "large_5": 173760
+   },
+   "load_s": {
+    "tiny": 0.013,
+    "large_1": 0.04,
+    "large_2": 0.015,
+    "large_3": 0.028,
+    "large_4": 0.013,
+    "large_5": 0.015
+   },
+   "solver_log": {
+    "tiny": {
+     "version": "0.1.0",
+     "n": 12,
+     "m": 3,
+     "C": 131,
+     "Gamma": 3,
+     "symmetric": true,
+     "T": 60.0,
+     "load_s": 0.013,
+     "workers": 2,
+     "parent": {
+      "seed": 1,
+      "iterations": 629184,
+      "accepted": 219332,
+      "improved": 3,
+      "construction": 420,
+      "construction_feasible": true,
+      "T0": 14.0,
+      "Tf": 0.14,
+      "best": 380,
+      "best_feasible": true,
+      "events": [
+       [
+        0.016,
+        420,
+        true
+       ],
+       [
+        0.017,
+        395,
+        true
+       ],
+       [
+        0.018,
+        390,
+        true
+       ],
+       [
+        0.018,
+        380,
+        true
+       ],
+       [
+        0.016,
+        420,
+        true
+       ],
+       [
+        0.017,
+        395,
+        true
+       ],
+       [
+        0.018,
+        390,
+        true
+       ],
+       [
+        0.018,
+        380,
+        true
+       ]
+      ]
+     },
+     "best_source": "parent",
+     "child": {
+      "seed": 1001,
+      "iterations": 627712,
+      "accepted": 216360,
+      "improved": 0,
+      "construction": 380,
+      "construction_feasible": true,
+      "T0": 12.666666666666666,
+      "Tf": 0.12666666666666665,
+      "best": 380,
+      "best_feasible": true,
+      "events": [
+       [
+        0.016,
+        380,
+        true
+       ],
+       [
+        0.016,
+        380,
+        true
+       ]
+      ]
+     },
+     "best": 380.0,
+     "wall_s": 54.003
+    },
+    "large_1": {
+     "version": "0.1.0",
+     "n": 80,
+     "m": 37,
+     "C": 276,
+     "Gamma": 6,
+     "symmetric": true,
+     "T": 60.0,
+     "load_s": 0.04,
+     "workers": 2,
+     "parent": {
+      "seed": 1,
+      "iterations": 175056,
+      "accepted": 67259,
+      "improved": 28,
+      "construction": 3101,
+      "construction_feasible": true,
+      "T0": 13.252136752136753,
+      "Tf": 0.13252136752136753,
+      "best": 2698,
+      "best_feasible": true,
+      "events": [
+       [
+        0.061,
+        3101,
+        true
+       ],
+       [
+        0.064,
+        3089,
+        true
+       ],
+       [
+        0.065,
+        3053,
+        true
+       ],
+       [
+        0.066,
+        2946,
+        true
+       ],
+       [
+        0.071,
+        2924,
+        true
+       ],
+       [
+        0.181,
+        2779,
+        true
+       ],
+       [
+        0.186,
+        2776,
+        true
+       ],
+       [
+        0.419,
+        2750,
+        true
+       ],
+       [
+        0.429,
+        2747,
+        true
+       ],
+       [
+        0.462,
+        2743,
+        true
+       ],
+       [
+        0.464,
+        2727,
+        true
+       ],
+       [
+        0.538,
+        2721,
+        true
+       ],
+       [
+        1.059,
+        2713,
+        true
+       ],
+       [
+        1.246,
+        2711,
+        true
+       ],
+       [
+        2.031,
+        2710,
+        true
+       ],
+       [
+        7.9,
+        2708,
+        true
+       ],
+       [
+        7.904,
+        2706,
+        true
+       ],
+       [
+        7.906,
+        2705,
+        true
+       ],
+       [
+        11.156,
+        2701,
+        true
+       ],
+       [
+        11.169,
+        2698,
+        true
+       ]
+      ]
+     },
+     "best_source": "parent",
+     "child": {
+      "seed": 1001,
+      "iterations": 174240,
+      "accepted": 66945,
+      "improved": 30,
+      "construction": 3101,
+      "construction_feasible": true,
+      "T0": 13.252136752136753,
+      "Tf": 0.13252136752136753,
+      "best": 2698,
+      "best_feasible": true,
+      "events": [
+       [
+        0.05,
+        3101,
+        true
+       ],
+       [
+        0.054,
+        3014,
+        true
+       ],
+       [
+        0.068,
+        3003,
+        true
+       ],
+       [
+        0.068,
+        2986,
+        true
+       ],
+       [
+        0.07,
+        2964,
+        true
+       ],
+       [
+        0.263,
+        2749,
+        true
+       ],
+       [
+        0.275,
+        2747,
+        true
+       ],
+       [
+        0.28,
+        2745,
+        true
+       ],
+       [
+        0.922,
+        2734,
+        true
+       ],
+       [
+        0.999,
+        2730,
+        true
+       ],
+       [
+        2.106,
+        2722,
+        true
+       ],
+       [
+        4.095,
+        2717,
+        true
+       ],
+       [
+        4.106,
+        2715,
+        true
+       ],
+       [
+        5.15,
+        2714,
+        true
+       ],
+       [
+        5.251,
+        2712,
+        true
+       ],
+       [
+        5.529,
+        2709,
+        true
+       ],
+       [
+        6.326,
+        2703,
+        true
+       ],
+       [
+        6.352,
+        2701,
+        true
+       ],
+       [
+        7.407,
+        2699,
+        true
+       ],
+       [
+        7.995,
+        2698,
+        true
+       ]
+      ]
+     },
+     "best": 2698.0,
+     "wall_s": 54.005
+    },
+    "large_2": {
+     "version": "0.1.0",
+     "n": 75,
+     "m": 31,
+     "C": 223,
+     "Gamma": 5,
+     "symmetric": true,
+     "T": 60.0,
+     "load_s": 0.015,
+     "workers": 2,
+     "parent": {
+      "seed": 1,
+      "iterations": 168304,
+      "accepted": 57353,
+      "improved": 36,
+      "construction": 2791,
+      "construction_feasible": true,
+      "T0": 13.165094339622641,
+      "Tf": 0.1316509433962264,
+      "best": 2315,
+      "best_feasible": true,
+      "events": [
+       [
+        0.022,
+        2787,
+        true
+       ],
+       [
+        0.025,
+        2771,
+        true
+       ],
+       [
+        0.025,
+        2744,
+        true
+       ],
+       [
+        0.027,
+        2693,
+        true
+       ],
+       [
+        0.03,
+        2689,
+        true
+       ],
+       [
+        0.594,
+        2363,
+        true
+       ],
+       [
+        0.623,
+        2360,
+        true
+       ],
+       [
+        0.624,
+        2358,
+        true
+       ],
+       [
+        1.258,
+        2355,
+        true
+       ],
+       [
+        1.27,
+        2347,
+        true
+       ],
+       [
+        1.282,
+        2340,
+        true
+       ],
+       [
+        1.387,
+        2337,
+        true
+       ],
+       [
+        3.571,
+        2331,
+        true
+       ],
+       [
+        3.573,
+        2328,
+        true
+       ],
+       [
+        4.452,
+        2324,
+        true
+       ],
+       [
+        6.82,
+        2323,
+        true
+       ],
+       [
+        6.888,
+        2321,
+        true
+       ],
+       [
+        9.176,
+        2318,
+        true
+       ],
+       [
+        15.766,
+        2317,
+        true
+       ],
+       [
+        17.39,
+        2315,
+        true
+       ]
+      ]
+     },
+     "best_source": "parent",
+     "child": {
+      "seed": 1001,
+      "iterations": 171200,
+      "accepted": 58112,
+      "improved": 42,
+      "construction": 2791,
+      "construction_feasible": true,
+      "T0": 13.165094339622641,
+      "Tf": 0.1316509433962264,
+      "best": 2315,
+      "best_feasible": true,
+      "events": [
+       [
+        0.024,
+        2787,
+        true
+       ],
+       [
+        0.025,
+        2750,
+        true
+       ],
+       [
+        0.028,
+        2743,
+        true
+       ],
+       [
+        0.029,
+        2738,
+        true
+       ],
+       [
+        0.031,
+        2735,
+        true
+       ],
+       [
+        0.132,
+        2423,
+        true
+       ],
+       [
+        0.15,
+        2421,
+        true
+       ],
+       [
+        0.285,
+        2415,
+        true
+       ],
+       [
+        0.288,
+        2388,
+        true
+       ],
+       [
+        0.288,
+        2387,
+        true
+       ],
+       [
+        0.292,
+        2374,
+        true
+       ],
+       [
+        0.294,
+        2368,
+        true
+       ],
+       [
+        0.417,
+        2364,
+        true
+       ],
+       [
+        0.426,
+        2340,
+        true
+       ],
+       [
+        0.693,
+        2335,
+        true
+       ],
+       [
+        3.132,
+        2333,
+        true
+       ],
+       [
+        7.212,
+        2326,
+        true
+       ],
+       [
+        9.475,
+        2321,
+        true
+       ],
+       [
+        9.596,
+        2317,
+        true
+       ],
+       [
+        26.62,
+        2315,
+        true
+       ]
+      ]
+     },
+     "best": 2315.0,
+     "wall_s": 54.004
+    },
+    "large_3": {
+     "version": "0.1.0",
+     "n": 80,
+     "m": 37,
+     "C": 313,
+     "Gamma": 6,
+     "symmetric": true,
+     "T": 60.0,
+     "load_s": 0.028,
+     "workers": 2,
+     "parent": {
+      "seed": 1,
+      "iterations": 164048,
+      "accepted": 64233,
+      "improved": 41,
+      "construction": 3101,
+      "construction_feasible": true,
+      "T0": 13.252136752136753,
+      "Tf": 0.13252136752136753,
+      "best": 2698,
+      "best_feasible": true,
+      "events": [
+       [
+        0.041,
+        3101,
+        true
+       ],
+       [
+        0.044,
+        3089,
+        true
+       ],
+       [
+        0.044,
+        3053,
+        true
+       ],
+       [
+        0.047,
+        3012,
+        true
+       ],
+       [
+        0.047,
+        3011,
+        true
+       ],
+       [
+        1.167,
+        2732,
+        true
+       ],
+       [
+        1.17,
+        2730,
+        true
+       ],
+       [
+        1.172,
+        2725,
+        true
+       ],
+       [
+        1.21,
+        2722,
+        true
+       ],
+       [
+        1.218,
+        2718,
+        true
+       ],
+       [
+        1.245,
+        2717,
+        true
+       ],
+       [
+        1.376,
+        2716,
+        true
+       ],
+       [
+        2.256,
+        2711,
+        true
+       ],
+       [
+        3.46,
+        2709,
+        true
+       ],
+       [
+        6.451,
+        2705,
+        true
+       ],
+       [
+        6.93,
+        2704,
+        true
+       ],
+       [
+        10.28,
+        2703,
+        true
+       ],
+       [
+        11.46,
+        2702,
+        true
+       ],
+       [
+        11.68,
+        2701,
+        true
+       ],
+       [
+        11.898,
+        2698,
+        true
+       ]
+      ]
+     },
+     "best_source": "parent",
+     "child": {
+      "seed": 1001,
+      "iterations": 166992,
+      "accepted": 65477,
+      "improved": 27,
+      "construction": 3101,
+      "construction_feasible": true,
+      "T0": 13.252136752136753,
+      "Tf": 0.13252136752136753,
+      "best": 2698,
+      "best_feasible": true,
+      "events": [
+       [
+        0.038,
+        3101,
+        true
+       ],
+       [
+        0.041,
+        3014,
+        true
+       ],
+       [
+        0.055,
+        3003,
+        true
+       ],
+       [
+        0.056,
+        2986,
+        true
+       ],
+       [
+        0.057,
+        2975,
+        true
+       ],
+       [
+        0.122,
+        2741,
+        true
+       ],
+       [
+        0.38,
+        2739,
+        true
+       ],
+       [
+        0.383,
+        2737,
+        true
+       ],
+       [
+        0.393,
+        2736,
+        true
+       ],
+       [
+        0.4,
+        2734,
+        true
+       ],
+       [
+        0.4,
+        2726,
+        true
+       ],
+       [
+        0.421,
+        2715,
+        true
+       ],
+       [
+        0.868,
+        2714,
+        true
+       ],
+       [
+        0.926,
+        2713,
+        true
+       ],
+       [
+        0.959,
+        2710,
+        true
+       ],
+       [
+        0.961,
+        2708,
+        true
+       ],
+       [
+        5.101,
+        2702,
+        true
+       ],
+       [
+        5.116,
+        2701,
+        true
+       ],
+       [
+        9.117,
+        2700,
+        true
+       ],
+       [
+        14.761,
+        2698,
+        true
+       ]
+      ]
+     },
+     "best": 2698.0,
+     "wall_s": 54.004
+    },
+    "large_4": {
+     "version": "0.1.0",
+     "n": 75,
+     "m": 31,
+     "C": 257,
+     "Gamma": 3,
+     "symmetric": true,
+     "T": 60.0,
+     "load_s": 0.013,
+     "workers": 2,
+     "parent": {
+      "seed": 1,
+      "iterations": 189904,
+      "accepted": 65881,
+      "improved": 41,
+      "construction": 2791,
+      "construction_feasible": true,
+      "T0": 13.165094339622641,
+      "Tf": 0.1316509433962264,
+      "best": 2312,
+      "best_feasible": true,
+      "events": [
+       [
+        0.019,
+        2787,
+        true
+       ],
+       [
+        0.022,
+        2771,
+        true
+       ],
+       [
+        0.023,
+        2744,
+        true
+       ],
+       [
+        0.024,
+        2693,
+        true
+       ],
+       [
+        0.026,
+        2689,
+        true
+       ],
+       [
+        0.085,
+        2367,
+        true
+       ],
+       [
+        0.086,
+        2365,
+        true
+       ],
+       [
+        0.181,
+        2356,
+        true
+       ],
+       [
+        0.415,
+        2348,
+        true
+       ],
+       [
+        0.488,
+        2343,
+        true
+       ],
+       [
+        0.618,
+        2339,
+        true
+       ],
+       [
+        0.623,
+        2336,
+        true
+       ],
+       [
+        2.905,
+        2333,
+        true
+       ],
+       [
+        3.485,
+        2327,
+        true
+       ],
+       [
+        3.493,
+        2326,
+        true
+       ],
+       [
+        3.497,
+        2322,
+        true
+       ],
+       [
+        6.212,
+        2316,
+        true
+       ],
+       [
+        15.829,
+        2314,
+        true
+       ],
+       [
+        16.001,
+        2313,
+        true
+       ],
+       [
+        17.77,
+        2312,
+        true
+       ]
+      ]
+     },
+     "best_source": "parent",
+     "child": {
+      "seed": 1001,
+      "iterations": 196736,
+      "accepted": 67487,
+      "improved": 40,
+      "construction": 2791,
+      "construction_feasible": true,
+      "T0": 13.165094339622641,
+      "Tf": 0.1316509433962264,
+      "best": 2312,
+      "best_feasible": true,
+      "events": [
+       [
+        0.02,
+        2787,
+        true
+       ],
+       [
+        0.021,
+        2750,
+        true
+       ],
+       [
+        0.023,
+        2743,
+        true
+       ],
+       [
+        0.026,
+        2711,
+        true
+       ],
+       [
+        0.027,
+        2697,
+        true
+       ],
+       [
+        0.103,
+        2395,
+        true
+       ],
+       [
+        0.106,
+        2382,
+        true
+       ],
+       [
+        0.162,
+        2370,
+        true
+       ],
+       [
+        0.163,
+        2364,
+        true
+       ],
+       [
+        0.172,
+        2359,
+        true
+       ],
+       [
+        0.182,
+        2352,
+        true
+       ],
+       [
+        0.183,
+        2330,
+        true
+       ],
+       [
+        1.206,
+        2328,
+        true
+       ],
+       [
+        1.21,
+        2323,
+        true
+       ],
+       [
+        1.903,
+        2321,
+        true
+       ],
+       [
+        4.34,
+        2320,
+        true
+       ],
+       [
+        4.378,
+        2319,
+        true
+       ],
+       [
+        4.386,
+        2317,
+        true
+       ],
+       [
+        11.563,
+        2316,
+        true
+       ],
+       [
+        24.759,
+        2312,
+        true
+       ]
+      ]
+     },
+     "best": 2312.0,
+     "wall_s": 54.002
+    },
+    "large_5": {
+     "version": "0.1.0",
+     "n": 80,
+     "m": 37,
+     "C": 276,
+     "Gamma": 8,
+     "symmetric": true,
+     "T": 60.0,
+     "load_s": 0.015,
+     "workers": 2,
+     "parent": {
+      "seed": 1,
+      "iterations": 170368,
+      "accepted": 63603,
+      "improved": 32,
+      "construction": 3101,
+      "construction_feasible": true,
+      "T0": 13.252136752136753,
+      "Tf": 0.13252136752136753,
+      "best": 2703,
+      "best_feasible": true,
+      "events": [
+       [
+        0.023,
+        3101,
+        true
+       ],
+       [
+        0.026,
+        3089,
+        true
+       ],
+       [
+        0.026,
+        3053,
+        true
+       ],
+       [
+        0.028,
+        3052,
+        true
+       ],
+       [
+        0.035,
+        3050,
+        true
+       ],
+       [
+        0.076,
+        2819,
+        true
+       ],
+       [
+        0.093,
+        2814,
+        true
+       ],
+       [
+        0.097,
+        2774,
+        true
+       ],
+       [
+        0.106,
+        2773,
+        true
+       ],
+       [
+        0.119,
+        2771,
+        true
+       ],
+       [
+        0.127,
+        2769,
+        true
+       ],
+       [
+        0.13,
+        2752,
+        true
+       ],
+       [
+        0.145,
+        2744,
+        true
+       ],
+       [
+        0.145,
+        2732,
+        true
+       ],
+       [
+        1.342,
+        2724,
+        true
+       ],
+       [
+        1.885,
+        2721,
+        true
+       ],
+       [
+        2.909,
+        2714,
+        true
+       ],
+       [
+        3.65,
+        2706,
+        true
+       ],
+       [
+        3.652,
+        2704,
+        true
+       ],
+       [
+        9.575,
+        2703,
+        true
+       ]
+      ]
+     },
+     "best_source": "child",
+     "child": {
+      "seed": 1001,
+      "iterations": 173760,
+      "accepted": 66492,
+      "improved": 32,
+      "construction": 3101,
+      "construction_feasible": true,
+      "T0": 13.252136752136753,
+      "Tf": 0.13252136752136753,
+      "best": 2702,
+      "best_feasible": true,
+      "events": [
+       [
+        0.022,
+        3101,
+        true
+       ],
+       [
+        0.026,
+        3014,
+        true
+       ],
+       [
+        0.032,
+        3002,
+        true
+       ],
+       [
+        0.032,
+        2990,
+        true
+       ],
+       [
+        0.033,
+        2971,
+        true
+       ],
+       [
+        0.148,
+        2771,
+        true
+       ],
+       [
+        0.16,
+        2738,
+        true
+       ],
+       [
+        0.182,
+        2736,
+        true
+       ],
+       [
+        0.184,
+        2726,
+        true
+       ],
+       [
+        0.961,
+        2723,
+        true
+       ],
+       [
+        3.232,
+        2721,
+        true
+       ],
+       [
+        3.271,
+        2720,
+        true
+       ],
+       [
+        3.285,
+        2718,
+        true
+       ],
+       [
+        4.506,
+        2717,
+        true
+       ],
+       [
+        4.512,
+        2713,
+        true
+       ],
+       [
+        7.162,
+        2712,
+        true
+       ],
+       [
+        9.148,
+        2711,
+        true
+       ],
+       [
+        9.809,
+        2710,
+        true
+       ],
+       [
+        12.063,
+        2703,
+        true
+       ],
+       [
+        23.967,
+        2702,
+        true
+       ]
+      ]
+     },
+     "best": 2702.0,
+     "wall_s": 54.008
+    }
+   }
+  },
+  "v010-10s": {
+   "time_limit": 10.0,
+   "revision": "ef42a2eac13595453f986d9df0b62e86e75ab596",
+   "cases": 6,
+   "official_feasible": 6,
+   "official_rejected": {},
+   "status": {
+    "tiny": "ok",
+    "large_1": "ok",
+    "large_2": "ok",
+    "large_3": "ok",
+    "large_4": "ok",
+    "large_5": "ok"
+   },
+   "objective": {
+    "tiny": 380.0,
+    "large_1": 2698.0,
+    "large_2": 2318.0,
+    "large_3": 2698.0,
+    "large_4": 2312.0,
+    "large_5": 2703.0
+   },
+   "reference": {
+    "tiny": 380.0,
+    "large_1": 2698.0,
+    "large_2": 2315.0,
+    "large_3": 2698.0,
+    "large_4": 2312.0,
+    "large_5": 2702.0
+   },
+   "score": {
+    "tiny": 1.0,
+    "large_1": 1.0,
+    "large_2": 0.998706,
+    "large_3": 1.0,
+    "large_4": 1.0,
+    "large_5": 0.99963
+   },
+   "gap_pct": {
+    "tiny": 0.0,
+    "large_1": 0.0,
+    "large_2": 0.1296,
+    "large_3": 0.0,
+    "large_4": 0.0,
+    "large_5": 0.037
+   },
+   "large_mean_score": 0.999667,
+   "large_strictly_better": 0,
+   "large_matched_or_better": 3,
+   "wall_s": {
+    "tiny": 7.256,
+    "large_1": 7.205,
+    "large_2": 7.165,
+    "large_3": 7.139,
+    "large_4": 7.165,
+    "large_5": 7.12
+   },
+   "gurobi_official_feasible": {
+    "tiny": true,
+    "large_1": true,
+    "large_2": true,
+    "large_3": true,
+    "large_4": true,
+    "large_5": true
+   },
+   "gurobi_ours_feasible": {
+    "tiny": true,
+    "large_1": true,
+    "large_2": true,
+    "large_3": true,
+    "large_4": true,
+    "large_5": true
+   },
+   "gurobi_log": {
+    "tiny": {
+     "lines": 2,
+     "last": {
+      "time": 0.309,
+      "objective_value": 432.0
+     }
+    },
+    "large_1": {
+     "lines": 13,
+     "last": {
+      "time": 6.017,
+      "objective_value": 2698.0
+     }
+    },
+    "large_2": {
+     "lines": 8,
+     "last": {
+      "time": 2.657,
+      "objective_value": 2314.0
+     }
+    },
+    "large_3": {
+     "lines": 6,
+     "last": {
+      "time": 4.892,
+      "objective_value": 2698.0
+     }
+    },
+    "large_4": {
+     "lines": 9,
+     "last": {
+      "time": 17.964,
+      "objective_value": 2312.0
+     }
+    },
+    "large_5": {
+     "lines": 10,
+     "last": {
+      "time": 69.87,
+      "objective_value": 2702.0
+     }
+    }
+   },
+   "size": {
+    "tiny": {
+     "n": 12,
+     "m": 3,
+     "C": 131,
+     "Gamma": 3,
+     "symmetric": true,
+     "tight_nominal": 0.6972,
+     "tight_full_deviation": 0.9059,
+     "max_dist": 99.0
+    },
+    "large_1": {
+     "n": 80,
+     "m": 37,
+     "C": 276,
+     "Gamma": 6,
+     "symmetric": true,
+     "tight_nominal": 0.1987,
+     "tight_full_deviation": 0.2583,
+     "max_dist": 135.0
+    },
+    "large_2": {
+     "n": 75,
+     "m": 31,
+     "C": 223,
+     "Gamma": 5,
+     "symmetric": true,
+     "tight_nominal": 0.2879,
+     "tight_full_deviation": 0.3171,
+     "max_dist": 135.0
+    },
+    "large_3": {
+     "n": 80,
+     "m": 37,
+     "C": 313,
+     "Gamma": 6,
+     "symmetric": true,
+     "tight_nominal": 0.1752,
+     "tight_full_deviation": 0.2629,
+     "max_dist": 135.0
+    },
+    "large_4": {
+     "n": 75,
+     "m": 31,
+     "C": 257,
+     "Gamma": 3,
+     "symmetric": true,
+     "tight_nominal": 0.2498,
+     "tight_full_deviation": 0.3251,
+     "max_dist": 135.0
+    },
+    "large_5": {
+     "n": 80,
+     "m": 37,
+     "C": 276,
+     "Gamma": 8,
+     "symmetric": true,
+     "tight_nominal": 0.1987,
+     "tight_full_deviation": 0.2583,
+     "max_dist": 135.0
+    }
+   },
+   "construction": {
+    "tiny": 420,
+    "large_1": 3101,
+    "large_2": 2791,
+    "large_3": 3101,
+    "large_4": 2791,
+    "large_5": 3101
+   },
+   "construction_feasible": {
+    "tiny": true,
+    "large_1": true,
+    "large_2": true,
+    "large_3": true,
+    "large_4": true,
+    "large_5": true
+   },
+   "best_source": {
+    "tiny": "parent",
+    "large_1": "parent",
+    "large_2": "child",
+    "large_3": "parent",
+    "large_4": "child",
+    "large_5": "parent"
+   },
+   "iterations_parent": {
+    "tiny": 71968,
+    "large_1": 22080,
+    "large_2": 24928,
+    "large_3": 27952,
+    "large_4": 28128,
+    "large_5": 28160
+   },
+   "iterations_child": {
+    "tiny": 68640,
+    "large_1": 21088,
+    "large_2": 24832,
+    "large_3": 27120,
+    "large_4": 26832,
+    "large_5": 26256
+   },
+   "load_s": {
+    "tiny": 0.018,
+    "large_1": 0.017,
+    "large_2": 0.012,
+    "large_3": 0.01,
+    "large_4": 0.011,
+    "large_5": 0.009
+   },
+   "solver_log": {
+    "tiny": {
+     "version": "0.1.0",
+     "n": 12,
+     "m": 3,
+     "C": 131,
+     "Gamma": 3,
+     "symmetric": true,
+     "T": 10.0,
+     "load_s": 0.018,
+     "workers": 2,
+     "parent": {
+      "seed": 1,
+      "iterations": 71968,
+      "accepted": 25321,
+      "improved": 3,
+      "construction": 420,
+      "construction_feasible": true,
+      "T0": 14.0,
+      "Tf": 0.14,
+      "best": 380,
+      "best_feasible": true,
+      "events": [
+       [
+        0.021,
+        420,
+        true
+       ],
+       [
+        0.023,
+        395,
+        true
+       ],
+       [
+        0.024,
+        390,
+        true
+       ],
+       [
+        0.024,
+        380,
+        true
+       ],
+       [
+        0.021,
+        420,
+        true
+       ],
+       [
+        0.023,
+        395,
+        true
+       ],
+       [
+        0.024,
+        390,
+        true
+       ],
+       [
+        0.024,
+        380,
+        true
+       ]
+      ]
+     },
+     "best_source": "parent",
+     "child": {
+      "seed": 1001,
+      "iterations": 68640,
+      "accepted": 23901,
+      "improved": 0,
+      "construction": 380,
+      "construction_feasible": true,
+      "T0": 12.666666666666666,
+      "Tf": 0.12666666666666665,
+      "best": 380,
+      "best_feasible": true,
+      "events": [
+       [
+        0.021,
+        380,
+        true
+       ],
+       [
+        0.021,
+        380,
+        true
+       ]
+      ]
+     },
+     "best": 380.0,
+     "wall_s": 7.001
+    },
+    "large_1": {
+     "version": "0.1.0",
+     "n": 80,
+     "m": 37,
+     "C": 276,
+     "Gamma": 6,
+     "symmetric": true,
+     "T": 10.0,
+     "load_s": 0.017,
+     "workers": 2,
+     "parent": {
+      "seed": 1,
+      "iterations": 22080,
+      "accepted": 8576,
+      "improved": 31,
+      "construction": 3101,
+      "construction_feasible": true,
+      "T0": 13.252136752136753,
+      "Tf": 0.13252136752136753,
+      "best": 2698,
+      "best_feasible": true,
+      "events": [
+       [
+        0.025,
+        3101,
+        true
+       ],
+       [
+        0.028,
+        3089,
+        true
+       ],
+       [
+        0.029,
+        3053,
+        true
+       ],
+       [
+        0.031,
+        2946,
+        true
+       ],
+       [
+        0.034,
+        2924,
+        true
+       ],
+       [
+        0.382,
+        2752,
+        true
+       ],
+       [
+        0.384,
+        2751,
+        true
+       ],
+       [
+        0.402,
+        2750,
+        true
+       ],
+       [
+        0.404,
+        2737,
+        true
+       ],
+       [
+        0.504,
+        2727,
+        true
+       ],
+       [
+        0.506,
+        2725,
+        true
+       ],
+       [
+        0.514,
+        2719,
+        true
+       ],
+       [
+        0.52,
+        2715,
+        true
+       ],
+       [
+        0.599,
+        2714,
+        true
+       ],
+       [
+        0.953,
+        2707,
+        true
+       ],
+       [
+        0.953,
+        2706,
+        true
+       ],
+       [
+        1.195,
+        2702,
+        true
+       ],
+       [
+        1.2,
+        2701,
+        true
+       ],
+       [
+        1.218,
+        2700,
+        true
+       ],
+       [
+        2.895,
+        2698,
+        true
+       ]
+      ]
+     },
+     "best_source": "parent",
+     "child": {
+      "seed": 1001,
+      "iterations": 21088,
+      "accepted": 8092,
+      "improved": 31,
+      "construction": 3101,
+      "construction_feasible": true,
+      "T0": 13.252136752136753,
+      "Tf": 0.13252136752136753,
+      "best": 2700,
+      "best_feasible": true,
+      "events": [
+       [
+        0.026,
+        3101,
+        true
+       ],
+       [
+        0.03,
+        3014,
+        true
+       ],
+       [
+        0.041,
+        3003,
+        true
+       ],
+       [
+        0.042,
+        2986,
+        true
+       ],
+       [
+        0.043,
+        2964,
+        true
+       ],
+       [
+        0.184,
+        2747,
+        true
+       ],
+       [
+        0.188,
+        2745,
+        true
+       ],
+       [
+        0.214,
+        2744,
+        true
+       ],
+       [
+        0.217,
+        2740,
+        true
+       ],
+       [
+        0.248,
+        2723,
+        true
+       ],
+       [
+        0.262,
+        2717,
+        true
+       ],
+       [
+        0.508,
+        2713,
+        true
+       ],
+       [
+        0.509,
+        2709,
+        true
+       ],
+       [
+        1.604,
+        2707,
+        true
+       ],
+       [
+        1.695,
+        2706,
+        true
+       ],
+       [
+        1.716,
+        2705,
+        true
+       ],
+       [
+        1.754,
+        2704,
+        true
+       ],
+       [
+        2.141,
+        2702,
+        true
+       ],
+       [
+        2.157,
+        2701,
+        true
+       ],
+       [
+        2.221,
+        2700,
+        true
+       ]
+      ]
+     },
+     "best": 2698.0,
+     "wall_s": 7.001
+    },
+    "large_2": {
+     "version": "0.1.0",
+     "n": 75,
+     "m": 31,
+     "C": 223,
+     "Gamma": 5,
+     "symmetric": true,
+     "T": 10.0,
+     "load_s": 0.012,
+     "workers": 2,
+     "parent": {
+      "seed": 1,
+      "iterations": 24928,
+      "accepted": 8247,
+      "improved": 31,
+      "construction": 2791,
+      "construction_feasible": true,
+      "T0": 13.165094339622641,
+      "Tf": 0.1316509433962264,
+      "best": 2319,
+      "best_feasible": true,
+      "events": [
+       [
+        0.017,
+        2787,
+        true
+       ],
+       [
+        0.019,
+        2771,
+        true
+       ],
+       [
+        0.019,
+        2744,
+        true
+       ],
+       [
+        0.02,
+        2693,
+        true
+       ],
+       [
+        0.022,
+        2689,
+        true
+       ],
+       [
+        0.046,
+        2455,
+        true
+       ],
+       [
+        0.06,
+        2454,
+        true
+       ],
+       [
+        0.093,
+        2399,
+        true
+       ],
+       [
+        0.101,
+        2390,
+        true
+       ],
+       [
+        0.104,
+        2382,
+        true
+       ],
+       [
+        0.354,
+        2365,
+        true
+       ],
+       [
+        0.383,
+        2362,
+        true
+       ],
+       [
+        0.842,
+        2352,
+        true
+       ],
+       [
+        0.868,
+        2349,
+        true
+       ],
+       [
+        0.882,
+        2345,
+        true
+       ],
+       [
+        0.914,
+        2344,
+        true
+       ],
+       [
+        1.227,
+        2339,
+        true
+       ],
+       [
+        1.307,
+        2332,
+        true
+       ],
+       [
+        1.329,
+        2331,
+        true
+       ],
+       [
+        2.063,
+        2319,
+        true
+       ]
+      ]
+     },
+     "best_source": "child",
+     "child": {
+      "seed": 1001,
+      "iterations": 24832,
+      "accepted": 8357,
+      "improved": 49,
+      "construction": 2791,
+      "construction_feasible": true,
+      "T0": 13.165094339622641,
+      "Tf": 0.1316509433962264,
+      "best": 2318,
+      "best_feasible": true,
+      "events": [
+       [
+        0.017,
+        2787,
+        true
+       ],
+       [
+        0.018,
+        2750,
+        true
+       ],
+       [
+        0.02,
+        2743,
+        true
+       ],
+       [
+        0.021,
+        2738,
+        true
+       ],
+       [
+        0.021,
+        2735,
+        true
+       ],
+       [
+        0.327,
+        2369,
+        true
+       ],
+       [
+        0.354,
+        2367,
+        true
+       ],
+       [
+        0.368,
+        2364,
+        true
+       ],
+       [
+        0.633,
+        2351,
+        true
+       ],
+       [
+        0.804,
+        2349,
+        true
+       ],
+       [
+        0.858,
+        2348,
+        true
+       ],
+       [
+        1.712,
+        2340,
+        true
+       ],
+       [
+        1.772,
+        2337,
+        true
+       ],
+       [
+        1.775,
+        2336,
+        true
+       ],
+       [
+        1.84,
+        2333,
+        true
+       ],
+       [
+        1.975,
+        2329,
+        true
+       ],
+       [
+        2.397,
+        2326,
+        true
+       ],
+       [
+        2.616,
+        2324,
+        true
+       ],
+       [
+        2.921,
+        2323,
+        true
+       ],
+       [
+        4.165,
+        2318,
+        true
+       ]
+      ]
+     },
+     "best": 2318.0,
+     "wall_s": 7.001
+    },
+    "large_3": {
+     "version": "0.1.0",
+     "n": 80,
+     "m": 37,
+     "C": 313,
+     "Gamma": 6,
+     "symmetric": true,
+     "T": 10.0,
+     "load_s": 0.01,
+     "workers": 2,
+     "parent": {
+      "seed": 1,
+      "iterations": 27952,
+      "accepted": 11010,
+      "improved": 33,
+      "construction": 3101,
+      "construction_feasible": true,
+      "T0": 13.252136752136753,
+      "Tf": 0.13252136752136753,
+      "best": 2698,
+      "best_feasible": true,
+      "events": [
+       [
+        0.016,
+        3101,
+        true
+       ],
+       [
+        0.018,
+        3089,
+        true
+       ],
+       [
+        0.018,
+        3053,
+        true
+       ],
+       [
+        0.02,
+        3012,
+        true
+       ],
+       [
+        0.02,
+        3011,
+        true
+       ],
+       [
+        0.076,
+        2787,
+        true
+       ],
+       [
+        0.078,
+        2770,
+        true
+       ],
+       [
+        0.081,
+        2753,
+        true
+       ],
+       [
+        0.081,
+        2752,
+        true
+       ],
+       [
+        0.102,
+        2750,
+        true
+       ],
+       [
+        0.103,
+        2741,
+        true
+       ],
+       [
+        0.148,
+        2727,
+        true
+       ],
+       [
+        0.149,
+        2723,
+        true
+       ],
+       [
+        0.151,
+        2718,
+        true
+       ],
+       [
+        0.223,
+        2714,
+        true
+       ],
+       [
+        1.48,
+        2710,
+        true
+       ],
+       [
+        1.667,
+        2708,
+        true
+       ],
+       [
+        2.137,
+        2701,
+        true
+       ],
+       [
+        2.625,
+        2700,
+        true
+       ],
+       [
+        4.342,
+        2698,
+        true
+       ]
+      ]
+     },
+     "best_source": "parent",
+     "child": {
+      "seed": 1001,
+      "iterations": 27120,
+      "accepted": 10317,
+      "improved": 28,
+      "construction": 3101,
+      "construction_feasible": true,
+      "T0": 13.252136752136753,
+      "Tf": 0.13252136752136753,
+      "best": 2700,
+      "best_feasible": true,
+      "events": [
+       [
+        0.016,
+        3101,
+        true
+       ],
+       [
+        0.018,
+        3014,
+        true
+       ],
+       [
+        0.023,
+        3003,
+        true
+       ],
+       [
+        0.023,
+        2986,
+        true
+       ],
+       [
+        0.024,
+        2975,
+        true
+       ],
+       [
+        0.117,
+        2739,
+        true
+       ],
+       [
+        0.681,
+        2729,
+        true
+       ],
+       [
+        0.716,
+        2724,
+        true
+       ],
+       [
+        0.721,
+        2723,
+        true
+       ],
+       [
+        0.765,
+        2720,
+        true
+       ],
+       [
+        0.768,
+        2719,
+        true
+       ],
+       [
+        0.773,
+        2717,
+        true
+       ],
+       [
+        0.778,
+        2716,
+        true
+       ],
+       [
+        0.788,
+        2715,
+        true
+       ],
+       [
+        0.99,
+        2713,
+        true
+       ],
+       [
+        1.039,
+        2710,
+        true
+       ],
+       [
+        1.039,
+        2709,
+        true
+       ],
+       [
+        1.04,
+        2707,
+        true
+       ],
+       [
+        1.824,
+        2704,
+        true
+       ],
+       [
+        2.826,
+        2700,
+        true
+       ]
+      ]
+     },
+     "best": 2698.0,
+     "wall_s": 7.002
+    },
+    "large_4": {
+     "version": "0.1.0",
+     "n": 75,
+     "m": 31,
+     "C": 257,
+     "Gamma": 3,
+     "symmetric": true,
+     "T": 10.0,
+     "load_s": 0.011,
+     "workers": 2,
+     "parent": {
+      "seed": 1,
+      "iterations": 28128,
+      "accepted": 9721,
+      "improved": 39,
+      "construction": 2791,
+      "construction_feasible": true,
+      "T0": 13.165094339622641,
+      "Tf": 0.1316509433962264,
+      "best": 2313,
+      "best_feasible": true,
+      "events": [
+       [
+        0.016,
+        2787,
+        true
+       ],
+       [
+        0.02,
+        2771,
+        true
+       ],
+       [
+        0.02,
+        2744,
+        true
+       ],
+       [
+        0.021,
+        2693,
+        true
+       ],
+       [
+        0.023,
+        2689,
+        true
+       ],
+       [
+        0.078,
+        2388,
+        true
+       ],
+       [
+        0.078,
+        2387,
+        true
+       ],
+       [
+        0.085,
+        2381,
+        true
+       ],
+       [
+        0.164,
+        2378,
+        true
+       ],
+       [
+        0.39,
+        2359,
+        true
+       ],
+       [
+        0.796,
+        2354,
+        true
+       ],
+       [
+        0.804,
+        2336,
+        true
+       ],
+       [
+        0.981,
+        2333,
+        true
+       ],
+       [
+        0.995,
+        2330,
+        true
+       ],
+       [
+        1.115,
+        2329,
+        true
+       ],
+       [
+        1.13,
+        2328,
+        true
+       ],
+       [
+        1.283,
+        2320,
+        true
+       ],
+       [
+        1.291,
+        2318,
+        true
+       ],
+       [
+        1.357,
+        2317,
+        true
+       ],
+       [
+        1.377,
+        2313,
+        true
+       ]
+      ]
+     },
+     "best_source": "child",
+     "child": {
+      "seed": 1001,
+      "iterations": 26832,
+      "accepted": 9311,
+      "improved": 39,
+      "construction": 2791,
+      "construction_feasible": true,
+      "T0": 13.165094339622641,
+      "Tf": 0.1316509433962264,
+      "best": 2312,
+      "best_feasible": true,
+      "events": [
+       [
+        0.016,
+        2787,
+        true
+       ],
+       [
+        0.018,
+        2750,
+        true
+       ],
+       [
+        0.02,
+        2743,
+        true
+       ],
+       [
+        0.023,
+        2711,
+        true
+       ],
+       [
+        0.024,
+        2697,
+        true
+       ],
+       [
+        0.072,
+        2369,
+        true
+       ],
+       [
+        0.074,
+        2364,
+        true
+       ],
+       [
+        0.076,
+        2359,
+        true
+       ],
+       [
+        0.2,
+        2355,
+        true
+       ],
+       [
+        0.353,
+        2350,
+        true
+       ],
+       [
+        0.364,
+        2349,
+        true
+       ],
+       [
+        0.374,
+        2344,
+        true
+       ],
+       [
+        0.968,
+        2340,
+        true
+       ],
+       [
+        0.981,
+        2326,
+        true
+       ],
+       [
+        0.983,
+        2323,
+        true
+       ],
+       [
+        0.998,
+        2322,
+        true
+       ],
+       [
+        0.999,
+        2321,
+        true
+       ],
+       [
+        1.142,
+        2317,
+        true
+       ],
+       [
+        2.369,
+        2313,
+        true
+       ],
+       [
+        2.442,
+        2312,
+        true
+       ]
+      ]
+     },
+     "best": 2312.0,
+     "wall_s": 7.003
+    },
+    "large_5": {
+     "version": "0.1.0",
+     "n": 80,
+     "m": 37,
+     "C": 276,
+     "Gamma": 8,
+     "symmetric": true,
+     "T": 10.0,
+     "load_s": 0.009,
+     "workers": 2,
+     "parent": {
+      "seed": 1,
+      "iterations": 28160,
+      "accepted": 10663,
+      "improved": 37,
+      "construction": 3101,
+      "construction_feasible": true,
+      "T0": 13.252136752136753,
+      "Tf": 0.13252136752136753,
+      "best": 2703,
+      "best_feasible": true,
+      "events": [
+       [
+        0.015,
+        3101,
+        true
+       ],
+       [
+        0.016,
+        3089,
+        true
+       ],
+       [
+        0.017,
+        3053,
+        true
+       ],
+       [
+        0.017,
+        3052,
+        true
+       ],
+       [
+        0.022,
+        3050,
+        true
+       ],
+       [
+        0.066,
+        2769,
+        true
+       ],
+       [
+        0.068,
+        2752,
+        true
+       ],
+       [
+        0.072,
+        2751,
+        true
+       ],
+       [
+        0.077,
+        2742,
+        true
+       ],
+       [
+        0.077,
+        2726,
+        true
+       ],
+       [
+        0.079,
+        2722,
+        true
+       ],
+       [
+        0.081,
+        2721,
+        true
+       ],
+       [
+        0.094,
+        2718,
+        true
+       ],
+       [
+        0.91,
+        2717,
+        true
+       ],
+       [
+        0.954,
+        2715,
+        true
+       ],
+       [
+        0.956,
+        2708,
+        true
+       ],
+       [
+        1.103,
+        2707,
+        true
+       ],
+       [
+        1.132,
+        2705,
+        true
+       ],
+       [
+        2.934,
+        2704,
+        true
+       ],
+       [
+        5.034,
+        2703,
+        true
+       ]
+      ]
+     },
+     "best_source": "parent",
+     "child": {
+      "seed": 1001,
+      "iterations": 26256,
+      "accepted": 10084,
+      "improved": 25,
+      "construction": 3101,
+      "construction_feasible": true,
+      "T0": 13.252136752136753,
+      "Tf": 0.13252136752136753,
+      "best": 2708,
+      "best_feasible": true,
+      "events": [
+       [
+        0.015,
+        3101,
+        true
+       ],
+       [
+        0.016,
+        3014,
+        true
+       ],
+       [
+        0.02,
+        3002,
+        true
+       ],
+       [
+        0.02,
+        2990,
+        true
+       ],
+       [
+        0.02,
+        2971,
+        true
+       ],
+       [
+        0.027,
+        2832,
+        true
+       ],
+       [
+        0.035,
+        2819,
+        true
+       ],
+       [
+        0.036,
+        2818,
+        true
+       ],
+       [
+        0.037,
+        2807,
+        true
+       ],
+       [
+        0.04,
+        2792,
+        true
+       ],
+       [
+        0.077,
+        2790,
+        true
+       ],
+       [
+        0.079,
+        2777,
+        true
+       ],
+       [
+        0.085,
+        2771,
+        true
+       ],
+       [
+        0.09,
+        2738,
+        true
+       ],
+       [
+        0.099,
+        2736,
+        true
+       ],
+       [
+        0.1,
+        2726,
+        true
+       ],
+       [
+        0.411,
+        2717,
+        true
+       ],
+       [
+        0.665,
+        2714,
+        true
+       ],
+       [
+        0.712,
+        2712,
+        true
+       ],
+       [
+        1.492,
+        2708,
+        true
+       ]
+      ]
+     },
+     "best": 2703.0,
+     "wall_s": 7.002
+    }
+   }
+  },
+  "v010-1w-60s": {
+   "time_limit": 60.0,
+   "revision": "ef42a2eac13595453f986d9df0b62e86e75ab596",
+   "cases": 6,
+   "official_feasible": 6,
+   "official_rejected": {},
+   "status": {
+    "tiny": "ok",
+    "large_1": "ok",
+    "large_2": "ok",
+    "large_3": "ok",
+    "large_4": "ok",
+    "large_5": "ok"
+   },
+   "objective": {
+    "tiny": 380.0,
+    "large_1": 2698.0,
+    "large_2": 2315.0,
+    "large_3": 2698.0,
+    "large_4": 2312.0,
+    "large_5": 2703.0
+   },
+   "reference": {
+    "tiny": 380.0,
+    "large_1": 2698.0,
+    "large_2": 2315.0,
+    "large_3": 2698.0,
+    "large_4": 2312.0,
+    "large_5": 2702.0
+   },
+   "score": {
+    "tiny": 1.0,
+    "large_1": 1.0,
+    "large_2": 1.0,
+    "large_3": 1.0,
+    "large_4": 1.0,
+    "large_5": 0.99963
+   },
+   "gap_pct": {
+    "tiny": 0.0,
+    "large_1": 0.0,
+    "large_2": 0.0,
+    "large_3": 0.0,
+    "large_4": 0.0,
+    "large_5": 0.037
+   },
+   "large_mean_score": 0.999926,
+   "large_strictly_better": 0,
+   "large_matched_or_better": 4,
+   "wall_s": {
+    "tiny": 54.121,
+    "large_1": 54.135,
+    "large_2": 54.12,
+    "large_3": 54.209,
+    "large_4": 54.599,
+    "large_5": 54.473
+   },
+   "gurobi_official_feasible": {
+    "tiny": true,
+    "large_1": true,
+    "large_2": true,
+    "large_3": true,
+    "large_4": true,
+    "large_5": true
+   },
+   "gurobi_ours_feasible": {
+    "tiny": true,
+    "large_1": true,
+    "large_2": true,
+    "large_3": true,
+    "large_4": true,
+    "large_5": true
+   },
+   "gurobi_log": {
+    "tiny": {
+     "lines": 2,
+     "last": {
+      "time": 0.309,
+      "objective_value": 432.0
+     }
+    },
+    "large_1": {
+     "lines": 13,
+     "last": {
+      "time": 6.017,
+      "objective_value": 2698.0
+     }
+    },
+    "large_2": {
+     "lines": 8,
+     "last": {
+      "time": 2.657,
+      "objective_value": 2314.0
+     }
+    },
+    "large_3": {
+     "lines": 6,
+     "last": {
+      "time": 4.892,
+      "objective_value": 2698.0
+     }
+    },
+    "large_4": {
+     "lines": 9,
+     "last": {
+      "time": 17.964,
+      "objective_value": 2312.0
+     }
+    },
+    "large_5": {
+     "lines": 10,
+     "last": {
+      "time": 69.87,
+      "objective_value": 2702.0
+     }
+    }
+   },
+   "size": {
+    "tiny": {
+     "n": 12,
+     "m": 3,
+     "C": 131,
+     "Gamma": 3,
+     "symmetric": true,
+     "tight_nominal": 0.6972,
+     "tight_full_deviation": 0.9059,
+     "max_dist": 99.0
+    },
+    "large_1": {
+     "n": 80,
+     "m": 37,
+     "C": 276,
+     "Gamma": 6,
+     "symmetric": true,
+     "tight_nominal": 0.1987,
+     "tight_full_deviation": 0.2583,
+     "max_dist": 135.0
+    },
+    "large_2": {
+     "n": 75,
+     "m": 31,
+     "C": 223,
+     "Gamma": 5,
+     "symmetric": true,
+     "tight_nominal": 0.2879,
+     "tight_full_deviation": 0.3171,
+     "max_dist": 135.0
+    },
+    "large_3": {
+     "n": 80,
+     "m": 37,
+     "C": 313,
+     "Gamma": 6,
+     "symmetric": true,
+     "tight_nominal": 0.1752,
+     "tight_full_deviation": 0.2629,
+     "max_dist": 135.0
+    },
+    "large_4": {
+     "n": 75,
+     "m": 31,
+     "C": 257,
+     "Gamma": 3,
+     "symmetric": true,
+     "tight_nominal": 0.2498,
+     "tight_full_deviation": 0.3251,
+     "max_dist": 135.0
+    },
+    "large_5": {
+     "n": 80,
+     "m": 37,
+     "C": 276,
+     "Gamma": 8,
+     "symmetric": true,
+     "tight_nominal": 0.1987,
+     "tight_full_deviation": 0.2583,
+     "max_dist": 135.0
+    }
+   },
+   "construction": {
+    "tiny": 420,
+    "large_1": 3101,
+    "large_2": 2791,
+    "large_3": 3101,
+    "large_4": 2791,
+    "large_5": 3101
+   },
+   "construction_feasible": {
+    "tiny": true,
+    "large_1": true,
+    "large_2": true,
+    "large_3": true,
+    "large_4": true,
+    "large_5": true
+   },
+   "best_source": {
+    "tiny": "parent",
+    "large_1": "parent",
+    "large_2": "parent",
+    "large_3": "parent",
+    "large_4": "parent",
+    "large_5": "parent"
+   },
+   "iterations_parent": {
+    "tiny": 916496,
+    "large_1": 220256,
+    "large_2": 254320,
+    "large_3": 152656,
+    "large_4": 172288,
+    "large_5": 99776
+   },
+   "iterations_child": {
+    "tiny": null,
+    "large_1": null,
+    "large_2": null,
+    "large_3": null,
+    "large_4": null,
+    "large_5": null
+   },
+   "load_s": {
+    "tiny": 0.006,
+    "large_1": 0.011,
+    "large_2": 0.008,
+    "large_3": 0.019,
+    "large_4": 0.018,
+    "large_5": 0.043
+   },
+   "solver_log": {
+    "tiny": {
+     "version": "0.1.0",
+     "n": 12,
+     "m": 3,
+     "C": 131,
+     "Gamma": 3,
+     "symmetric": true,
+     "T": 60.0,
+     "load_s": 0.006,
+     "workers": 1,
+     "parent": {
+      "seed": 1,
+      "iterations": 916496,
+      "accepted": 319714,
+      "improved": 3,
+      "construction": 420,
+      "construction_feasible": true,
+      "T0": 14.0,
+      "Tf": 0.14,
+      "best": 380,
+      "best_feasible": true,
+      "events": [
+       [
+        0.006,
+        420,
+        true
+       ],
+       [
+        0.007,
+        395,
+        true
+       ],
+       [
+        0.007,
+        390,
+        true
+       ],
+       [
+        0.007,
+        380,
+        true
+       ],
+       [
+        0.006,
+        420,
+        true
+       ],
+       [
+        0.007,
+        395,
+        true
+       ],
+       [
+        0.007,
+        390,
+        true
+       ],
+       [
+        0.007,
+        380,
+        true
+       ]
+      ]
+     },
+     "best_source": "parent",
+     "best": 380.0,
+     "wall_s": 54.002
+    },
+    "large_1": {
+     "version": "0.1.0",
+     "n": 80,
+     "m": 37,
+     "C": 276,
+     "Gamma": 6,
+     "symmetric": true,
+     "T": 60.0,
+     "load_s": 0.011,
+     "workers": 1,
+     "parent": {
+      "seed": 1,
+      "iterations": 220256,
+      "accepted": 86396,
+      "improved": 38,
+      "construction": 3101,
+      "construction_feasible": true,
+      "T0": 13.252136752136753,
+      "Tf": 0.13252136752136753,
+      "best": 2698,
+      "best_feasible": true,
+      "events": [
+       [
+        0.015,
+        3101,
+        true
+       ],
+       [
+        0.016,
+        3089,
+        true
+       ],
+       [
+        0.016,
+        3053,
+        true
+       ],
+       [
+        0.017,
+        2946,
+        true
+       ],
+       [
+        0.02,
+        2924,
+        true
+       ],
+       [
+        0.6,
+        2736,
+        true
+       ],
+       [
+        0.632,
+        2727,
+        true
+       ],
+       [
+        2.206,
+        2725,
+        true
+       ],
+       [
+        2.281,
+        2723,
+        true
+       ],
+       [
+        2.559,
+        2719,
+        true
+       ],
+       [
+        2.58,
+        2716,
+        true
+       ],
+       [
+        3.99,
+        2715,
+        true
+       ],
+       [
+        4.207,
+        2714,
+        true
+       ],
+       [
+        4.266,
+        2712,
+        true
+       ],
+       [
+        4.285,
+        2709,
+        true
+       ],
+       [
+        6.417,
+        2708,
+        true
+       ],
+       [
+        6.43,
+        2706,
+        true
+       ],
+       [
+        8.296,
+        2704,
+        true
+       ],
+       [
+        8.297,
+        2700,
+        true
+       ],
+       [
+        16.451,
+        2698,
+        true
+       ]
+      ]
+     },
+     "best_source": "parent",
+     "best": 2698.0,
+     "wall_s": 54.0
+    },
+    "large_2": {
+     "version": "0.1.0",
+     "n": 75,
+     "m": 31,
+     "C": 223,
+     "Gamma": 5,
+     "symmetric": true,
+     "T": 60.0,
+     "load_s": 0.008,
+     "workers": 1,
+     "parent": {
+      "seed": 1,
+      "iterations": 254320,
+      "accepted": 85592,
+      "improved": 38,
+      "construction": 2791,
+      "construction_feasible": true,
+      "T0": 13.165094339622641,
+      "Tf": 0.1316509433962264,
+      "best": 2315,
+      "best_feasible": true,
+      "events": [
+       [
+        0.011,
+        2787,
+        true
+       ],
+       [
+        0.012,
+        2771,
+        true
+       ],
+       [
+        0.012,
+        2744,
+        true
+       ],
+       [
+        0.013,
+        2693,
+        true
+       ],
+       [
+        0.015,
+        2689,
+        true
+       ],
+       [
+        0.333,
+        2363,
+        true
+       ],
+       [
+        0.352,
+        2362,
+        true
+       ],
+       [
+        0.352,
+        2361,
+        true
+       ],
+       [
+        0.359,
+        2355,
+        true
+       ],
+       [
+        0.776,
+        2349,
+        true
+       ],
+       [
+        0.788,
+        2345,
+        true
+       ],
+       [
+        0.789,
+        2344,
+        true
+       ],
+       [
+        0.793,
+        2338,
+        true
+       ],
+       [
+        1.199,
+        2331,
+        true
+       ],
+       [
+        5.446,
+        2325,
+        true
+       ],
+       [
+        5.473,
+        2324,
+        true
+       ],
+       [
+        7.567,
+        2321,
+        true
+       ],
+       [
+        7.585,
+        2320,
+        true
+       ],
+       [
+        7.932,
+        2318,
+        true
+       ],
+       [
+        21.861,
+        2315,
+        true
+       ]
+      ]
+     },
+     "best_source": "parent",
+     "best": 2315.0,
+     "wall_s": 54.001
+    },
+    "large_3": {
+     "version": "0.1.0",
+     "n": 80,
+     "m": 37,
+     "C": 313,
+     "Gamma": 6,
+     "symmetric": true,
+     "T": 60.0,
+     "load_s": 0.019,
+     "workers": 1,
+     "parent": {
+      "seed": 1,
+      "iterations": 152656,
+      "accepted": 59405,
+      "improved": 34,
+      "construction": 3101,
+      "construction_feasible": true,
+      "T0": 13.252136752136753,
+      "Tf": 0.13252136752136753,
+      "best": 2698,
+      "best_feasible": true,
+      "events": [
+       [
+        0.025,
+        3101,
+        true
+       ],
+       [
+        0.027,
+        3089,
+        true
+       ],
+       [
+        0.027,
+        3053,
+        true
+       ],
+       [
+        0.028,
+        3012,
+        true
+       ],
+       [
+        0.028,
+        3011,
+        true
+       ],
+       [
+        0.093,
+        2770,
+        true
+       ],
+       [
+        0.095,
+        2753,
+        true
+       ],
+       [
+        0.095,
+        2752,
+        true
+       ],
+       [
+        0.115,
+        2750,
+        true
+       ],
+       [
+        0.116,
+        2741,
+        true
+       ],
+       [
+        0.211,
+        2740,
+        true
+       ],
+       [
+        0.29,
+        2716,
+        true
+       ],
+       [
+        1.449,
+        2714,
+        true
+       ],
+       [
+        4.398,
+        2711,
+        true
+       ],
+       [
+        4.4,
+        2706,
+        true
+       ],
+       [
+        4.4,
+        2705,
+        true
+       ],
+       [
+        11.834,
+        2703,
+        true
+       ],
+       [
+        12.816,
+        2701,
+        true
+       ],
+       [
+        20.997,
+        2699,
+        true
+       ],
+       [
+        21.962,
+        2698,
+        true
+       ]
+      ]
+     },
+     "best_source": "parent",
+     "best": 2698.0,
+     "wall_s": 54.001
+    },
+    "large_4": {
+     "version": "0.1.0",
+     "n": 75,
+     "m": 31,
+     "C": 257,
+     "Gamma": 3,
+     "symmetric": true,
+     "T": 60.0,
+     "load_s": 0.018,
+     "workers": 1,
+     "parent": {
+      "seed": 1,
+      "iterations": 172288,
+      "accepted": 59299,
+      "improved": 47,
+      "construction": 2791,
+      "construction_feasible": true,
+      "T0": 13.165094339622641,
+      "Tf": 0.1316509433962264,
+      "best": 2312,
+      "best_feasible": true,
+      "events": [
+       [
+        0.028,
+        2787,
+        true
+       ],
+       [
+        0.031,
+        2771,
+        true
+       ],
+       [
+        0.031,
+        2744,
+        true
+       ],
+       [
+        0.033,
+        2693,
+        true
+       ],
+       [
+        0.036,
+        2689,
+        true
+       ],
+       [
+        0.199,
+        2370,
+        true
+       ],
+       [
+        0.251,
+        2368,
+        true
+       ],
+       [
+        0.256,
+        2365,
+        true
+       ],
+       [
+        0.267,
+        2364,
+        true
+       ],
+       [
+        0.268,
+        2356,
+        true
+       ],
+       [
+        0.274,
+        2355,
+        true
+       ],
+       [
+        0.276,
+        2338,
+        true
+       ],
+       [
+        0.29,
+        2332,
+        true
+       ],
+       [
+        3.855,
+        2323,
+        true
+       ],
+       [
+        7.857,
+        2322,
+        true
+       ],
+       [
+        9.466,
+        2320,
+        true
+       ],
+       [
+        9.499,
+        2319,
+        true
+       ],
+       [
+        10.369,
+        2317,
+        true
+       ],
+       [
+        16.877,
+        2316,
+        true
+       ],
+       [
+        23.401,
+        2312,
+        true
+       ]
+      ]
+     },
+     "best_source": "parent",
+     "best": 2312.0,
+     "wall_s": 54.0
+    },
+    "large_5": {
+     "version": "0.1.0",
+     "n": 80,
+     "m": 37,
+     "C": 276,
+     "Gamma": 8,
+     "symmetric": true,
+     "T": 60.0,
+     "load_s": 0.043,
+     "workers": 1,
+     "parent": {
+      "seed": 1,
+      "iterations": 99776,
+      "accepted": 38126,
+      "improved": 30,
+      "construction": 3101,
+      "construction_feasible": true,
+      "T0": 13.252136752136753,
+      "Tf": 0.13252136752136753,
+      "best": 2703,
+      "best_feasible": true,
+      "events": [
+       [
+        0.058,
+        3101,
+        true
+       ],
+       [
+        0.072,
+        3089,
+        true
+       ],
+       [
+        0.072,
+        3053,
+        true
+       ],
+       [
+        0.073,
+        3052,
+        true
+       ],
+       [
+        0.092,
+        3050,
+        true
+       ],
+       [
+        0.17,
+        2827,
+        true
+       ],
+       [
+        0.179,
+        2822,
+        true
+       ],
+       [
+        0.184,
+        2819,
+        true
+       ],
+       [
+        0.214,
+        2814,
+        true
+       ],
+       [
+        0.218,
+        2774,
+        true
+       ],
+       [
+        0.223,
+        2773,
+        true
+       ],
+       [
+        0.257,
+        2771,
+        true
+       ],
+       [
+        0.273,
+        2769,
+        true
+       ],
+       [
+        0.275,
+        2752,
+        true
+       ],
+       [
+        0.339,
+        2742,
+        true
+       ],
+       [
+        0.34,
+        2732,
+        true
+       ],
+       [
+        1.919,
+        2715,
+        true
+       ],
+       [
+        3.914,
+        2710,
+        true
+       ],
+       [
+        7.203,
+        2705,
+        true
+       ],
+       [
+        12.042,
+        2703,
+        true
+       ]
+      ]
+     },
+     "best_source": "parent",
+     "best": 2703.0,
+     "wall_s": 54.005
+    }
+   }
+  },
+  "v010-seed7-60s": {
+   "time_limit": 60.0,
+   "revision": "ef42a2eac13595453f986d9df0b62e86e75ab596",
+   "cases": 6,
+   "official_feasible": 6,
+   "official_rejected": {},
+   "status": {
+    "tiny": "ok",
+    "large_1": "ok",
+    "large_2": "ok",
+    "large_3": "ok",
+    "large_4": "ok",
+    "large_5": "ok"
+   },
+   "objective": {
+    "tiny": 380.0,
+    "large_1": 2698.0,
+    "large_2": 2315.0,
+    "large_3": 2698.0,
+    "large_4": 2312.0,
+    "large_5": 2702.0
+   },
+   "reference": {
+    "tiny": 380.0,
+    "large_1": 2698.0,
+    "large_2": 2315.0,
+    "large_3": 2698.0,
+    "large_4": 2312.0,
+    "large_5": 2702.0
+   },
+   "score": {
+    "tiny": 1.0,
+    "large_1": 1.0,
+    "large_2": 1.0,
+    "large_3": 1.0,
+    "large_4": 1.0,
+    "large_5": 1.0
+   },
+   "gap_pct": {
+    "tiny": 0.0,
+    "large_1": 0.0,
+    "large_2": 0.0,
+    "large_3": 0.0,
+    "large_4": 0.0,
+    "large_5": 0.0
+   },
+   "large_mean_score": 1.0,
+   "large_strictly_better": 0,
+   "large_matched_or_better": 5,
+   "wall_s": {
+    "tiny": 54.64,
+    "large_1": 54.766,
+    "large_2": 54.38,
+    "large_3": 54.216,
+    "large_4": 54.8,
+    "large_5": 54.272
+   },
+   "gurobi_official_feasible": {
+    "tiny": true,
+    "large_1": true,
+    "large_2": true,
+    "large_3": true,
+    "large_4": true,
+    "large_5": true
+   },
+   "gurobi_ours_feasible": {
+    "tiny": true,
+    "large_1": true,
+    "large_2": true,
+    "large_3": true,
+    "large_4": true,
+    "large_5": true
+   },
+   "gurobi_log": {
+    "tiny": {
+     "lines": 2,
+     "last": {
+      "time": 0.309,
+      "objective_value": 432.0
+     }
+    },
+    "large_1": {
+     "lines": 13,
+     "last": {
+      "time": 6.017,
+      "objective_value": 2698.0
+     }
+    },
+    "large_2": {
+     "lines": 8,
+     "last": {
+      "time": 2.657,
+      "objective_value": 2314.0
+     }
+    },
+    "large_3": {
+     "lines": 6,
+     "last": {
+      "time": 4.892,
+      "objective_value": 2698.0
+     }
+    },
+    "large_4": {
+     "lines": 9,
+     "last": {
+      "time": 17.964,
+      "objective_value": 2312.0
+     }
+    },
+    "large_5": {
+     "lines": 10,
+     "last": {
+      "time": 69.87,
+      "objective_value": 2702.0
+     }
+    }
+   },
+   "size": {
+    "tiny": {
+     "n": 12,
+     "m": 3,
+     "C": 131,
+     "Gamma": 3,
+     "symmetric": true,
+     "tight_nominal": 0.6972,
+     "tight_full_deviation": 0.9059,
+     "max_dist": 99.0
+    },
+    "large_1": {
+     "n": 80,
+     "m": 37,
+     "C": 276,
+     "Gamma": 6,
+     "symmetric": true,
+     "tight_nominal": 0.1987,
+     "tight_full_deviation": 0.2583,
+     "max_dist": 135.0
+    },
+    "large_2": {
+     "n": 75,
+     "m": 31,
+     "C": 223,
+     "Gamma": 5,
+     "symmetric": true,
+     "tight_nominal": 0.2879,
+     "tight_full_deviation": 0.3171,
+     "max_dist": 135.0
+    },
+    "large_3": {
+     "n": 80,
+     "m": 37,
+     "C": 313,
+     "Gamma": 6,
+     "symmetric": true,
+     "tight_nominal": 0.1752,
+     "tight_full_deviation": 0.2629,
+     "max_dist": 135.0
+    },
+    "large_4": {
+     "n": 75,
+     "m": 31,
+     "C": 257,
+     "Gamma": 3,
+     "symmetric": true,
+     "tight_nominal": 0.2498,
+     "tight_full_deviation": 0.3251,
+     "max_dist": 135.0
+    },
+    "large_5": {
+     "n": 80,
+     "m": 37,
+     "C": 276,
+     "Gamma": 8,
+     "symmetric": true,
+     "tight_nominal": 0.1987,
+     "tight_full_deviation": 0.2583,
+     "max_dist": 135.0
+    }
+   },
+   "construction": {
+    "tiny": 420,
+    "large_1": 3101,
+    "large_2": 2791,
+    "large_3": 3101,
+    "large_4": 2782,
+    "large_5": 3101
+   },
+   "construction_feasible": {
+    "tiny": true,
+    "large_1": true,
+    "large_2": true,
+    "large_3": true,
+    "large_4": true,
+    "large_5": true
+   },
+   "best_source": {
+    "tiny": "parent",
+    "large_1": "parent",
+    "large_2": "parent",
+    "large_3": "parent",
+    "large_4": "parent",
+    "large_5": "parent"
+   },
+   "iterations_parent": {
+    "tiny": 329024,
+    "large_1": 84224,
+    "large_2": 123168,
+    "large_3": 173504,
+    "large_4": 64176,
+    "large_5": 114256
+   },
+   "iterations_child": {
+    "tiny": 352944,
+    "large_1": 87584,
+    "large_2": 118944,
+    "large_3": 187648,
+    "large_4": 104736,
+    "large_5": 77232
+   },
+   "load_s": {
+    "tiny": 0.048,
+    "large_1": 0.055,
+    "large_2": 0.023,
+    "large_3": 0.011,
+    "large_4": 0.063,
+    "large_5": 0.015
+   },
+   "solver_log": {
+    "tiny": {
+     "version": "0.1.0",
+     "n": 12,
+     "m": 3,
+     "C": 131,
+     "Gamma": 3,
+     "symmetric": true,
+     "T": 60.0,
+     "load_s": 0.048,
+     "workers": 2,
+     "parent": {
+      "seed": 7,
+      "iterations": 329024,
+      "accepted": 113876,
+      "improved": 2,
+      "construction": 420,
+      "construction_feasible": true,
+      "T0": 14.0,
+      "Tf": 0.14,
+      "best": 380,
+      "best_feasible": true,
+      "events": [
+       [
+        0.063,
+        420,
+        true
+       ],
+       [
+        0.066,
+        396,
+        true
+       ],
+       [
+        0.078,
+        380,
+        true
+       ],
+       [
+        0.063,
+        420,
+        true
+       ],
+       [
+        0.066,
+        396,
+        true
+       ],
+       [
+        0.078,
+        380,
+        true
+       ]
+      ]
+     },
+     "best_source": "parent",
+     "child": {
+      "seed": 1007,
+      "iterations": 352944,
+      "accepted": 121583,
+      "improved": 1,
+      "construction": 396,
+      "construction_feasible": true,
+      "T0": 13.2,
+      "Tf": 0.132,
+      "best": 380,
+      "best_feasible": true,
+      "events": [
+       [
+        0.054,
+        396,
+        true
+       ],
+       [
+        0.054,
+        380,
+        true
+       ],
+       [
+        0.054,
+        396,
+        true
+       ],
+       [
+        0.054,
+        380,
+        true
+       ]
+      ]
+     },
+     "best": 380.0,
+     "wall_s": 54.004
+    },
+    "large_1": {
+     "version": "0.1.0",
+     "n": 80,
+     "m": 37,
+     "C": 276,
+     "Gamma": 6,
+     "symmetric": true,
+     "T": 60.0,
+     "load_s": 0.055,
+     "workers": 2,
+     "parent": {
+      "seed": 7,
+      "iterations": 84224,
+      "accepted": 32664,
+      "improved": 38,
+      "construction": 3101,
+      "construction_feasible": true,
+      "T0": 13.252136752136753,
+      "Tf": 0.13252136752136753,
+      "best": 2698,
+      "best_feasible": true,
+      "events": [
+       [
+        0.086,
+        3101,
+        true
+       ],
+       [
+        0.091,
+        3056,
+        true
+       ],
+       [
+        0.094,
+        3051,
+        true
+       ],
+       [
+        0.102,
+        3046,
+        true
+       ],
+       [
+        0.103,
+        3039,
+        true
+       ],
+       [
+        0.534,
+        2750,
+        true
+       ],
+       [
+        0.542,
+        2746,
+        true
+       ],
+       [
+        0.546,
+        2741,
+        true
+       ],
+       [
+        0.559,
+        2735,
+        true
+       ],
+       [
+        1.129,
+        2728,
+        true
+       ],
+       [
+        1.51,
+        2721,
+        true
+       ],
+       [
+        4.648,
+        2714,
+        true
+       ],
+       [
+        4.717,
+        2710,
+        true
+       ],
+       [
+        4.718,
+        2709,
+        true
+       ],
+       [
+        4.734,
+        2708,
+        true
+       ],
+       [
+        5.893,
+        2703,
+        true
+       ],
+       [
+        5.961,
+        2701,
+        true
+       ],
+       [
+        6.803,
+        2700,
+        true
+       ],
+       [
+        10.806,
+        2699,
+        true
+       ],
+       [
+        24.847,
+        2698,
+        true
+       ]
+      ]
+     },
+     "best_source": "parent",
+     "child": {
+      "seed": 1007,
+      "iterations": 87584,
+      "accepted": 33671,
+      "improved": 49,
+      "construction": 3101,
+      "construction_feasible": true,
+      "T0": 13.252136752136753,
+      "Tf": 0.13252136752136753,
+      "best": 2698,
+      "best_feasible": true,
+      "events": [
+       [
+        0.066,
+        3101,
+        true
+       ],
+       [
+        0.076,
+        3055,
+        true
+       ],
+       [
+        0.08,
+        3025,
+        true
+       ],
+       [
+        0.081,
+        2985,
+        true
+       ],
+       [
+        0.081,
+        2978,
+        true
+       ],
+       [
+        0.484,
+        2741,
+        true
+       ],
+       [
+        0.878,
+        2733,
+        true
+       ],
+       [
+        1.095,
+        2731,
+        true
+       ],
+       [
+        1.154,
+        2730,
+        true
+       ],
+       [
+        1.16,
+        2724,
+        true
+       ],
+       [
+        1.161,
+        2721,
+        true
+       ],
+       [
+        1.301,
+        2716,
+        true
+       ],
+       [
+        3.687,
+        2713,
+        true
+       ],
+       [
+        3.691,
+        2712,
+        true
+       ],
+       [
+        6.771,
+        2710,
+        true
+       ],
+       [
+        6.813,
+        2708,
+        true
+       ],
+       [
+        7.053,
+        2706,
+        true
+       ],
+       [
+        7.072,
+        2702,
+        true
+       ],
+       [
+        13.021,
+        2701,
+        true
+       ],
+       [
+        13.369,
+        2698,
+        true
+       ]
+      ]
+     },
+     "best": 2698.0,
+     "wall_s": 54.008
+    },
+    "large_2": {
+     "version": "0.1.0",
+     "n": 75,
+     "m": 31,
+     "C": 223,
+     "Gamma": 5,
+     "symmetric": true,
+     "T": 60.0,
+     "load_s": 0.023,
+     "workers": 2,
+     "parent": {
+      "seed": 7,
+      "iterations": 123168,
+      "accepted": 41244,
+      "improved": 37,
+      "construction": 2791,
+      "construction_feasible": true,
+      "T0": 13.165094339622641,
+      "Tf": 0.1316509433962264,
+      "best": 2315,
+      "best_feasible": true,
+      "events": [
+       [
+        0.034,
+        2787,
+        true
+       ],
+       [
+        0.04,
+        2778,
+        true
+       ],
+       [
+        0.047,
+        2746,
+        true
+       ],
+       [
+        0.048,
+        2742,
+        true
+       ],
+       [
+        0.049,
+        2646,
+        true
+       ],
+       [
+        0.18,
+        2380,
+        true
+       ],
+       [
+        0.196,
+        2378,
+        true
+       ],
+       [
+        0.215,
+        2372,
+        true
+       ],
+       [
+        0.217,
+        2366,
+        true
+       ],
+       [
+        1.237,
+        2350,
+        true
+       ],
+       [
+        2.11,
+        2344,
+        true
+       ],
+       [
+        3.968,
+        2343,
+        true
+       ],
+       [
+        3.97,
+        2336,
+        true
+       ],
+       [
+        8.118,
+        2332,
+        true
+       ],
+       [
+        9.039,
+        2330,
+        true
+       ],
+       [
+        9.248,
+        2326,
+        true
+       ],
+       [
+        10.316,
+        2325,
+        true
+       ],
+       [
+        10.353,
+        2323,
+        true
+       ],
+       [
+        12.145,
+        2320,
+        true
+       ],
+       [
+        12.551,
+        2315,
+        true
+       ]
+      ]
+     },
+     "best_source": "parent",
+     "child": {
+      "seed": 1007,
+      "iterations": 118944,
+      "accepted": 40749,
+      "improved": 36,
+      "construction": 2757,
+      "construction_feasible": true,
+      "T0": 13.004716981132075,
+      "Tf": 0.13004716981132075,
+      "best": 2318,
+      "best_feasible": true,
+      "events": [
+       [
+        0.033,
+        2748,
+        true
+       ],
+       [
+        0.036,
+        2717,
+        true
+       ],
+       [
+        0.037,
+        2713,
+        true
+       ],
+       [
+        0.042,
+        2622,
+        true
+       ],
+       [
+        0.044,
+        2583,
+        true
+       ],
+       [
+        0.572,
+        2358,
+        true
+       ],
+       [
+        0.625,
+        2351,
+        true
+       ],
+       [
+        0.66,
+        2347,
+        true
+       ],
+       [
+        1.141,
+        2344,
+        true
+       ],
+       [
+        1.148,
+        2343,
+        true
+       ],
+       [
+        4.552,
+        2339,
+        true
+       ],
+       [
+        4.59,
+        2336,
+        true
+       ],
+       [
+        4.595,
+        2335,
+        true
+       ],
+       [
+        4.606,
+        2334,
+        true
+       ],
+       [
+        5.14,
+        2333,
+        true
+       ],
+       [
+        5.155,
+        2328,
+        true
+       ],
+       [
+        8.759,
+        2327,
+        true
+       ],
+       [
+        9.61,
+        2323,
+        true
+       ],
+       [
+        9.863,
+        2322,
+        true
+       ],
+       [
+        14.067,
+        2318,
+        true
+       ]
+      ]
+     },
+     "best": 2315.0,
+     "wall_s": 54.002
+    },
+    "large_3": {
+     "version": "0.1.0",
+     "n": 80,
+     "m": 37,
+     "C": 313,
+     "Gamma": 6,
+     "symmetric": true,
+     "T": 60.0,
+     "load_s": 0.011,
+     "workers": 2,
+     "parent": {
+      "seed": 7,
+      "iterations": 173504,
+      "accepted": 68537,
+      "improved": 29,
+      "construction": 3101,
+      "construction_feasible": true,
+      "T0": 13.252136752136753,
+      "Tf": 0.13252136752136753,
+      "best": 2698,
+      "best_feasible": true,
+      "events": [
+       [
+        0.017,
+        3101,
+        true
+       ],
+       [
+        0.019,
+        3056,
+        true
+       ],
+       [
+        0.021,
+        3051,
+        true
+       ],
+       [
+        0.022,
+        3046,
+        true
+       ],
+       [
+        0.022,
+        3039,
+        true
+       ],
+       [
+        0.046,
+        2764,
+        true
+       ],
+       [
+        0.055,
+        2748,
+        true
+       ],
+       [
+        0.066,
+        2747,
+        true
+       ],
+       [
+        0.073,
+        2745,
+        true
+       ],
+       [
+        0.162,
+        2740,
+        true
+       ],
+       [
+        0.164,
+        2738,
+        true
+       ],
+       [
+        0.197,
+        2733,
+        true
+       ],
+       [
+        0.296,
+        2722,
+        true
+       ],
+       [
+        0.697,
+        2718,
+        true
+       ],
+       [
+        2.834,
+        2711,
+        true
+       ],
+       [
+        3.601,
+        2706,
+        true
+       ],
+       [
+        4.648,
+        2705,
+        true
+       ],
+       [
+        5.914,
+        2703,
+        true
+       ],
+       [
+        8.805,
+        2700,
+        true
+       ],
+       [
+        9.696,
+        2698,
+        true
+       ]
+      ]
+     },
+     "best_source": "parent",
+     "child": {
+      "seed": 1007,
+      "iterations": 187648,
+      "accepted": 74022,
+      "improved": 36,
+      "construction": 3101,
+      "construction_feasible": true,
+      "T0": 13.252136752136753,
+      "Tf": 0.13252136752136753,
+      "best": 2698,
+      "best_feasible": true,
+      "events": [
+       [
+        0.017,
+        3101,
+        true
+       ],
+       [
+        0.018,
+        3055,
+        true
+       ],
+       [
+        0.02,
+        3025,
+        true
+       ],
+       [
+        0.02,
+        2985,
+        true
+       ],
+       [
+        0.02,
+        2978,
+        true
+       ],
+       [
+        0.04,
+        2762,
+        true
+       ],
+       [
+        0.041,
+        2758,
+        true
+       ],
+       [
+        0.065,
+        2757,
+        true
+       ],
+       [
+        0.148,
+        2750,
+        true
+       ],
+       [
+        0.158,
+        2744,
+        true
+       ],
+       [
+        0.159,
+        2732,
+        true
+       ],
+       [
+        0.56,
+        2725,
+        true
+       ],
+       [
+        0.693,
+        2723,
+        true
+       ],
+       [
+        0.696,
+        2718,
+        true
+       ],
+       [
+        1.01,
+        2708,
+        true
+       ],
+       [
+        1.013,
+        2705,
+        true
+       ],
+       [
+        1.021,
+        2704,
+        true
+       ],
+       [
+        10.945,
+        2701,
+        true
+       ],
+       [
+        12.412,
+        2700,
+        true
+       ],
+       [
+        13.065,
+        2698,
+        true
+       ]
+      ]
+     },
+     "best": 2698.0,
+     "wall_s": 54.014
+    },
+    "large_4": {
+     "version": "0.1.0",
+     "n": 75,
+     "m": 31,
+     "C": 257,
+     "Gamma": 3,
+     "symmetric": true,
+     "T": 60.0,
+     "load_s": 0.063,
+     "workers": 2,
+     "parent": {
+      "seed": 7,
+      "iterations": 64176,
+      "accepted": 21849,
+      "improved": 33,
+      "construction": 2782,
+      "construction_feasible": true,
+      "T0": 13.122641509433961,
+      "Tf": 0.1312264150943396,
+      "best": 2312,
+      "best_feasible": true,
+      "events": [
+       [
+        0.082,
+        2782,
+        true
+       ],
+       [
+        0.094,
+        2752,
+        true
+       ],
+       [
+        0.096,
+        2732,
+        true
+       ],
+       [
+        0.097,
+        2723,
+        true
+       ],
+       [
+        0.098,
+        2670,
+        true
+       ],
+       [
+        0.174,
+        2383,
+        true
+       ],
+       [
+        0.305,
+        2381,
+        true
+       ],
+       [
+        0.319,
+        2367,
+        true
+       ],
+       [
+        0.446,
+        2365,
+        true
+       ],
+       [
+        0.447,
+        2364,
+        true
+       ],
+       [
+        1.804,
+        2349,
+        true
+       ],
+       [
+        1.841,
+        2346,
+        true
+       ],
+       [
+        1.852,
+        2344,
+        true
+       ],
+       [
+        2.587,
+        2335,
+        true
+       ],
+       [
+        2.595,
+        2327,
+        true
+       ],
+       [
+        5.45,
+        2325,
+        true
+       ],
+       [
+        5.468,
+        2319,
+        true
+       ],
+       [
+        7.123,
+        2314,
+        true
+       ],
+       [
+        7.186,
+        2313,
+        true
+       ],
+       [
+        8.517,
+        2312,
+        true
+       ]
+      ]
+     },
+     "best_source": "parent",
+     "child": {
+      "seed": 1007,
+      "iterations": 104736,
+      "accepted": 36255,
+      "improved": 36,
+      "construction": 2757,
+      "construction_feasible": true,
+      "T0": 13.004716981132075,
+      "Tf": 0.13004716981132075,
+      "best": 2312,
+      "best_feasible": true,
+      "events": [
+       [
+        0.073,
+        2748,
+        true
+       ],
+       [
+        0.077,
+        2725,
+        true
+       ],
+       [
+        0.079,
+        2684,
+        true
+       ],
+       [
+        0.08,
+        2637,
+        true
+       ],
+       [
+        0.08,
+        2636,
+        true
+       ],
+       [
+        0.162,
+        2385,
+        true
+       ],
+       [
+        0.211,
+        2379,
+        true
+       ],
+       [
+        0.213,
+        2375,
+        true
+       ],
+       [
+        0.305,
+        2373,
+        true
+       ],
+       [
+        0.32,
+        2370,
+        true
+       ],
+       [
+        0.325,
+        2368,
+        true
+       ],
+       [
+        0.34,
+        2364,
+        true
+       ],
+       [
+        0.346,
+        2356,
+        true
+       ],
+       [
+        0.752,
+        2344,
+        true
+       ],
+       [
+        1.635,
+        2337,
+        true
+       ],
+       [
+        3.7,
+        2328,
+        true
+       ],
+       [
+        3.832,
+        2327,
+        true
+       ],
+       [
+        6.316,
+        2318,
+        true
+       ],
+       [
+        9.463,
+        2314,
+        true
+       ],
+       [
+        19.028,
+        2312,
+        true
+       ]
+      ]
+     },
+     "best": 2312.0,
+     "wall_s": 54.024
+    },
+    "large_5": {
+     "version": "0.1.0",
+     "n": 80,
+     "m": 37,
+     "C": 276,
+     "Gamma": 8,
+     "symmetric": true,
+     "T": 60.0,
+     "load_s": 0.015,
+     "workers": 2,
+     "parent": {
+      "seed": 7,
+      "iterations": 114256,
+      "accepted": 44733,
+      "improved": 27,
+      "construction": 3101,
+      "construction_feasible": true,
+      "T0": 13.252136752136753,
+      "Tf": 0.13252136752136753,
+      "best": 2702,
+      "best_feasible": true,
+      "events": [
+       [
+        0.023,
+        3101,
+        true
+       ],
+       [
+        0.025,
+        3056,
+        true
+       ],
+       [
+        0.026,
+        3051,
+        true
+       ],
+       [
+        0.027,
+        3046,
+        true
+       ],
+       [
+        0.027,
+        3039,
+        true
+       ],
+       [
+        0.057,
+        2779,
+        true
+       ],
+       [
+        0.065,
+        2766,
+        true
+       ],
+       [
+        0.07,
+        2765,
+        true
+       ],
+       [
+        0.07,
+        2750,
+        true
+       ],
+       [
+        0.073,
+        2748,
+        true
+       ],
+       [
+        0.074,
+        2743,
+        true
+       ],
+       [
+        0.083,
+        2733,
+        true
+       ],
+       [
+        0.084,
+        2721,
+        true
+       ],
+       [
+        1.766,
+        2719,
+        true
+       ],
+       [
+        1.77,
+        2708,
+        true
+       ],
+       [
+        4.475,
+        2707,
+        true
+       ],
+       [
+        8.05,
+        2706,
+        true
+       ],
+       [
+        8.105,
+        2705,
+        true
+       ],
+       [
+        9.467,
+        2703,
+        true
+       ],
+       [
+        35.254,
+        2702,
+        true
+       ]
+      ]
+     },
+     "best_source": "parent",
+     "child": {
+      "seed": 1007,
+      "iterations": 77232,
+      "accepted": 30859,
+      "improved": 29,
+      "construction": 3101,
+      "construction_feasible": true,
+      "T0": 13.252136752136753,
+      "Tf": 0.13252136752136753,
+      "best": 2703,
+      "best_feasible": true,
+      "events": [
+       [
+        0.024,
+        3101,
+        true
+       ],
+       [
+        0.025,
+        3055,
+        true
+       ],
+       [
+        0.027,
+        3025,
+        true
+       ],
+       [
+        0.027,
+        2985,
+        true
+       ],
+       [
+        0.028,
+        2982,
+        true
+       ],
+       [
+        0.066,
+        2779,
+        true
+       ],
+       [
+        0.066,
+        2771,
+        true
+       ],
+       [
+        0.068,
+        2769,
+        true
+       ],
+       [
+        0.126,
+        2768,
+        true
+       ],
+       [
+        0.128,
+        2767,
+        true
+       ],
+       [
+        0.179,
+        2764,
+        true
+       ],
+       [
+        0.192,
+        2755,
+        true
+       ],
+       [
+        0.198,
+        2745,
+        true
+       ],
+       [
+        0.38,
+        2734,
+        true
+       ],
+       [
+        0.555,
+        2729,
+        true
+       ],
+       [
+        1.598,
+        2718,
+        true
+       ],
+       [
+        2.707,
+        2714,
+        true
+       ],
+       [
+        5.236,
+        2708,
+        true
+       ],
+       [
+        6.44,
+        2704,
+        true
+       ],
+       [
+        6.455,
+        2703,
+        true
+       ]
+      ]
+     },
+     "best": 2702.0,
+     "wall_s": 54.01
+    }
+   }
+  },
+  "v010-300s": {
+   "time_limit": 300.0,
+   "revision": "ef42a2eac13595453f986d9df0b62e86e75ab596",
+   "cases": 6,
+   "official_feasible": 6,
+   "official_rejected": {},
+   "status": {
+    "tiny": "ok",
+    "large_1": "ok",
+    "large_2": "ok",
+    "large_3": "ok",
+    "large_4": "ok",
+    "large_5": "ok"
+   },
+   "objective": {
+    "tiny": 380.0,
+    "large_1": 2698.0,
+    "large_2": 2315.0,
+    "large_3": 2698.0,
+    "large_4": 2312.0,
+    "large_5": 2702.0
+   },
+   "reference": {
+    "tiny": 380.0,
+    "large_1": 2698.0,
+    "large_2": 2315.0,
+    "large_3": 2698.0,
+    "large_4": 2312.0,
+    "large_5": 2702.0
+   },
+   "score": {
+    "tiny": 1.0,
+    "large_1": 1.0,
+    "large_2": 1.0,
+    "large_3": 1.0,
+    "large_4": 1.0,
+    "large_5": 1.0
+   },
+   "gap_pct": {
+    "tiny": 0.0,
+    "large_1": 0.0,
+    "large_2": 0.0,
+    "large_3": 0.0,
+    "large_4": 0.0,
+    "large_5": 0.0
+   },
+   "large_mean_score": 1.0,
+   "large_strictly_better": 0,
+   "large_matched_or_better": 5,
+   "wall_s": {
+    "tiny": 270.403,
+    "large_1": 270.703,
+    "large_2": 270.158,
+    "large_3": 270.142,
+    "large_4": 270.164,
+    "large_5": 270.133
+   },
+   "gurobi_official_feasible": {
+    "tiny": true,
+    "large_1": true,
+    "large_2": true,
+    "large_3": true,
+    "large_4": true,
+    "large_5": true
+   },
+   "gurobi_ours_feasible": {
+    "tiny": true,
+    "large_1": true,
+    "large_2": true,
+    "large_3": true,
+    "large_4": true,
+    "large_5": true
+   },
+   "gurobi_log": {
+    "tiny": {
+     "lines": 2,
+     "last": {
+      "time": 0.309,
+      "objective_value": 432.0
+     }
+    },
+    "large_1": {
+     "lines": 13,
+     "last": {
+      "time": 6.017,
+      "objective_value": 2698.0
+     }
+    },
+    "large_2": {
+     "lines": 8,
+     "last": {
+      "time": 2.657,
+      "objective_value": 2314.0
+     }
+    },
+    "large_3": {
+     "lines": 6,
+     "last": {
+      "time": 4.892,
+      "objective_value": 2698.0
+     }
+    },
+    "large_4": {
+     "lines": 9,
+     "last": {
+      "time": 17.964,
+      "objective_value": 2312.0
+     }
+    },
+    "large_5": {
+     "lines": 10,
+     "last": {
+      "time": 69.87,
+      "objective_value": 2702.0
+     }
+    }
+   },
+   "size": {
+    "tiny": {
+     "n": 12,
+     "m": 3,
+     "C": 131,
+     "Gamma": 3,
+     "symmetric": true,
+     "tight_nominal": 0.6972,
+     "tight_full_deviation": 0.9059,
+     "max_dist": 99.0
+    },
+    "large_1": {
+     "n": 80,
+     "m": 37,
+     "C": 276,
+     "Gamma": 6,
+     "symmetric": true,
+     "tight_nominal": 0.1987,
+     "tight_full_deviation": 0.2583,
+     "max_dist": 135.0
+    },
+    "large_2": {
+     "n": 75,
+     "m": 31,
+     "C": 223,
+     "Gamma": 5,
+     "symmetric": true,
+     "tight_nominal": 0.2879,
+     "tight_full_deviation": 0.3171,
+     "max_dist": 135.0
+    },
+    "large_3": {
+     "n": 80,
+     "m": 37,
+     "C": 313,
+     "Gamma": 6,
+     "symmetric": true,
+     "tight_nominal": 0.1752,
+     "tight_full_deviation": 0.2629,
+     "max_dist": 135.0
+    },
+    "large_4": {
+     "n": 75,
+     "m": 31,
+     "C": 257,
+     "Gamma": 3,
+     "symmetric": true,
+     "tight_nominal": 0.2498,
+     "tight_full_deviation": 0.3251,
+     "max_dist": 135.0
+    },
+    "large_5": {
+     "n": 80,
+     "m": 37,
+     "C": 276,
+     "Gamma": 8,
+     "symmetric": true,
+     "tight_nominal": 0.1987,
+     "tight_full_deviation": 0.2583,
+     "max_dist": 135.0
+    }
+   },
+   "construction": {
+    "tiny": 420,
+    "large_1": 3101,
+    "large_2": 2791,
+    "large_3": 3101,
+    "large_4": 2791,
+    "large_5": 3101
+   },
+   "construction_feasible": {
+    "tiny": true,
+    "large_1": true,
+    "large_2": true,
+    "large_3": true,
+    "large_4": true,
+    "large_5": true
+   },
+   "best_source": {
+    "tiny": "parent",
+    "large_1": "parent",
+    "large_2": "parent",
+    "large_3": "parent",
+    "large_4": "parent",
+    "large_5": "parent"
+   },
+   "iterations_parent": {
+    "tiny": 2098080,
+    "large_1": 885744,
+    "large_2": 1017664,
+    "large_3": 1079952,
+    "large_4": 1200976,
+    "large_5": 1133600
+   },
+   "iterations_child": {
+    "tiny": 1389280,
+    "large_1": 885776,
+    "large_2": 1047136,
+    "large_3": 1062944,
+    "large_4": 1184336,
+    "large_5": 1216464
+   },
+   "load_s": {
+    "tiny": 0.024,
+    "large_1": 0.067,
+    "large_2": 0.012,
+    "large_3": 0.01,
+    "large_4": 0.01,
+    "large_5": 0.009
+   },
+   "solver_log": {
+    "tiny": {
+     "version": "0.1.0",
+     "n": 12,
+     "m": 3,
+     "C": 131,
+     "Gamma": 3,
+     "symmetric": true,
+     "T": 300.0,
+     "load_s": 0.024,
+     "workers": 2,
+     "parent": {
+      "seed": 1,
+      "iterations": 2098080,
+      "accepted": 731459,
+      "improved": 3,
+      "construction": 420,
+      "construction_feasible": true,
+      "T0": 14.0,
+      "Tf": 0.14,
+      "best": 380,
+      "best_feasible": true,
+      "events": [
+       [
+        0.027,
+        420,
+        true
+       ],
+       [
+        0.029,
+        395,
+        true
+       ],
+       [
+        0.03,
+        390,
+        true
+       ],
+       [
+        0.03,
+        380,
+        true
+       ],
+       [
+        0.027,
+        420,
+        true
+       ],
+       [
+        0.029,
+        395,
+        true
+       ],
+       [
+        0.03,
+        390,
+        true
+       ],
+       [
+        0.03,
+        380,
+        true
+       ]
+      ]
+     },
+     "best_source": "parent",
+     "child": {
+      "seed": 1001,
+      "iterations": 1389280,
+      "accepted": 476930,
+      "improved": 0,
+      "construction": 380,
+      "construction_feasible": true,
+      "T0": 12.666666666666666,
+      "Tf": 0.12666666666666665,
+      "best": 380,
+      "best_feasible": true,
+      "events": [
+       [
+        0.027,
+        380,
+        true
+       ],
+       [
+        0.027,
+        380,
+        true
+       ]
+      ]
+     },
+     "best": 380.0,
+     "wall_s": 270.004
+    },
+    "large_1": {
+     "version": "0.1.0",
+     "n": 80,
+     "m": 37,
+     "C": 276,
+     "Gamma": 6,
+     "symmetric": true,
+     "T": 300.0,
+     "load_s": 0.067,
+     "workers": 2,
+     "parent": {
+      "seed": 1,
+      "iterations": 885744,
+      "accepted": 343828,
+      "improved": 30,
+      "construction": 3101,
+      "construction_feasible": true,
+      "T0": 13.252136752136753,
+      "Tf": 0.13252136752136753,
+      "best": 2698,
+      "best_feasible": true,
+      "events": [
+       [
+        0.088,
+        3101,
+        true
+       ],
+       [
+        0.092,
+        3089,
+        true
+       ],
+       [
+        0.1,
+        3053,
+        true
+       ],
+       [
+        0.102,
+        2946,
+        true
+       ],
+       [
+        0.107,
+        2924,
+        true
+       ],
+       [
+        0.656,
+        2766,
+        true
+       ],
+       [
+        0.72,
+        2757,
+        true
+       ],
+       [
+        0.721,
+        2755,
+        true
+       ],
+       [
+        1.057,
+        2751,
+        true
+       ],
+       [
+        1.058,
+        2748,
+        true
+       ],
+       [
+        1.285,
+        2740,
+        true
+       ],
+       [
+        1.302,
+        2724,
+        true
+       ],
+       [
+        1.304,
+        2720,
+        true
+       ],
+       [
+        1.313,
+        2715,
+        true
+       ],
+       [
+        1.318,
+        2709,
+        true
+       ],
+       [
+        23.062,
+        2707,
+        true
+       ],
+       [
+        28.624,
+        2703,
+        true
+       ],
+       [
+        34.433,
+        2702,
+        true
+       ],
+       [
+        44.222,
+        2699,
+        true
+       ],
+       [
+        51.633,
+        2698,
+        true
+       ]
+      ]
+     },
+     "best_source": "parent",
+     "child": {
+      "seed": 1001,
+      "iterations": 885776,
+      "accepted": 344316,
+      "improved": 33,
+      "construction": 3101,
+      "construction_feasible": true,
+      "T0": 13.252136752136753,
+      "Tf": 0.13252136752136753,
+      "best": 2698,
+      "best_feasible": true,
+      "events": [
+       [
+        0.088,
+        3101,
+        true
+       ],
+       [
+        0.1,
+        3014,
+        true
+       ],
+       [
+        0.112,
+        3003,
+        true
+       ],
+       [
+        0.113,
+        2986,
+        true
+       ],
+       [
+        0.115,
+        2964,
+        true
+       ],
+       [
+        0.43,
+        2735,
+        true
+       ],
+       [
+        0.577,
+        2734,
+        true
+       ],
+       [
+        0.577,
+        2732,
+        true
+       ],
+       [
+        0.598,
+        2727,
+        true
+       ],
+       [
+        0.604,
+        2718,
+        true
+       ],
+       [
+        3.896,
+        2717,
+        true
+       ],
+       [
+        3.897,
+        2715,
+        true
+       ],
+       [
+        5.851,
+        2713,
+        true
+       ],
+       [
+        5.86,
+        2711,
+        true
+       ],
+       [
+        8.617,
+        2707,
+        true
+       ],
+       [
+        22.337,
+        2704,
+        true
+       ],
+       [
+        22.353,
+        2702,
+        true
+       ],
+       [
+        26.646,
+        2700,
+        true
+       ],
+       [
+        60.636,
+        2699,
+        true
+       ],
+       [
+        60.9,
+        2698,
+        true
+       ]
+      ]
+     },
+     "best": 2698.0,
+     "wall_s": 270.005
+    },
+    "large_2": {
+     "version": "0.1.0",
+     "n": 75,
+     "m": 31,
+     "C": 223,
+     "Gamma": 5,
+     "symmetric": true,
+     "T": 300.0,
+     "load_s": 0.012,
+     "workers": 2,
+     "parent": {
+      "seed": 1,
+      "iterations": 1017664,
+      "accepted": 343973,
+      "improved": 35,
+      "construction": 2791,
+      "construction_feasible": true,
+      "T0": 13.165094339622641,
+      "Tf": 0.1316509433962264,
+      "best": 2315,
+      "best_feasible": true,
+      "events": [
+       [
+        0.018,
+        2787,
+        true
+       ],
+       [
+        0.02,
+        2771,
+        true
+       ],
+       [
+        0.02,
+        2744,
+        true
+       ],
+       [
+        0.021,
+        2693,
+        true
+       ],
+       [
+        0.023,
+        2689,
+        true
+       ],
+       [
+        0.104,
+        2382,
+        true
+       ],
+       [
+        0.538,
+        2378,
+        true
+       ],
+       [
+        0.599,
+        2373,
+        true
+       ],
+       [
+        0.601,
+        2369,
+        true
+       ],
+       [
+        0.61,
+        2366,
+        true
+       ],
+       [
+        0.76,
+        2351,
+        true
+       ],
+       [
+        0.816,
+        2343,
+        true
+       ],
+       [
+        0.816,
+        2342,
+        true
+       ],
+       [
+        1.771,
+        2335,
+        true
+       ],
+       [
+        7.519,
+        2329,
+        true
+       ],
+       [
+        7.534,
+        2328,
+        true
+       ],
+       [
+        20.922,
+        2322,
+        true
+       ],
+       [
+        20.962,
+        2320,
+        true
+       ],
+       [
+        32.048,
+        2318,
+        true
+       ],
+       [
+        59.293,
+        2315,
+        true
+       ]
+      ]
+     },
+     "best_source": "parent",
+     "child": {
+      "seed": 1001,
+      "iterations": 1047136,
+      "accepted": 354428,
+      "improved": 44,
+      "construction": 2791,
+      "construction_feasible": true,
+      "T0": 13.165094339622641,
+      "Tf": 0.1316509433962264,
+      "best": 2315,
+      "best_feasible": true,
+      "events": [
+       [
+        0.017,
+        2787,
+        true
+       ],
+       [
+        0.018,
+        2750,
+        true
+       ],
+       [
+        0.02,
+        2743,
+        true
+       ],
+       [
+        0.021,
+        2738,
+        true
+       ],
+       [
+        0.022,
+        2735,
+        true
+       ],
+       [
+        0.159,
+        2418,
+        true
+       ],
+       [
+        0.161,
+        2388,
+        true
+       ],
+       [
+        0.161,
+        2387,
+        true
+       ],
+       [
+        0.165,
+        2374,
+        true
+       ],
+       [
+        0.167,
+        2368,
+        true
+       ],
+       [
+        0.211,
+        2365,
+        true
+       ],
+       [
+        0.212,
+        2358,
+        true
+       ],
+       [
+        0.223,
+        2348,
+        true
+       ],
+       [
+        0.284,
+        2328,
+        true
+       ],
+       [
+        9.288,
+        2325,
+        true
+       ],
+       [
+        15.834,
+        2322,
+        true
+       ],
+       [
+        39.563,
+        2321,
+        true
+       ],
+       [
+        40.705,
+        2319,
+        true
+       ],
+       [
+        50.192,
+        2318,
+        true
+       ],
+       [
+        90.792,
+        2315,
+        true
+       ]
+      ]
+     },
+     "best": 2315.0,
+     "wall_s": 270.002
+    },
+    "large_3": {
+     "version": "0.1.0",
+     "n": 80,
+     "m": 37,
+     "C": 313,
+     "Gamma": 6,
+     "symmetric": true,
+     "T": 300.0,
+     "load_s": 0.01,
+     "workers": 2,
+     "parent": {
+      "seed": 1,
+      "iterations": 1079952,
+      "accepted": 420598,
+      "improved": 35,
+      "construction": 3101,
+      "construction_feasible": true,
+      "T0": 13.252136752136753,
+      "Tf": 0.13252136752136753,
+      "best": 2698,
+      "best_feasible": true,
+      "events": [
+       [
+        0.015,
+        3101,
+        true
+       ],
+       [
+        0.016,
+        3089,
+        true
+       ],
+       [
+        0.017,
+        3053,
+        true
+       ],
+       [
+        0.018,
+        3012,
+        true
+       ],
+       [
+        0.018,
+        3011,
+        true
+       ],
+       [
+        0.088,
+        2753,
+        true
+       ],
+       [
+        0.088,
+        2752,
+        true
+       ],
+       [
+        0.111,
+        2750,
+        true
+       ],
+       [
+        0.112,
+        2741,
+        true
+       ],
+       [
+        0.213,
+        2740,
+        true
+       ],
+       [
+        0.317,
+        2736,
+        true
+       ],
+       [
+        0.318,
+        2733,
+        true
+       ],
+       [
+        0.319,
+        2727,
+        true
+       ],
+       [
+        0.322,
+        2719,
+        true
+       ],
+       [
+        0.324,
+        2716,
+        true
+       ],
+       [
+        0.804,
+        2714,
+        true
+       ],
+       [
+        6.946,
+        2707,
+        true
+       ],
+       [
+        6.948,
+        2704,
+        true
+       ],
+       [
+        10.688,
+        2702,
+        true
+       ],
+       [
+        38.449,
+        2698,
+        true
+       ]
+      ]
+     },
+     "best_source": "parent",
+     "child": {
+      "seed": 1001,
+      "iterations": 1062944,
+      "accepted": 414714,
+      "improved": 27,
+      "construction": 3101,
+      "construction_feasible": true,
+      "T0": 13.252136752136753,
+      "Tf": 0.13252136752136753,
+      "best": 2698,
+      "best_feasible": true,
+      "events": [
+       [
+        0.015,
+        3101,
+        true
+       ],
+       [
+        0.016,
+        3014,
+        true
+       ],
+       [
+        0.021,
+        3003,
+        true
+       ],
+       [
+        0.021,
+        2986,
+        true
+       ],
+       [
+        0.022,
+        2975,
+        true
+       ],
+       [
+        0.057,
+        2741,
+        true
+       ],
+       [
+        0.301,
+        2736,
+        true
+       ],
+       [
+        0.307,
+        2735,
+        true
+       ],
+       [
+        0.309,
+        2734,
+        true
+       ],
+       [
+        0.961,
+        2724,
+        true
+       ],
+       [
+        0.966,
+        2721,
+        true
+       ],
+       [
+        2.641,
+        2720,
+        true
+       ],
+       [
+        3.318,
+        2715,
+        true
+       ],
+       [
+        8.194,
+        2710,
+        true
+       ],
+       [
+        11.159,
+        2709,
+        true
+       ],
+       [
+        13.362,
+        2705,
+        true
+       ],
+       [
+        20.095,
+        2703,
+        true
+       ],
+       [
+        27.646,
+        2700,
+        true
+       ],
+       [
+        36.602,
+        2699,
+        true
+       ],
+       [
+        67.516,
+        2698,
+        true
+       ]
+      ]
+     },
+     "best": 2698.0,
+     "wall_s": 270.001
+    },
+    "large_4": {
+     "version": "0.1.0",
+     "n": 75,
+     "m": 31,
+     "C": 257,
+     "Gamma": 3,
+     "symmetric": true,
+     "T": 300.0,
+     "load_s": 0.01,
+     "workers": 2,
+     "parent": {
+      "seed": 1,
+      "iterations": 1200976,
+      "accepted": 412608,
+      "improved": 43,
+      "construction": 2791,
+      "construction_feasible": true,
+      "T0": 13.165094339622641,
+      "Tf": 0.1316509433962264,
+      "best": 2312,
+      "best_feasible": true,
+      "events": [
+       [
+        0.015,
+        2787,
+        true
+       ],
+       [
+        0.017,
+        2771,
+        true
+       ],
+       [
+        0.017,
+        2744,
+        true
+       ],
+       [
+        0.018,
+        2693,
+        true
+       ],
+       [
+        0.02,
+        2689,
+        true
+       ],
+       [
+        0.171,
+        2356,
+        true
+       ],
+       [
+        0.624,
+        2346,
+        true
+       ],
+       [
+        0.634,
+        2345,
+        true
+       ],
+       [
+        0.655,
+        2343,
+        true
+       ],
+       [
+        0.657,
+        2341,
+        true
+       ],
+       [
+        0.826,
+        2336,
+        true
+       ],
+       [
+        2.1,
+        2327,
+        true
+       ],
+       [
+        2.196,
+        2326,
+        true
+       ],
+       [
+        7.034,
+        2324,
+        true
+       ],
+       [
+        7.04,
+        2322,
+        true
+       ],
+       [
+        7.04,
+        2320,
+        true
+       ],
+       [
+        7.043,
+        2318,
+        true
+       ],
+       [
+        41.34,
+        2316,
+        true
+       ],
+       [
+        43.676,
+        2314,
+        true
+       ],
+       [
+        46.345,
+        2312,
+        true
+       ]
+      ]
+     },
+     "best_source": "parent",
+     "child": {
+      "seed": 1001,
+      "iterations": 1184336,
+      "accepted": 406490,
+      "improved": 36,
+      "construction": 2791,
+      "construction_feasible": true,
+      "T0": 13.165094339622641,
+      "Tf": 0.1316509433962264,
+      "best": 2312,
+      "best_feasible": true,
+      "events": [
+       [
+        0.015,
+        2787,
+        true
+       ],
+       [
+        0.016,
+        2750,
+        true
+       ],
+       [
+        0.018,
+        2743,
+        true
+       ],
+       [
+        0.021,
+        2711,
+        true
+       ],
+       [
+        0.022,
+        2697,
+        true
+       ],
+       [
+        0.1,
+        2420,
+        true
+       ],
+       [
+        0.1,
+        2411,
+        true
+       ],
+       [
+        0.101,
+        2398,
+        true
+       ],
+       [
+        0.111,
+        2396,
+        true
+       ],
+       [
+        0.113,
+        2395,
+        true
+       ],
+       [
+        0.116,
+        2382,
+        true
+       ],
+       [
+        0.169,
+        2370,
+        true
+       ],
+       [
+        0.169,
+        2364,
+        true
+       ],
+       [
+        0.178,
+        2359,
+        true
+       ],
+       [
+        0.187,
+        2352,
+        true
+       ],
+       [
+        0.188,
+        2330,
+        true
+       ],
+       [
+        6.146,
+        2325,
+        true
+       ],
+       [
+        9.462,
+        2317,
+        true
+       ],
+       [
+        27.832,
+        2314,
+        true
+       ],
+       [
+        27.839,
+        2312,
+        true
+       ]
+      ]
+     },
+     "best": 2312.0,
+     "wall_s": 270.002
+    },
+    "large_5": {
+     "version": "0.1.0",
+     "n": 80,
+     "m": 37,
+     "C": 276,
+     "Gamma": 8,
+     "symmetric": true,
+     "T": 300.0,
+     "load_s": 0.009,
+     "workers": 2,
+     "parent": {
+      "seed": 1,
+      "iterations": 1133600,
+      "accepted": 424141,
+      "improved": 35,
+      "construction": 3101,
+      "construction_feasible": true,
+      "T0": 13.252136752136753,
+      "Tf": 0.13252136752136753,
+      "best": 2702,
+      "best_feasible": true,
+      "events": [
+       [
+        0.015,
+        3101,
+        true
+       ],
+       [
+        0.016,
+        3089,
+        true
+       ],
+       [
+        0.016,
+        3053,
+        true
+       ],
+       [
+        0.017,
+        3052,
+        true
+       ],
+       [
+        0.021,
+        3050,
+        true
+       ],
+       [
+        0.064,
+        2773,
+        true
+       ],
+       [
+        0.076,
+        2771,
+        true
+       ],
+       [
+        0.079,
+        2769,
+        true
+       ],
+       [
+        0.08,
+        2752,
+        true
+       ],
+       [
+        0.093,
+        2744,
+        true
+       ],
+       [
+        0.093,
+        2732,
+        true
+       ],
+       [
+        0.522,
+        2731,
+        true
+       ],
+       [
+        0.524,
+        2726,
+        true
+       ],
+       [
+        0.529,
+        2718,
+        true
+       ],
+       [
+        0.53,
+        2716,
+        true
+       ],
+       [
+        3.414,
+        2710,
+        true
+       ],
+       [
+        20.713,
+        2706,
+        true
+       ],
+       [
+        26.058,
+        2705,
+        true
+       ],
+       [
+        33.554,
+        2704,
+        true
+       ],
+       [
+        45.239,
+        2702,
+        true
+       ]
+      ]
+     },
+     "best_source": "parent",
+     "child": {
+      "seed": 1001,
+      "iterations": 1216464,
+      "accepted": 465147,
+      "improved": 26,
+      "construction": 3101,
+      "construction_feasible": true,
+      "T0": 13.252136752136753,
+      "Tf": 0.13252136752136753,
+      "best": 2702,
+      "best_feasible": true,
+      "events": [
+       [
+        0.015,
+        3101,
+        true
+       ],
+       [
+        0.016,
+        3014,
+        true
+       ],
+       [
+        0.019,
+        3002,
+        true
+       ],
+       [
+        0.019,
+        2990,
+        true
+       ],
+       [
+        0.02,
+        2971,
+        true
+       ],
+       [
+        0.03,
+        2798,
+        true
+       ],
+       [
+        0.03,
+        2787,
+        true
+       ],
+       [
+        0.037,
+        2748,
+        true
+       ],
+       [
+        0.038,
+        2747,
+        true
+       ],
+       [
+        0.038,
+        2727,
+        true
+       ],
+       [
+        0.055,
+        2726,
+        true
+       ],
+       [
+        0.056,
+        2719,
+        true
+       ],
+       [
+        0.738,
+        2717,
+        true
+       ],
+       [
+        0.74,
+        2715,
+        true
+       ],
+       [
+        7.733,
+        2710,
+        true
+       ],
+       [
+        8.809,
+        2706,
+        true
+       ],
+       [
+        23.74,
+        2705,
+        true
+       ],
+       [
+        27.92,
+        2704,
+        true
+       ],
+       [
+        60.415,
+        2703,
+        true
+       ],
+       [
+        106.738,
+        2702,
+        true
+       ]
+      ]
+     },
+     "best": 2702.0,
+     "wall_s": 270.003
+    }
+   }
+  }
+ },
+ "gurobi_facts": {
+  "tiny": {
+   "routes": 3,
+   "nonempty": 3,
+   "max_load": 116,
+   "C": 131,
+   "status": "optimal",
+   "runtime": 0.58,
+   "objective_value": 380.0
+  },
+  "large_1": {
+   "routes": 37,
+   "nonempty": 37,
+   "max_load": 275,
+   "C": 276,
+   "status": "feasible",
+   "runtime": 29.49,
+   "objective_value": 2698.0
+  },
+  "large_2": {
+   "routes": 31,
+   "nonempty": 31,
+   "max_load": 217,
+   "C": 223,
+   "status": "feasible",
+   "runtime": 3601.37,
+   "objective_value": 2315.0
+  },
+  "large_3": {
+   "routes": 37,
+   "nonempty": 37,
+   "max_load": 310,
+   "C": 313,
+   "status": "optimal",
+   "runtime": 8.54,
+   "objective_value": 2698.0
+  },
+  "large_4": {
+   "routes": 31,
+   "nonempty": 31,
+   "max_load": 256,
+   "C": 257,
+   "status": "feasible",
+   "runtime": 3601.34,
+   "objective_value": 2312.0
+  },
+  "large_5": {
+   "routes": 37,
+   "nonempty": 37,
+   "max_load": 273,
+   "C": 276,
+   "status": "feasible",
+   "runtime": 3600.65,
+   "objective_value": 2702.0
+  }
+ },
+ "empty_route_probe": {
+  "padded_with_2_empty_routes": {
+   "exit": 0,
+   "stderr_tail": "",
+   "feasible": true,
+   "violated": [],
+   "violations": "[]",
+   "objective_value": 102.0
+  },
+  "three_nonempty_routes": {
+   "exit": 0,
+   "stderr_tail": "",
+   "feasible": true,
+   "violated": [],
+   "violations": "[]",
+   "objective_value": 160.0
+  }
+ },
+ "checker_disagreements": []
+}
