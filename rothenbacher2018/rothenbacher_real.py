@@ -8,8 +8,8 @@ MV2 of Munim, Inc. (mv2@munimtech.com). Made with AI agents working in MV2's nam
 1. Downloads github.com/munimtechnologies/frontieror-routing at the current commit of main (sha recorded) for its kit
    (frontieror_hf, harness, frontieror_real).
 2. Runs this folder's solve.py the contest way (python solve.py --problem rothenbacher2018 --instance ... --output ...
-   --time-limit T) on the tiny + 5 large public instances (Hugging Face frontieror/FrontierOR, CC BY 4.0) at 60 s and
-   at 10 s.
+   --time-limit T) on the tiny + 5 large public instances (Hugging Face frontieror/FrontierOR, CC BY 4.0): seed 1 at
+   60 s and at 10 s, and seed 7 at 60 s (the seed goes in through MV2_TTR_SEED).
 3. Each output is judged by the official feasibility_check.py (run as a program by the kit) and by solve.verify(), our
    mirror of it. Reference = the stored Gurobi solution's objective_value; contest-style score = min(2, ref / ours).
 4. For our answers and Gurobi's: routes, solo and complete vehicles, parkings, fixed costs; and each instance's size.
@@ -30,7 +30,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = "munimtechnologies/frontieror-routing"
 UA = "MV2-of-Munim-Inc FrontierOR rothenbacher2018 (mv2@munimtech.com)"
 SLUG = "rothenbacher2018"
-VARIANTS = [("ttr-60s", 60.0), ("ttr-10s", 10.0)]
+VARIANTS = [("ttr-60s", 60.0, 1), ("ttr-10s", 10.0, 1), ("ttr-60s-seed7", 60.0, 7)]
 CASE_FILES = [("tiny", "tiny_instance.json", "tiny_solution.json")] + [
     ("large_%d" % k, "large_instance_%d.json" % k, "large_solution_%d.json" % k) for k in range(1, 6)]
 
@@ -163,16 +163,17 @@ def main(argv=None):
     summary = {"repo_sha": sha, "version": S.VERSION, "strict": S.STRICT, "python": sys.version,
                "cpu_count": os.cpu_count(), "variants": {}, "gurobi": {}}
     tdir = os.path.join(a.hf_dir, "tasks", SLUG)
-    for name, tl in VARIANTS:
+    for name, tl, seed in VARIANTS:
         if a.only and name not in a.only:
             continue
+        os.environ["MV2_TTR_SEED"] = str(seed)
         vout = os.path.join(out, name)
         try:
             tally = FR.run_task(SLUG, solver, chk, "min", a.hf_dir, vout, tl, size_info=size_info,
                                 title="rothenbacher2018 (truck-and-trailer routing with time windows), MV2 engine "
-                                      "v%s, %ss" % (S.VERSION, int(tl)))
+                                      "v%s, %ss, seed %d" % (S.VERSION, int(tl), seed))
         except Exception as e:  # noqa: BLE001 - record and go on
-            summary["variants"][name] = {"error": repr(e)[:500]}
+            summary["variants"][name] = {"error": repr(e)[:500], "seed": seed}
             print("variant failed", name, repr(e), flush=True)
             continue
         with open(os.path.join(vout, "rows.jsonl"), encoding="utf-8") as f:
@@ -184,7 +185,7 @@ def main(argv=None):
             sol = load(os.path.join(vout, "work", cname + ".solution.json"))
             parts[cname] = split(inst, sol) if inst and sol else None
         summary["variants"][name] = {
-            "time_limit": tl, "revision": tally.get("revision"), "cases": len(rows),
+            "time_limit": tl, "seed": seed, "revision": tally.get("revision"), "cases": len(rows),
             "official_feasible": sum(1 for r in rows if r.get("official_feasible") is True),
             "ours_agree_official": sum(1 for r in rows if r.get("official_feasible") is not None
                                        and bool(r.get("official_feasible")) == bool(r.get("ours_feasible"))),

@@ -1,4 +1,4 @@
-"""MV2 truck-and-trailer engine v0.1.0 for FrontierOR task rothenbacher2018 (standard library only).
+"""MV2 truck-and-trailer engine v0.1.1 for FrontierOR task rothenbacher2018 (standard library only).
 
 The truck-and-trailer routing problem with time windows (Rothenbaecher, Drexl and Irnich, Transportation Science
 2018): a heterogeneous fleet of trucks, each used solo or with a trailer (a "complete vehicle"), collects supply from
@@ -34,6 +34,13 @@ route's expanded node list with earliest departures, latest feasible arrivals an
 customer (into the main tour, into the subtour, or as a new subtour with its own parking) is tested and priced in
 O(1). Slack induction by string removals (SISR) with simulated annealing, plus route removal, vehicle class changes
 and re-parking moves. Every written solution passes verify(), a mirror of the official checker.
+
+v0.1.1 (2026-11-15): v0.1.0 could not turn two solo trucks into one complete vehicle. Greedy reinsertion always
+opened the class with the cheapest one-customer route (a small solo truck), and a class change to a complete vehicle
+was only tried for routes holding trailer customers alone. On the tiny public instance it never improved on its
+first construction (0 improvements in 777,512 iterations; 15% above Gurobi's optimum). New: a "pair" move empties
+two nearby routes and rebuilds them, and reinsertion can run in "big" mode, where a new route is always opened with
+the largest-capacity class that is still available. Half of the constructions also use big mode.
 """
 import argparse
 import json
@@ -43,7 +50,7 @@ import random
 import sys
 import time
 
-VERSION = "0.1.0"
+VERSION = "0.1.1"
 INF = float("inf")
 EPS = 1e-7
 STRICT = True
@@ -353,9 +360,10 @@ def park_cands(P, u, a, b):
     return out
 
 
-def best_insert(P, st, u, rng, blink=0.0):
+def best_insert(P, st, u, rng, blink=0.0, big=False):
     """Cheapest feasible insertion of customer u: (delta, route index or -1, expanded index k, parking or None,
-    new Route for -1). None if u fits nowhere."""
+    new Route for -1). None if u fits nowhere. big=True: a new route may only use the largest-capacity class that
+    can still be opened (so later customers can join it)."""
     q = P.q[u]
     nh = P.is_nh[u]
     ku = NH_ if nh else NL_
@@ -431,8 +439,12 @@ def best_insert(P, st, u, rng, blink=0.0):
                         continue
                     best_d, best = delta, (ri, k, p)
     newr = None
-    for ci, rr in P.new_routes(u):
-        if rr.cost < best_d and st.can_open(P, ci):
+    cands = [(ci, rr) for ci, rr in P.new_routes(u) if st.can_open(P, ci)]
+    if big and cands:
+        capmax = max(P.classes[ci].QL + P.classes[ci].QH for ci, _ in cands)
+        cands = [(ci, rr) for ci, rr in cands if P.classes[ci].QL + P.classes[ci].QH >= capmax - EPS]
+    for ci, rr in cands:
+        if rr.cost < best_d:
             best_d, best, newr = rr.cost, (-1, 0, None), rr
     if best is None:
         return None
@@ -504,7 +516,7 @@ def repark(P, r):
     return best
 
 
-def recreate(P, st, removed, rng, blink=0.01, keep_order=False, repark_p=0.3):
+def recreate(P, st, removed, rng, blink=0.01, keep_order=False, repark_p=0.3, big=False):
     if not keep_order:
         mode = rng.random()
         if mode < 0.35:
@@ -519,7 +531,7 @@ def recreate(P, st, removed, rng, blink=0.01, keep_order=False, repark_p=0.3):
             removed.sort(key=lambda v: P.e[v])
     touched = set()
     for u in removed:
-        res = best_insert(P, st, u, rng, blink)
+        res = best_insert(P, st, u, rng, blink, big)
         if res is None:
             return False
         _, ri, k, p, newr = res
@@ -591,6 +603,29 @@ def ruin_route(P, st, rng):
     ws = [1.0 / (1.0 + len(r.custs())) for r in st.routes]
     ri = rng.choices(range(len(st.routes)), weights=ws)[0]
     removed = st.routes[ri].custs()
+    removed.extend(remove_customers(P, st, removed))
+    return removed
+
+
+def ruin_pair(P, st, rng):
+    """Empty two routes for a joint rebuild: a random route and (mostly) the route whose customers lie nearest."""
+    n = len(st.routes)
+    if n < 2:
+        return ruin_route(P, st, rng)
+    i = rng.randrange(n)
+    ci = st.routes[i].custs()
+    if rng.random() < 0.3:
+        j = rng.choice([x for x in range(n) if x != i])
+    else:
+        j, best_v = -1, INF
+        d = P.d
+        for x in range(n):
+            if x == i:
+                continue
+            v = min(d[a][b] + d[b][a] for a in ci for b in st.routes[x].custs())
+            if v < best_v:
+                j, best_v = x, v
+    removed = ci + st.routes[j].custs()
     removed.extend(remove_customers(P, st, removed))
     return removed
 
@@ -918,30 +953,34 @@ def _verify(inst, sol):
 
 # ---- search ------------------------------------------------------------------------------------------------------
 def construct(P, rng, tries=8):
+    """Greedy constructions: orders 0-3 with cheapest route opening, then the same orders in big mode."""
     best = None
     for t in range(tries):
         st = State(P)
         order = list(P.cust)
-        if t == 0:
+        kind = t % 4
+        if kind == 0:
             order.sort(key=lambda v: (P.l[v], v))
-        elif t == 1:
+        elif kind == 1:
             order.sort(key=lambda v: (-P.q[v], v))
-        elif t == 2:
+        elif kind == 2:
             order.sort(key=lambda v: (-P.d[P.depot][v], v))
-        elif t == 3:
-            order.sort(key=lambda v: (P.is_nh[v], P.l[v], v))
         else:
+            order.sort(key=lambda v: (P.is_nh[v], P.l[v], v))
+        if t >= 8:
             rng.shuffle(order)
-        if recreate(P, st, order, rng, blink=0.0, keep_order=True, repark_p=1.0):
+        if recreate(P, st, order, rng, blink=0.0, keep_order=True, repark_p=1.0, big=(t // 4) % 2 == 1):
             if best is None or st.total() < best.total():
                 best = st
-        if best is not None and t >= 4:
+        if best is not None and t >= 8:
             break
     return best
 
 
 def search(P, deadline, rng, on_best=None, log=None):
-    cur = construct(P, rng)
+    cur = construct(P, rng, tries=8)
+    if cur is None:
+        cur = construct(P, rng, tries=16)
     if cur is None:
         if log is not None:
             log["error"] = "no construction"
@@ -955,7 +994,7 @@ def search(P, deadline, rng, on_best=None, log=None):
     t_begin = time.monotonic()
     span = max(1e-6, deadline - t_begin)
     it = acc = imp = fails = 0
-    moves = {k: [0, 0, 0] for k in ("sisr", "route", "class", "repark")}
+    moves = {k: [0, 0, 0] for k in ("sisr", "route", "pair", "class", "repark")}
     last_imp = 0
     events = [(0.0, round(best_c, 4), "construct")]
     last_write = t_begin
@@ -985,12 +1024,19 @@ def search(P, deadline, rng, on_best=None, log=None):
                 continue
             cand.routes[i] = nr
         else:
-            kind = "route" if u < 0.16 else "sisr"
-            removed = ruin_route(P, cand, rng) if kind == "route" else ruin_sisr(P, cand, rng)
+            if u < 0.14:
+                kind, big_p = "pair", 0.5
+                removed = ruin_pair(P, cand, rng)
+            elif u < 0.20:
+                kind, big_p = "route", 0.25
+                removed = ruin_route(P, cand, rng)
+            else:
+                kind, big_p = "sisr", 0.05
+                removed = ruin_sisr(P, cand, rng)
             if not removed:
                 continue
             moves[kind][0] += 1
-            if not recreate(P, cand, removed, rng):
+            if not recreate(P, cand, removed, rng, big=rng.random() < big_p):
                 fails += 1
                 continue
         c = cand.total()
