@@ -1,0 +1,868 @@
+{
+ "repo_sha": "4aee588752d2039a666903bd88fee3340f0c8b7b",
+ "time_limit": 60.0,
+ "submission": {
+  "folders": {
+   "cordeau2006": [
+    {
+     "file": "solve.py",
+     "from": "practice/postfix/cordeau2006/solve.py",
+     "bytes": 6236,
+     "sha256": "6f020aa9fce919a86ac10cd180da6de85416a817c4b98ced62fd86e4a163f6d4",
+     "compiles": true
+    },
+    {
+     "file": "darp_core.py",
+     "from": "darp/cordeau2006/solve.py",
+     "bytes": 23649,
+     "sha256": "ae64c2a2092a04864192f59cf4cabb9660e10a4b119504421af55ba39f05ef28",
+     "compiles": true
+    }
+   ],
+   "nagy2015": [
+    {
+     "file": "solve.py",
+     "from": "practice/postfix/nagy2015/solve.py",
+     "bytes": 5148,
+     "sha256": "1c454656a3f33c77275936e59bc42be17dc582a5ed10807ab041f1639cfcf80d",
+     "compiles": true
+    },
+    {
+     "file": "nagy_core.py",
+     "from": "vrpddp/nagy2015/solve.py",
+     "bytes": 21955,
+     "sha256": "3f7ea084e9b9c06d6069c5d3f6c1a3596ec719b396eec13e1687f9d79ef83431",
+     "compiles": true
+    }
+   ],
+   "fischetti1998": [
+    {
+     "file": "solve.py",
+     "from": "op/fischetti1998/solve.py",
+     "bytes": 9593,
+     "sha256": "3fa28371f8a8b43341a2c1b3f4a8dd3e9bf879211bde97a48fb5ed1f69fbbf5c",
+     "compiles": true
+    }
+   ],
+   "hoffman1993": [
+    {
+     "file": "solve.py",
+     "from": "HERE:spp/hoffman1993/solve.py",
+     "bytes": 26959,
+     "sha256": "2bb01292a5ae2bf02db8577359df4772bb69ebe3584cd8875788ee21a236edce",
+     "compiles": true
+    },
+    {
+     "file": "frontier_runtime.py",
+     "from": "kit/frontier_runtime.py",
+     "bytes": 5719,
+     "sha256": "f6f71c18ee5cc3baf22aeb87cf9bedd482b6d1fbc0e1fde88365182aa74b7eae",
+     "compiles": true
+    }
+   ]
+  },
+  "errors": [],
+  "archive_bytes": 35128,
+  "archive_within_4mb": true
+ },
+ "variants": {
+  "spp-v040": {
+   "cases": 6,
+   "official_feasible": 5,
+   "official_rejected": [],
+   "official_violations": {},
+   "no_output_or_overtime": [
+    "large_4"
+   ],
+   "official_score_large_mean": 0.593228,
+   "official_score_all": {
+    "tiny": 1.0,
+    "large_1": 0.397459,
+    "large_2": 1.0,
+    "large_3": 0.568681,
+    "large_4": 0.0,
+    "large_5": 1.0
+   },
+   "objective": {
+    "tiny": 16.0,
+    "large_1": 1653.0,
+    "large_2": 229.0,
+    "large_3": 364.0,
+    "large_4": null,
+    "large_5": 180.0
+   },
+   "reference": {
+    "tiny": 16.0,
+    "large_1": 657.0,
+    "large_2": 229.0,
+    "large_3": 207.0,
+    "large_4": 331.0,
+    "large_5": 180.0
+   },
+   "wall_s": {
+    "tiny": 1.53,
+    "large_1": 55.975,
+    "large_2": 1.188,
+    "large_3": 55.821,
+    "large_4": 57.768,
+    "large_5": 18.663
+   },
+   "solver_log": {
+    "tiny": "",
+    "large_1": "",
+    "large_2": "",
+    "large_3": "",
+    "large_4": "",
+    "large_5": ""
+   },
+   "solver_log_file": {
+    "tiny": {
+     "version": "0.4.0",
+     "config": {
+      "phase2": "cpsat",
+      "dfs_share": 0.5,
+      "log_file": true
+     },
+     "m": 30,
+     "n": 25,
+     "extra_columns_ignored": 0,
+     "row_indices_ignored": 0,
+     "short_columns": 0,
+     "lp": 16.0,
+     "lp_s": 1.39,
+     "proven": "lp_integral",
+     "value": 16.0,
+     "history": [
+      [
+       1.386,
+       16.0,
+       "lp"
+      ]
+     ],
+     "s": 1.39
+    },
+    "large_1": {
+     "version": "0.4.0",
+     "config": {
+      "phase2": "cpsat",
+      "dfs_share": 0.5,
+      "log_file": true
+     },
+     "m": 100,
+     "n": 15000,
+     "extra_columns_ignored": 0,
+     "row_indices_ignored": 0,
+     "short_columns": 0,
+     "lp": 11.746286,
+     "lp_s": 1.59,
+     "L": 11.746286,
+     "dfs": {
+      "complete": false,
+      "nodes": 144640,
+      "leaves": 4,
+      "s": 28.39,
+      "value": 1653.0
+     },
+     "kept": 15000,
+     "phase2": "cpsat",
+     "value": 1653.0,
+     "history": [
+      [
+       2.971,
+       1876.0,
+       "dfs"
+      ],
+      [
+       3.34,
+       1815.0,
+       "dfs"
+      ],
+      [
+       4.961,
+       1813.0,
+       "dfs"
+      ],
+      [
+       5.458,
+       1653.0,
+       "dfs"
+      ]
+     ],
+     "s": 55.84
+    },
+    "large_2": {
+     "version": "0.4.0",
+     "config": {
+      "phase2": "cpsat",
+      "dfs_share": 0.5,
+      "log_file": true
+     },
+     "m": 100,
+     "n": 15000,
+     "extra_columns_ignored": 0,
+     "row_indices_ignored": 0,
+     "short_columns": 0,
+     "lp": 229.0,
+     "lp_s": 1.04,
+     "proven": "lp_integral",
+     "value": 229.0,
+     "history": [
+      [
+       1.041,
+       229.0,
+       "lp"
+      ]
+     ],
+     "s": 1.05
+    },
+    "large_3": {
+     "version": "0.4.0",
+     "config": {
+      "phase2": "cpsat",
+      "dfs_share": 0.5,
+      "log_file": true
+     },
+     "m": 100,
+     "n": 15000,
+     "extra_columns_ignored": 0,
+     "row_indices_ignored": 0,
+     "short_columns": 0,
+     "lp": 53.181713,
+     "lp_s": 1.2,
+     "L": 53.181713,
+     "dfs": {
+      "complete": false,
+      "nodes": 179888,
+      "leaves": 13,
+      "s": 28.2,
+      "value": 364.0
+     },
+     "kept": 15000,
+     "phase2": "cpsat",
+     "value": 364.0,
+     "history": [
+      [
+       2.839,
+       485.0,
+       "dfs"
+      ],
+      [
+       3.089,
+       467.0,
+       "dfs"
+      ],
+      [
+       4.824,
+       465.0,
+       "dfs"
+      ],
+      [
+       5.468,
+       435.0,
+       "dfs"
+      ],
+      [
+       7.131,
+       410.0,
+       "dfs"
+      ],
+      [
+       8.398,
+       405.0,
+       "dfs"
+      ],
+      [
+       15.204,
+       397.0,
+       "dfs"
+      ],
+      [
+       18.711,
+       364.0,
+       "dfs"
+      ]
+     ],
+     "s": 55.69
+    },
+    "large_5": {
+     "version": "0.4.0",
+     "config": {
+      "phase2": "cpsat",
+      "dfs_share": 0.5,
+      "log_file": true
+     },
+     "m": 100,
+     "n": 15000,
+     "extra_columns_ignored": 0,
+     "row_indices_ignored": 0,
+     "short_columns": 0,
+     "lp": 6.578892,
+     "lp_s": 2.32,
+     "L": 6.578892,
+     "dfs": {
+      "complete": true,
+      "nodes": 14296,
+      "leaves": 1,
+      "s": 18.49,
+      "value": 180.0
+     },
+     "proven": "dfs_complete",
+     "value": 180.0,
+     "history": [
+      [
+       14.368,
+       180.0,
+       "dfs"
+      ]
+     ],
+     "s": 18.49
+    }
+   },
+   "checkers_agree": 11,
+   "checker_comparisons": 11,
+   "max_wall_s": 57.768
+  },
+  "spp-v040-highs": {
+   "cases": 6,
+   "official_feasible": 5,
+   "official_rejected": [],
+   "official_violations": {},
+   "no_output_or_overtime": [
+    "large_4"
+   ],
+   "official_score_large_mean": 0.593228,
+   "official_score_all": {
+    "tiny": 1.0,
+    "large_1": 0.397459,
+    "large_2": 1.0,
+    "large_3": 0.568681,
+    "large_4": 0.0,
+    "large_5": 1.0
+   },
+   "objective": {
+    "tiny": 16.0,
+    "large_1": 1653.0,
+    "large_2": 229.0,
+    "large_3": 364.0,
+    "large_4": null,
+    "large_5": 180.0
+   },
+   "reference": {
+    "tiny": 16.0,
+    "large_1": 657.0,
+    "large_2": 229.0,
+    "large_3": 207.0,
+    "large_4": 331.0,
+    "large_5": 180.0
+   },
+   "wall_s": {
+    "tiny": 1.131,
+    "large_1": 55.322,
+    "large_2": 1.297,
+    "large_3": 55.386,
+    "large_4": 57.765,
+    "large_5": 16.654
+   },
+   "solver_log": {
+    "tiny": "",
+    "large_1": "",
+    "large_2": "",
+    "large_3": "",
+    "large_4": "",
+    "large_5": ""
+   },
+   "solver_log_file": {
+    "tiny": {
+     "version": "0.4.0",
+     "config": {
+      "phase2": "highs",
+      "dfs_share": 0.5,
+      "log_file": true
+     },
+     "m": 30,
+     "n": 25,
+     "extra_columns_ignored": 0,
+     "row_indices_ignored": 0,
+     "short_columns": 0,
+     "lp": 16.0,
+     "lp_s": 1.01,
+     "proven": "lp_integral",
+     "value": 16.0,
+     "history": [
+      [
+       1.011,
+       16.0,
+       "lp"
+      ]
+     ],
+     "s": 1.01
+    },
+    "large_1": {
+     "version": "0.4.0",
+     "config": {
+      "phase2": "highs",
+      "dfs_share": 0.5,
+      "log_file": true
+     },
+     "m": 100,
+     "n": 15000,
+     "extra_columns_ignored": 0,
+     "row_indices_ignored": 0,
+     "short_columns": 0,
+     "lp": 11.746286,
+     "lp_s": 1.3,
+     "L": 11.746286,
+     "dfs": {
+      "complete": false,
+      "nodes": 179584,
+      "leaves": 4,
+      "s": 28.25,
+      "value": 1653.0
+     },
+     "kept": 15000,
+     "phase2": "highs:limit",
+     "value": 1653.0,
+     "history": [
+      [
+       2.382,
+       1876.0,
+       "dfs"
+      ],
+      [
+       2.76,
+       1815.0,
+       "dfs"
+      ],
+      [
+       4.167,
+       1813.0,
+       "dfs"
+      ],
+      [
+       4.538,
+       1653.0,
+       "dfs"
+      ]
+     ],
+     "s": 55.18
+    },
+    "large_2": {
+     "version": "0.4.0",
+     "config": {
+      "phase2": "highs",
+      "dfs_share": 0.5,
+      "log_file": true
+     },
+     "m": 100,
+     "n": 15000,
+     "extra_columns_ignored": 0,
+     "row_indices_ignored": 0,
+     "short_columns": 0,
+     "lp": 229.0,
+     "lp_s": 1.13,
+     "proven": "lp_integral",
+     "value": 229.0,
+     "history": [
+      [
+       1.133,
+       229.0,
+       "lp"
+      ]
+     ],
+     "s": 1.15
+    },
+    "large_3": {
+     "version": "0.4.0",
+     "config": {
+      "phase2": "highs",
+      "dfs_share": 0.5,
+      "log_file": true
+     },
+     "m": 100,
+     "n": 15000,
+     "extra_columns_ignored": 0,
+     "row_indices_ignored": 0,
+     "short_columns": 0,
+     "lp": 53.181713,
+     "lp_s": 1.38,
+     "L": 53.181713,
+     "dfs": {
+      "complete": false,
+      "nodes": 158576,
+      "leaves": 13,
+      "s": 28.29,
+      "value": 364.0
+     },
+     "kept": 15000,
+     "phase2": "highs:limit",
+     "value": 364.0,
+     "history": [
+      [
+       3.524,
+       485.0,
+       "dfs"
+      ],
+      [
+       3.833,
+       467.0,
+       "dfs"
+      ],
+      [
+       6.142,
+       465.0,
+       "dfs"
+      ],
+      [
+       6.96,
+       435.0,
+       "dfs"
+      ],
+      [
+       8.926,
+       410.0,
+       "dfs"
+      ],
+      [
+       10.358,
+       405.0,
+       "dfs"
+      ],
+      [
+       17.64,
+       397.0,
+       "dfs"
+      ],
+      [
+       21.078,
+       364.0,
+       "dfs"
+      ]
+     ],
+     "s": 55.24
+    },
+    "large_5": {
+     "version": "0.4.0",
+     "config": {
+      "phase2": "highs",
+      "dfs_share": 0.5,
+      "log_file": true
+     },
+     "m": 100,
+     "n": 15000,
+     "extra_columns_ignored": 0,
+     "row_indices_ignored": 0,
+     "short_columns": 0,
+     "lp": 6.578892,
+     "lp_s": 1.66,
+     "L": 6.578892,
+     "dfs": {
+      "complete": true,
+      "nodes": 14296,
+      "leaves": 1,
+      "s": 16.53,
+      "value": 180.0
+     },
+     "proven": "dfs_complete",
+     "value": 180.0,
+     "history": [
+      [
+       12.482,
+       180.0,
+       "dfs"
+      ]
+     ],
+     "s": 16.53
+    }
+   },
+   "checkers_agree": 11,
+   "checker_comparisons": 11,
+   "max_wall_s": 57.765
+  },
+  "spp-v040-dfs": {
+   "cases": 6,
+   "official_feasible": 5,
+   "official_rejected": [],
+   "official_violations": {},
+   "no_output_or_overtime": [
+    "large_4"
+   ],
+   "official_score_large_mean": 0.596586,
+   "official_score_all": {
+    "tiny": 1.0,
+    "large_1": 0.41425,
+    "large_2": 1.0,
+    "large_3": 0.568681,
+    "large_4": 0.0,
+    "large_5": 1.0
+   },
+   "objective": {
+    "tiny": 16.0,
+    "large_1": 1586.0,
+    "large_2": 229.0,
+    "large_3": 364.0,
+    "large_4": null,
+    "large_5": 180.0
+   },
+   "reference": {
+    "tiny": 16.0,
+    "large_1": 657.0,
+    "large_2": 229.0,
+    "large_3": 207.0,
+    "large_4": 331.0,
+    "large_5": 180.0
+   },
+   "wall_s": {
+    "tiny": 1.21,
+    "large_1": 55.334,
+    "large_2": 1.109,
+    "large_3": 55.33,
+    "large_4": 55.324,
+    "large_5": 18.128
+   },
+   "solver_log": {
+    "tiny": "",
+    "large_1": "",
+    "large_2": "",
+    "large_3": "",
+    "large_4": "spp log {\"version\": \"0.4.0\", \"config\": {\"phase2\": \"dfs\", \"dfs_share\": 0.5, \"log_file\": true}, \"m\": 100, \"n\": 15000, \"extra_columns_ignored\": 0, \"row_indices_ignored\": 0, \"short_columns\": 0, \"lp\": 11.636969, \"lp_s\": 1.51, \"L\": 11.636969, \"dfs\": {\"complete\": false, \"nodes\": 332976, \"leaves\": 0, \"s\": 55.2, \"value\": null}, \"restricted\": [], \"value\": null, \"history\": [], \"s\": 55.2}\n",
+    "large_5": ""
+   },
+   "solver_log_file": {
+    "tiny": {
+     "version": "0.4.0",
+     "config": {
+      "phase2": "dfs",
+      "dfs_share": 0.5,
+      "log_file": true
+     },
+     "m": 30,
+     "n": 25,
+     "extra_columns_ignored": 0,
+     "row_indices_ignored": 0,
+     "short_columns": 0,
+     "lp": 16.0,
+     "lp_s": 1.08,
+     "proven": "lp_integral",
+     "value": 16.0,
+     "history": [
+      [
+       1.081,
+       16.0,
+       "lp"
+      ]
+     ],
+     "s": 1.08
+    },
+    "large_1": {
+     "version": "0.4.0",
+     "config": {
+      "phase2": "dfs",
+      "dfs_share": 0.5,
+      "log_file": true
+     },
+     "m": 100,
+     "n": 15000,
+     "extra_columns_ignored": 0,
+     "row_indices_ignored": 0,
+     "short_columns": 0,
+     "lp": 11.746286,
+     "lp_s": 1.42,
+     "L": 11.746286,
+     "dfs": {
+      "complete": false,
+      "nodes": 318176,
+      "leaves": 5,
+      "s": 55.2,
+      "value": 1586.0
+     },
+     "kept": 15000,
+     "value": 1586.0,
+     "history": [
+      [
+       2.54,
+       1876.0,
+       "dfs"
+      ],
+      [
+       2.857,
+       1815.0,
+       "dfs"
+      ],
+      [
+       4.406,
+       1813.0,
+       "dfs"
+      ],
+      [
+       4.882,
+       1653.0,
+       "dfs"
+      ],
+      [
+       54.193,
+       1586.0,
+       "dfs"
+      ]
+     ],
+     "s": 55.2
+    },
+    "large_2": {
+     "version": "0.4.0",
+     "config": {
+      "phase2": "dfs",
+      "dfs_share": 0.5,
+      "log_file": true
+     },
+     "m": 100,
+     "n": 15000,
+     "extra_columns_ignored": 0,
+     "row_indices_ignored": 0,
+     "short_columns": 0,
+     "lp": 229.0,
+     "lp_s": 0.97,
+     "proven": "lp_integral",
+     "value": 229.0,
+     "history": [
+      [
+       0.974,
+       229.0,
+       "lp"
+      ]
+     ],
+     "s": 0.99
+    },
+    "large_3": {
+     "version": "0.4.0",
+     "config": {
+      "phase2": "dfs",
+      "dfs_share": 0.5,
+      "log_file": true
+     },
+     "m": 100,
+     "n": 15000,
+     "extra_columns_ignored": 0,
+     "row_indices_ignored": 0,
+     "short_columns": 0,
+     "lp": 53.181713,
+     "lp_s": 1.22,
+     "L": 53.181713,
+     "dfs": {
+      "complete": false,
+      "nodes": 350032,
+      "leaves": 13,
+      "s": 55.2,
+      "value": 364.0
+     },
+     "kept": 15000,
+     "value": 364.0,
+     "history": [
+      [
+       2.739,
+       485.0,
+       "dfs"
+      ],
+      [
+       2.98,
+       467.0,
+       "dfs"
+      ],
+      [
+       4.644,
+       465.0,
+       "dfs"
+      ],
+      [
+       5.264,
+       435.0,
+       "dfs"
+      ],
+      [
+       6.95,
+       410.0,
+       "dfs"
+      ],
+      [
+       8.221,
+       405.0,
+       "dfs"
+      ],
+      [
+       14.465,
+       397.0,
+       "dfs"
+      ],
+      [
+       17.679,
+       364.0,
+       "dfs"
+      ]
+     ],
+     "s": 55.2
+    },
+    "large_4": {
+     "version": "0.4.0",
+     "config": {
+      "phase2": "dfs",
+      "dfs_share": 0.5,
+      "log_file": true
+     },
+     "m": 100,
+     "n": 15000,
+     "extra_columns_ignored": 0,
+     "row_indices_ignored": 0,
+     "short_columns": 0,
+     "lp": 11.636969,
+     "lp_s": 1.51,
+     "L": 11.636969,
+     "dfs": {
+      "complete": false,
+      "nodes": 332976,
+      "leaves": 0,
+      "s": 55.2,
+      "value": null
+     },
+     "restricted": [],
+     "value": null,
+     "history": [],
+     "s": 55.2
+    },
+    "large_5": {
+     "version": "0.4.0",
+     "config": {
+      "phase2": "dfs",
+      "dfs_share": 0.5,
+      "log_file": true
+     },
+     "m": 100,
+     "n": 15000,
+     "extra_columns_ignored": 0,
+     "row_indices_ignored": 0,
+     "short_columns": 0,
+     "lp": 6.578892,
+     "lp_s": 2.08,
+     "L": 6.578892,
+     "dfs": {
+      "complete": true,
+      "nodes": 14296,
+      "leaves": 1,
+      "s": 17.99,
+      "value": 180.0
+     },
+     "proven": "dfs_complete",
+     "value": 180.0,
+     "history": [
+      [
+       13.23,
+       180.0,
+       "dfs"
+      ]
+     ],
+     "s": 17.99
+    }
+   },
+   "checkers_agree": 11,
+   "checker_comparisons": 11,
+   "max_wall_s": 55.334
+  }
+ }
+}
