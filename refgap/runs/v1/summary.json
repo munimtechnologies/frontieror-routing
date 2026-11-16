@@ -1,0 +1,443 @@
+{
+ "version": "0.1.0",
+ "revision": "ef42a2eac13595453f986d9df0b62e86e75ab596",
+ "started_utc": "2026-11-16T05:34:45Z",
+ "finished_utc": "2026-11-16T05:53:07Z",
+ "tasks": 180,
+ "tasks_with_cases": 180,
+ "cases": 1080,
+ "large_cases": 900,
+ "large_cases_with_gap": 711,
+ "cases_read": 987,
+ "cases_range_read": 93,
+ "cases_skipped_size": 0,
+ "errors": [],
+ "sense_unknown_tasks": [
+  "cordeau2019",
+  "furini2017",
+  "gschwind2021",
+  "lozano2017",
+  "mehrotra1996",
+  "zetina2020"
+ ],
+ "solution_scalar_keys": {
+  "objective_value": 1080,
+  "runtime": 1080,
+  "status": 858,
+  "mip_gap": 509,
+  "solver": 210,
+  "best_bound": 208,
+  "solve_time": 153,
+  "solver_status": 121,
+  "status_name": 106,
+  "gap": 103,
+  "instance_id": 102,
+  "instance_path": 96,
+  "solve_time_seconds": 79,
+  "time_limit": 72,
+  "problem": 67,
+  "formulation": 54,
+  "status_str": 48,
+  "status_description": 48,
+  "num_vehicles": 42,
+  "instance": 37,
+  "node_count": 37,
+  "optimality_gap": 36,
+  "runtime_seconds": 36,
+  "clique_size": 24,
+  "n": 24,
+  "num_variables": 21,
+  "num_constraints": 21,
+  "num_bins": 19,
+  "num_nodes": 18,
+  "num_jobs": 18,
+  "model": 18,
+  "routing_cost": 18,
+  "num_vehicles_used": 18,
+  "optimization_method": 18,
+  "m": 18,
+  "num_routes": 18,
+  "gurobi_status": 16,
+  "optimal": 15,
+  "num_colors_used": 12,
+  "makespan": 12
+ },
+ "reference_table": {
+  "path": "metadata/gurobi_references.csv.gz",
+  "bytes_gz": 21064,
+  "bytes_csv": 130321,
+  "rows": 1080,
+  "header": [
+   "task_id",
+   "instance",
+   "objective_value",
+   "runtime",
+   "feasible",
+   "status",
+   "time_limit",
+   "solution_path"
+  ],
+  "columns_used": {
+   "task": "task_id",
+   "instance": "instance"
+  }
+ },
+ "reference_table_first_rows": [
+  {
+   "task_id": "adulyasak2015",
+   "instance": "tiny",
+   "objective_value": "1395.7593777311158",
+   "runtime": "0.90000000000000002",
+   "feasible": "True",
+   "status": "optimal",
+   "time_limit": "300",
+   "solution_path": "tasks/adulyasak2015/gurobi_solution/tiny_solution.json"
+  },
+  {
+   "task_id": "adulyasak2015",
+   "instance": "large_1",
+   "objective_value": "24264.431698905712",
+   "runtime": "3628.54",
+   "feasible": "True",
+   "status": "incumbent",
+   "time_limit": "3600",
+   "solution_path": "tasks/adulyasak2015/gurobi_solution/large_solution_1.json"
+  },
+  {
+   "task_id": "adulyasak2015",
+   "instance": "large_2",
+   "objective_value": "159840.11349897826",
+   "runtime": "3617.5500000000002",
+   "feasible": "True",
+   "status": "incumbent",
+   "time_limit": "3600",
+   "solution_path": "tasks/adulyasak2015/gurobi_solution/large_solution_2.json"
+  }
+ ],
+ "hard_tasks": 50,
+ "hard_tasks_with_large_gap_ge_10pct": 25,
+ "tasks_with_large_gap_ge_100pct": [
+  "adulyasak2015",
+  "bergman2019",
+  "fleszar2022b",
+  "guo2021",
+  "kobeaga2024",
+  "roshanaei2017",
+  "segundo2019b",
+  "yang2013",
+  "zetina2019"
+ ],
+ "tasks_with_a_ceiling_2_case": [
+  "adulyasak2015",
+  "armbruster2012",
+  "bard2002",
+  "bayani2024",
+  "bergman2019",
+  "bollapragada2001",
+  "borndorfer2007",
+  "chen1999",
+  "fleszar2022b",
+  "guo2021",
+  "he2020",
+  "hoffman1993",
+  "ji2019",
+  "kobeaga2024",
+  "kress2019",
+  "letelier2022",
+  "martin-iradi2024",
+  "ropke2009",
+  "roshanaei2017",
+  "rothenbacher2018",
+  "samarghandi2017",
+  "segundo2019b",
+  "spliet2015",
+  "yang2013",
+  "zetina2019"
+ ],
+ "guo2021": [
+  {
+   "case": "large_1",
+   "objective": -732149.200000001,
+   "gap": 0.15408209121945332,
+   "status": "time_limit_best",
+   "ceiling": 1.1540820912194534
+  },
+  {
+   "case": "large_2",
+   "objective": 32031.0,
+   "gap": 3346.626268303596,
+   "status": "time_limit_best",
+   "ceiling": 2.0
+  },
+  {
+   "case": "large_3",
+   "objective": -811118.6000000001,
+   "gap": 0.15046918014229357,
+   "status": "time_limit_best",
+   "ceiling": 1.1504691801422935
+  },
+  {
+   "case": "large_4",
+   "objective": -742197.8000000004,
+   "gap": 0.15617056770174212,
+   "status": "time_limit_best",
+   "ceiling": 1.1561705677017422
+  },
+  {
+   "case": "large_5",
+   "objective": -19170.0,
+   "gap": 6349.312989035584,
+   "status": "time_limit_best",
+   "ceiling": 2.0
+  },
+  {
+   "case": "tiny",
+   "objective": -38093.99999999999,
+   "gap": 0.008855287796853463,
+   "status": "optimal",
+   "ceiling": 1.0088552877968535
+  }
+ ],
+ "top30": [
+  {
+   "task": "zetina2019",
+   "hard_rank": 16,
+   "mean_ceiling": 2.0,
+   "max_gap": 1.0,
+   "cases_ceiling_2": 5,
+   "field": "Telecommunications & Networking"
+  },
+  {
+   "task": "armbruster2012",
+   "hard_rank": 7,
+   "mean_ceiling": 2.0,
+   "max_gap": 0.9997397866250325,
+   "cases_ceiling_2": 5,
+   "field": "Foundational / Theoretical"
+  },
+  {
+   "task": "kress2019",
+   "hard_rank": null,
+   "mean_ceiling": 2.0,
+   "max_gap": 0.8669724770642202,
+   "cases_ceiling_2": 2,
+   "field": "Transportation & Logistics"
+  },
+  {
+   "task": "martin-iradi2024",
+   "hard_rank": 39,
+   "mean_ceiling": 2.0,
+   "max_gap": 0.858837424495967,
+   "cases_ceiling_2": 5,
+   "field": "Transportation & Logistics"
+  },
+  {
+   "task": "rothenbacher2018",
+   "hard_rank": 4,
+   "mean_ceiling": 1.9944866418782616,
+   "max_gap": 0.7397207786185838,
+   "cases_ceiling_2": 4,
+   "field": "Transportation & Logistics"
+  },
+  {
+   "task": "samarghandi2017",
+   "hard_rank": null,
+   "mean_ceiling": 1.9855652173913043,
+   "max_gap": 0.689666582893241,
+   "cases_ceiling_2": 4,
+   "field": "Manufacturing & Production"
+  },
+  {
+   "task": "bayani2024",
+   "hard_rank": 32,
+   "mean_ceiling": 1.9707570947541175,
+   "max_gap": 0.7879509548210328,
+   "cases_ceiling_2": 4,
+   "field": "Foundational / Theoretical"
+  },
+  {
+   "task": "ropke2009",
+   "hard_rank": 6,
+   "mean_ceiling": 1.9314215300904476,
+   "max_gap": 0.7579677942419307,
+   "cases_ceiling_2": 3,
+   "field": "Transportation & Logistics"
+  },
+  {
+   "task": "borndorfer2007",
+   "hard_rank": 15,
+   "mean_ceiling": 1.8320988703319923,
+   "max_gap": 0.9044635222131908,
+   "cases_ceiling_2": 4,
+   "field": "Public Transit & Mobility"
+  },
+  {
+   "task": "kobeaga2024",
+   "hard_rank": 42,
+   "mean_ceiling": 1.8,
+   "max_gap": 16.4,
+   "cases_ceiling_2": 4,
+   "field": "Foundational / Theoretical"
+  },
+  {
+   "task": "he2020",
+   "hard_rank": 28,
+   "mean_ceiling": 1.7595768664469595,
+   "max_gap": 0.8165498203492246,
+   "cases_ceiling_2": 3,
+   "field": "Transportation & Logistics"
+  },
+  {
+   "task": "roshanaei2017",
+   "hard_rank": 12,
+   "mean_ceiling": 1.7041584632965179,
+   "max_gap": 72.08797981636145,
+   "cases_ceiling_2": 1,
+   "field": "Healthcare"
+  },
+  {
+   "task": "adulyasak2015",
+   "hard_rank": 13,
+   "mean_ceiling": 1.6675401958813505,
+   "max_gap": 1.0,
+   "cases_ceiling_2": 2,
+   "field": "Supply Chain & Inventory"
+  },
+  {
+   "task": "bierwirth2017",
+   "hard_rank": 43,
+   "mean_ceiling": 1.6473120640564218,
+   "max_gap": 0.46074,
+   "cases_ceiling_2": 0,
+   "field": "Manufacturing & Production"
+  },
+  {
+   "task": "fleszar2022b",
+   "hard_rank": null,
+   "mean_ceiling": 1.6358389135679432,
+   "max_gap": 4.511006540118041,
+   "cases_ceiling_2": 1,
+   "field": "Foundational / Theoretical"
+  },
+  {
+   "task": "segundo2019b",
+   "hard_rank": null,
+   "mean_ceiling": 1.6022514006909614,
+   "max_gap": 8.610714285714286,
+   "cases_ceiling_2": 3,
+   "field": "Foundational / Theoretical"
+  },
+  {
+   "task": "hoffman1993",
+   "hard_rank": null,
+   "mean_ceiling": 1.6,
+   "max_gap": 0.9452054794520548,
+   "cases_ceiling_2": 3,
+   "field": "Aerospace & Aviation"
+  },
+  {
+   "task": "chen1999",
+   "hard_rank": null,
+   "mean_ceiling": 1.585611510791367,
+   "max_gap": 0.8146551724137931,
+   "cases_ceiling_2": 2,
+   "field": "Manufacturing & Production"
+  },
+  {
+   "task": "ji2019",
+   "hard_rank": null,
+   "mean_ceiling": 1.5793866013927076,
+   "max_gap": 0.8301586129685592,
+   "cases_ceiling_2": 1,
+   "field": "Transportation & Logistics"
+  },
+  {
+   "task": "spliet2015",
+   "hard_rank": 48,
+   "mean_ceiling": 1.5537967603944194,
+   "max_gap": 0.753558249868213,
+   "cases_ceiling_2": 1,
+   "field": "Transportation & Logistics"
+  },
+  {
+   "task": "yang2013",
+   "hard_rank": null,
+   "mean_ceiling": 1.5424941545268651,
+   "max_gap": 2.4691793735542267,
+   "cases_ceiling_2": 1,
+   "field": "Foundational / Theoretical"
+  },
+  {
+   "task": "hassannayebi2016",
+   "hard_rank": null,
+   "mean_ceiling": 1.5063216200427936,
+   "max_gap": 0.42646176884366643,
+   "cases_ceiling_2": 0,
+   "field": "Public Transit & Mobility"
+  },
+  {
+   "task": "desaulniers2016",
+   "hard_rank": 26,
+   "mean_ceiling": 1.504978614096434,
+   "max_gap": 0.45008845485108884,
+   "cases_ceiling_2": 0,
+   "field": "Supply Chain & Inventory"
+  },
+  {
+   "task": "guo2021",
+   "hard_rank": 3,
+   "mean_ceiling": 1.4921443678126978,
+   "max_gap": 6349.312989035584,
+   "cases_ceiling_2": 2,
+   "field": "Healthcare"
+  },
+  {
+   "task": "bollapragada2001",
+   "hard_rank": null,
+   "mean_ceiling": 1.4745093329149457,
+   "max_gap": 0.7712645757243041,
+   "cases_ceiling_2": 2,
+   "field": "Foundational / Theoretical"
+  },
+  {
+   "task": "bard2002",
+   "hard_rank": 45,
+   "mean_ceiling": 1.4452941071470593,
+   "max_gap": 0.857143,
+   "cases_ceiling_2": 2,
+   "field": "Transportation & Logistics"
+  },
+  {
+   "task": "letelier2022",
+   "hard_rank": 30,
+   "mean_ceiling": 1.3692307692307693,
+   "max_gap": 0.75,
+   "cases_ceiling_2": 1,
+   "field": "Transportation & Logistics"
+  },
+  {
+   "task": "colombi2017",
+   "hard_rank": null,
+   "mean_ceiling": 1.3511134138824172,
+   "max_gap": 0.7771460856668667,
+   "cases_ceiling_2": 0,
+   "field": "Transportation & Logistics"
+  },
+  {
+   "task": "reihaneh2019",
+   "hard_rank": 37,
+   "mean_ceiling": 1.3370799656339567,
+   "max_gap": 0.3541435609765292,
+   "cases_ceiling_2": 0,
+   "field": "Transportation & Logistics"
+  },
+  {
+   "task": "nagy2015",
+   "hard_rank": 5,
+   "mean_ceiling": 1.2777462221616163,
+   "max_gap": 0.2836801752464403,
+   "cases_ceiling_2": 0,
+   "field": "Transportation & Logistics"
+  }
+ ]
+}

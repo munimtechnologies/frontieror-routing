@@ -1,0 +1,20 @@
+test_bound_side (test_refgap.TestCeiling.test_bound_side) ... ok
+test_ceiling_values (test_refgap.TestCeiling.test_ceiling_values) ... ok
+test_case_name (test_refgap.TestParsing.test_case_name) ... ok
+test_gap_from (test_refgap.TestParsing.test_gap_from) ... ok
+test_num (test_refgap.TestParsing.test_num) ... ok
+test_scalars (test_refgap.TestParsing.test_scalars) ... ok
+test_scalars_from_text (test_refgap.TestParsing.test_scalars_from_text) ... ok
+test_sense (test_refgap.TestParsing.test_sense) ... ok
+test_table_case (test_refgap.TestParsing.test_table_case) ... ok
+test_equal_is_one (test_refgap.TestScore.test_equal_is_one) ... ok
+test_negative_flips (test_refgap.TestScore.test_negative_flips) ... ok
+test_opposite_signs_and_zero_reference (test_refgap.TestScore.test_opposite_signs_and_zero_reference) ... ok
+test_positive_min_and_max (test_refgap.TestScore.test_positive_min_and_max) ... ok
+test_summarise_counts (test_refgap.TestSummary.test_summarise_counts) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.001s
+
+OK
+exit=0
