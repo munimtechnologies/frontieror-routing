@@ -1,0 +1,29 @@
+test_cli (test_vidal2011.TestCLI.test_cli) ... {"version": "0.1.0", "n": 20, "d": 2, "t": 4, "m": 3, "construction": {"cost": 1115.8024, "violated_routes": 2}, "final_objective": 981.0923202087858, "best_source": "child", "final_routes": 6, "wall_s": 6.443}
+ok
+test_brute_force_optimum (test_vidal2011.TestSolver.test_brute_force_optimum) ... FAIL
+test_brute_force_tight_capacity (test_vidal2011.TestSolver.test_brute_force_tight_capacity) ... ok
+test_duration_binds (test_vidal2011.TestSolver.test_duration_binds) ... ok
+test_random_instances (test_vidal2011.TestSolver.test_random_instances) ... ok
+test_two_workers (test_vidal2011.TestSolver.test_two_workers) ... ok
+test_accepts_own (test_vidal2011.TestVerify.test_accepts_own) ... ok
+test_agrees_with_official_on_random_breaks (test_vidal2011.TestVerify.test_agrees_with_official_on_random_breaks) ... ok
+test_rejects_double_departure (test_vidal2011.TestVerify.test_rejects_double_departure) ... skipped 'only one route on that depot and period'
+test_rejects_missing_visit (test_vidal2011.TestVerify.test_rejects_missing_visit) ... ok
+test_rejects_objective (test_vidal2011.TestVerify.test_rejects_objective) ... ok
+test_rejects_vehicle_over_m (test_vidal2011.TestVerify.test_rejects_vehicle_over_m) ... ok
+test_rejects_wrong_depot (test_vidal2011.TestVerify.test_rejects_wrong_depot) ... ok
+test_rejects_wrong_pattern (test_vidal2011.TestVerify.test_rejects_wrong_pattern) ... ok
+
+======================================================================
+FAIL: test_brute_force_optimum (test_vidal2011.TestSolver.test_brute_force_optimum)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/work/test_vidal2011.py", line 146, in test_brute_force_optimum
+    self.assertLessEqual(obj, opt + 1e-6, "seed %d: %s vs optimum %s" % (seed, obj, opt))
+AssertionError: 384.8738779346773 not less than or equal to 380.8536058206852 : seed 2: 384.8738779346773 vs optimum 380.8536048206852
+
+----------------------------------------------------------------------
+Ran 14 tests in 36.289s
+
+FAILED (failures=1, skipped=1)
+exit=0
